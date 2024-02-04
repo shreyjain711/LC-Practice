@@ -37,6 +37,25 @@
 </details>
 
 ### [**Valid Anagram**](https://leetcode.com/problems/valid-anagram/): Find if pair of strings have same chars
+  - ***Problem Desc***: return true if strings are anagram
+  - ***Brute [O(nlogn) time| O(1) space]***: Sort and compare
+    ```cpp
+    bool isAnagram(string s, string t) {
+        sort(s.begin(), s.end());
+        sort(t.begin(), t.end());
+        return s==t;
+    }
+    ```
+  - ***Count Chars and compare [O(n) time | O(1) space]***:
+    ```cppp
+    bool isAnagram(string s, string t) {
+        int count[26]; memset(count, 0, sizeof(count));
+        for(char c : s) count[c - 'a']++;
+        for(char c : t) count[c - 'a']--;
+        for(int i : count) if (i) return false;
+        return true;
+    }
+    ```
 
 ### **[Two Sum](https://leetcode.com/problems/two-sum/)**: return indices of elements that add up to a target val, exactly one sol confirmed
     

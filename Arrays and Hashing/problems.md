@@ -287,3 +287,20 @@
     ```
 
 ### **[Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/):** given arr, find longest consecutive seq possible (i.e. if arr was sorted)
+  - ***Problem Desc***: in O(n) time, for an unsorted array, tell what would be the longest consec seq if it was sorted
+  - **KEY POINT**: find if an elem is the start of a seq
+  - ***hashset to detect starts [O(n) time | O(n) space]***: make arr in set, check for each elem, if its prev doesn't exist then its a start, count from there
+  ```cpp
+  int longestConsecutive(vector<int>& nums) {
+      int lcs = 0, temp = 0;
+      unordered_set<int> s(nums.begin(), nums.end());
+      for (int n : nums) {
+          if (s.find(n-1)==s.end()) { // i.e. is start
+              while (s.find(n++) != s.end()) temp++;
+              lcs = max(lcs, temp);
+              temp = 0;
+          }
+      }
+      return lcs;
+  }
+  ```

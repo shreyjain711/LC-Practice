@@ -46,14 +46,19 @@
     ```
 
 ### **[Container with Most Water](https://leetcode.com/problems/container-with-most-water/)**: bars of diff heights give, find biggest container they can make
-  - ***Problem Desc***:
-  - ***Brute [O() time | O() space]***:
+  - ***Problem Desc***: each pos has a wall, using two walls from the whole array, what's the greatest volume container that can be formed
+  - ***Brute [O(n<sup>2</sup>) time | O(1) space]***: try each wall with other
+  - ***[O(n) time | O(1) space]***: in each turn, either - move left forward if its lower than the right else move right backwards. Chaning to smaller wall offers possibility of a higher volume
     ```cpp
-    
-    ```
-  - ***[O() time | O() space]***:
-    ```cpp
-    
+    int maxArea(vector<int>& height) {
+        int maxArr = 0, i = 0, j = height.size()-1;
+        while (i<j) {
+            maxArr = max(maxArr, min(height[i], height[j]) * (j-i));
+            if (height[i] < height[j]) ++i;
+            else --j;
+        }
+        return maxArr;
+    }
     ```
 
 ### **[Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)**: normal variant, height of indices given in arr, find trapped water

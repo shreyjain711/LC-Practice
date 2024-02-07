@@ -1,17 +1,34 @@
 # Problem Set
 
 ### ***[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)***: reverse LL
-- ***Problem Desc***:
-- ***Brute[O() time | O() space]***:
-- ***[O() time | O() space]***:
+- ***Problem Desc***: reverse an LL
+- ***Brute [O(n<sup>2</sup>) time | O(1) space]***: go to end, reverse, repeat
+- ***reverse, move to next, repeat [O(n) time | O(1) space]***: 
     ```cpp
+    
     ```
 
 ### ***[Merge Two Linked Lists](https://leetcode.com/problems/merge-two-sorted-lists/)***: merge two LL in sorted order
-- ***Problem Desc***:
-- ***Brute[O() time | O() space]***:
-- ***[O() time | O() space]***:
+- ***Problem Desc***: merge together two sorted LL
+- ***[O(n) time | O(1) space]***: make dummy ptr, maintain a tail/curr ptr. append to curr the pts from lists 1 and 2 the one that's the smaller
     ```cpp
+    ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
+        ListNode *dummy = new ListNode(), *curr = dummy;
+        while (list1 && list2) {
+            if (list1->val > list2->val) {
+                curr->next = list2;
+                curr = curr->next;
+                list2 = list2->next;
+            } else {
+                curr->next = list1;
+                curr = curr->next;
+                list1 = list1->next;
+            }
+        }
+        if (list1) curr->next = list1;
+        if (list2) curr->next = list2;
+        return dummy->next;
+    }
     ```
 
 ### ***[Reorder List](https://leetcode.com/problems/reorder-list/)***: E0, E1, … En-1, En → E0, En, E1, En-1 …

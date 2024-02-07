@@ -105,7 +105,7 @@
         return ans;
     }
     ```
-  - ***[O() time | O() space]***: start from pointers on both ends, if left pointer's prev maxLeft is less than maxRight then max water retention would be as per maxLeft, no need to calc till curr position from the right side as well
+  - ***[O(n) time | O(1) space]***: start from pointers on both ends, if left pointer's prev maxLeft is less than maxRight then max water retention would be as per maxLeft, no need to calc till curr position from the right side as well
     ```cpp
     int trap(vector<int>& h) {
         int n = h.size(), ans = 0;

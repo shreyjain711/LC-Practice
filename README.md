@@ -8,10 +8,10 @@
    - [Longest Consecutive Sequence (if arr sorted)](https://github.com/shreyjain711/LC-Practice/blob/main/Arrays%20and%20Hashing/longest_consec_seq_if_sorted.cpp)
      - hashmap, iterate and eval sequences from elems that don't have an elem-1 in arr
 2. Two Pointers
-  - [3Sum](https://github.com/shreyjain711/LC-Practice/blob/main/Two%20Pointers/3sum.cpp)
-    - sort, pick first, other two with two ptr approach
-  - [Trapping rain water](https://github.com/shreyjain711/LC-Practice/blob/main/Two%20Pointers/trapping_rain_water.cpp)
-    - don't need to calc maxLeft and right for all, go with two ptr approach
+   - [3Sum](https://github.com/shreyjain711/LC-Practice/blob/main/Two%20Pointers/3sum.cpp)
+      - sort, pick first, other two with two ptr approach
+   - [Trapping rain water](https://github.com/shreyjain711/LC-Practice/blob/main/Two%20Pointers/trapping_rain_water.cpp)
+      - don't need to calc maxLeft and right for all, go with two ptr approach
 
 
 ### Quick Notes
@@ -19,8 +19,8 @@
   <img width="585" alt="image" src="https://github.com/shreyjain711/LC-Practice/assets/31862368/4e3117cf-ec69-422d-b748-9564b943fe99">
 
     
-    1. Both set and unordered_set can be traversed but only in case of set that traversal order would be a sorted one
-    2. Why not unordered better here even after worst case complexity being higher - the hash table approach in unordered set will give O(n) if every insertion ends up creating a collision in hash table during insertion; this will not be the case in almost all practical cases
+   - Both set and unordered_set can be traversed but only in case of set that traversal order would be a sorted one
+   - Why not unordered better here even after worst case complexity being higher - the hash table approach in unordered set will give O(n) if every insertion ends up creating a collision in hash table during insertion; this will not be the case in almost all practical cases
 - unordered_map operations:
     - iteration:
         - `for(auto p: m) p.first p.second`

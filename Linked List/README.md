@@ -3,9 +3,18 @@
 ### ***[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)***: reverse LL
 - ***Problem Desc***: reverse an LL
 - ***Brute [O(n<sup>2</sup>) time | O(1) space]***: go to end, reverse, repeat
-- ***reverse, move to next, repeat [O(n) time | O(1) space]***: 
+- ***store next, reverse, move reversed, move to next, repeat [O(n) time | O(1) space]***: 
     ```cpp
-    
+    ListNode* reverseList(ListNode* head) {
+        ListNode *prev = NULL, *next = NULL;
+        while (head != NULL) {
+            next = head->next;
+            head->next = prev;
+            prev = head;
+            head = next;
+        }
+        return prev;
+    }
     ```
 
 ### ***[Merge Two Linked Lists](https://leetcode.com/problems/merge-two-sorted-lists/)***: merge two LL in sorted order

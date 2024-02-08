@@ -3,6 +3,7 @@
 ### ***[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)***: reverse LL
 - ***Problem Desc***: reverse an LL
 - ***Brute [O(n<sup>2</sup>) time | O(1) space]***: go to end, reverse, repeat
+- ***stack [O(n) time | O(n) space]***: push all in stack, popping gives reversed order
 - ***store next, reverse, move reversed, move to next, repeat [O(n) time | O(1) space]***: 
     ```cpp
     ListNode* reverseList(ListNode* head) {
@@ -92,11 +93,40 @@
     }
     ```
 
-### ***[Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/)***: clone LL with a random pointer
-- ***Problem Desc***:
-- ***Brute[O() time | O() space]***:
-- ***[O() time | O() space]***:
+### ***[Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/)***: 
+- ***Problem Desc***: clone LL with a random pointer
+- ***hashmap to store corresponding pointers[O(n) time | O(n) space]***
+- ***Insert copy after each node linearly, set random ptrs, disentangle LLs[O(n) time | O(1) space]***:
     ```cpp
+    Node* copyRandomList(Node* head) {
+        // insert new node after each, linearly
+        Node *curr = head, *next;
+        while (curr) {
+            next = curr->next;
+            curr->next = new Node(curr->val);
+            curr->next->next = next;
+            curr = next;
+        }
+
+        // set random pointers
+        curr = head;
+        while (curr) {
+            next = curr->next->next;
+            curr->next->random = (curr->random) ? curr->random->next : NULL;
+            curr = next;
+        }
+
+        // remove from main LL
+        curr = head; Node *dummyHead = new Node(0), *dummy = dummyHead;
+        while (curr) {
+            dummy->next = curr->next;
+            next = curr->next->next;
+            dummy = dummy->next;
+            curr->next = next;
+            curr = curr->next;
+        }
+        return dummyHead->next;
+    }
     ```
 
 ### ***[Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)***: given two nums in LL

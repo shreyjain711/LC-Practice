@@ -41,10 +41,34 @@
     ```
 
 ### ***[Reorder List](https://leetcode.com/problems/reorder-list/)***: E0, E1, … En-1, En → E0, En, E1, En-1 …
-- ***Problem Desc***:
-- ***Brute[O() time | O() space]***:
-- ***[O() time | O() space]***:
+- ***Problem Desc***: rearrage list, first points to first from right which then points to second pair and so on
+- ***slow fast to get to mid, split, reverse second half, merge left and right alternately [O(n) time | O(1) space]***:
     ```cpp
+    void reorderList(ListNode* head) {
+        ListNode *slow = head, *fast = head->next;
+        while (fast && fast->next) {
+            slow = slow->next;
+            fast = fast->next->next;
+        }
+        ListNode *rightHead = slow->next, *prev = NULL, *next = NULL;
+        slow->next = NULL;
+        while (rightHead) {
+            next = rightHead->next;
+            rightHead->next = prev;
+            prev = rightHead;
+            rightHead = next;
+        }
+
+        ListNode *l1 = head, *l2 = prev;
+        while (l1 && l2) {
+            next = l1->next;
+            l1->next = l2;
+            l1 = next;
+            next = l2->next;
+            l2->next = l1;
+            l2 = next;
+        }
+    }
     ```
 
 ### ***[Remove Nth Node from End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)***: remove nth node from end

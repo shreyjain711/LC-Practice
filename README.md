@@ -12,6 +12,9 @@
       - sort, pick first, other two with two ptr approach
    - [Trapping rain water](https://github.com/shreyjain711/LC-Practice/blob/main/Two%20Pointers/trapping_rain_water.cpp)
       - don't need to calc maxLeft and right for all, go with two ptr approach
+3. Linked Lists
+   - for cycle start slow and fast pointers taking 1 step (starting from node 0)
+   - for finding cycle point, start slow from 0 and fast from where first collision happened; move only one step at a time
 
 
 ### Quick Notes

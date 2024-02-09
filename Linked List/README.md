@@ -136,11 +136,20 @@
     ```cpp
     ```
 
-### ***[Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)***: detect cycle
-- ***Problem Desc***:
-- ***Brute[O() time | O() space]***:
-- ***[O() time | O() space]***:
+### ***[Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)***: 
+- ***Problem Desc***: detect if LL has a cycle
+- ***Brute[O(n) time | O(n) space]***: make arr from LL and check
+- ***fast and slow[O(n) time | O(1) space]***: **START BOTH FROM HEAD**
     ```cpp
+    bool hasCycle(ListNode *head) {
+        ListNode *slow = head, *fast = head;
+        while (fast && fast->next) {
+            slow = slow->next;
+            fast = fast->next->next;
+            if (slow == fast) return 1;
+        }
+        return 0;
+    }
     ```
 
 ### ***[Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/)***: arr of n+1 elms and only 1 num repeats. **BUT, it can repeat more than twice**. Time linear, space constant

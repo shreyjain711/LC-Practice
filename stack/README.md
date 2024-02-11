@@ -1,6 +1,6 @@
 # Problem Set
 
-### **[Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)**: given a str of brackets, check if they’re correct
+### ***[Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)***: given a str of brackets, check if they’re correct
   - ***Problem Desc***: given a str of brackets, check if they’re correct
   - ***If else tree [O(n) time | O(1) space]***:
     ```cpp
@@ -50,7 +50,7 @@
     ```
 
 
-### [Min Stack](https://leetcode.com/problems/min-stack/): give pop, push, top, min in O1
+### ***[Min Stack](https://leetcode.com/problems/min-stack/)***: give pop, push, top, min in O1
   - ***Problem Desc***: give pop, push, top, min in O1
   - ***stack of pair {elem, minTillNow} [O(n) time | O(1) space]***:
     ```cpp
@@ -68,7 +68,7 @@
     ```
     
 
-### **[Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/)**:
+### ***[Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/)***:
   - ***Problem Desc***: evaluate reverse polish notation; given expression always valid
   - ***stack to store nums and results[O(n) time | O(n) space]***:
     ```cpp
@@ -100,7 +100,7 @@
     ```
     
 
-### [**Generate Parentheses**](https://leetcode.com/problems/generate-parentheses/): generate all possible valid parentheses with n pairs
+### ***[Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)***: generate all possible valid parentheses with n pairs
   - ***Problem Desc***: generate all possible valid parentheses with n pairs
   - ***Recursive [O(2<sup>n</sup>) time | O(<sup>n</sup>) space]***: recursively call a helper, acc to num of open brackets, make further calls
   - ***Simul recur iter, through stacks[O(2<sup>n</sup>) time | O(2<sup>n</sup> space]***:
@@ -139,7 +139,7 @@
     ```
 
 
-### **[Daily Temperatures](https://leetcode.com/problems/daily-temperatures/)**: given temp for each day, for each day tell how many days before a day with higher temp seen
+### ***[Daily Temperatures](https://leetcode.com/problems/daily-temperatures/)***: given temp for each day, for each day tell how many days before a day with higher temp seen
   - ***Problem Desc***: given temp for each day, for each day tell how many days before a day with higher temp seen
   - ***Stack, 0..n iter [O(n) time | O(n) space]***:
     - can also keep only the indexes in stack, see the temp from the actual array
@@ -158,13 +158,31 @@
   - ***Stack, n-1..0 iter [O(n) time | O(n) space]***: pop if curr elem is >= top
 
 
-### [**Car Fleet**](https://leetcode.com/problems/car-fleet/): given destination and list of car positions and speeds. find num of groups that’ll reach at target
-  - ***Problem Desc***:
-  - ***Brute [O() time | O() space]***:
-  - ***[O() time | O() space]***:
+### ***[Car Fleet](https://leetcode.com/problems/car-fleet/)***: 
+  - ***Problem Desc***: given destination and list of car positions and speeds. find num of groups that’ll reach at target
+  - ***sort based on position, make descending levels of time in stack [O(n.logn) time | O(n) space]***:
+    ```cpp
+    int carFleet(int target, vector<int>& position, vector<int>& speed) {
+        int n = position.size();
+        vector<pair<int, int>> cars(n);
+        for (int i = 0; i<n; ++i) cars[i] = {position[i], speed[i]};
+        
+        sort(cars.begin(), cars.end());
+
+        stack<double> fleets;
+
+        for (auto car: cars) {
+            double timeNeeded = (target-car.first) / (double) car.second;
+            while (!fleets.empty() && fleets.top() <= timeNeeded) fleets.pop();
+            fleets.push(timeNeeded);
+        }
+
+        return fleets.size();
+    }
+    ```
 
 
-### [**Largest Rectangle In Histogram**](https://leetcode.com/problems/largest-rectangle-in-histogram/): given bar heights in an arr
+### ***[Largest Rectangle In Histogram***](https://leetcode.com/problems/largest-rectangle-in-histogram/)***: given bar heights in an arr
   - ***Problem Desc***:
   - ***Brute [O() time | O() space]***:
   - ***[O() time | O() space]***:

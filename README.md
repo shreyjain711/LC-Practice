@@ -13,8 +13,32 @@
    - [Trapping rain water](https://github.com/shreyjain711/LC-Practice/blob/main/Two%20Pointers/trapping_rain_water.cpp)
       - don't need to calc maxLeft and right for all, go with two ptr approach
 3. Linked Lists
-   - for cycle start slow and fast pointers taking 1 step (starting from node 0)
-   - for finding cycle point, start slow from 0 and fast from where first collision happened; move only one step at a time
+   - Notes:
+      - for cycle start slow and fast pointers taking 1 step (starting from node 0)
+      - for finding cycle point, start slow from 0 and fast from where first collision happened; move only one step at a time
+   - [LRU Cache](https://leetcode.com/problems/lru-cache/):
+      - doubleLL with node also storing key, val
+      - a map of key->doubleLL
+      - also maintain *head, *tail, size and capacity
+   - [Reverse Nodes In K Group](https://leetcode.com/problems/reverse-nodes-in-k-group/):
+      - iterative: check k nodes exist, reverse, repeat on next; store the prevTail (tail of LL till now) and currHead
+      - recursive: check k or more nodes exist, reverse, pass last recursively to next function
+4. Stacks
+   - [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/):
+      - recursively call a helper, acc to num of open brackets, make further calls
+         - if numOpen == numClose
+            - if == n: insert in ans arr
+            - else (i.e. <n): insert a '(' and add to temp
+         - else (can be only numOpen > numClose)
+            - if numOpen < n: insert a '(' and add to temp
+            - insert a ')' and add to temp
+      - iterative: use stacks, iterate on each n, like its BFS
+   - [Largest Rectangle In Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/):
+      - find indexes where the element's left and right smaller heights exist, dis b/w these * the height of the bar across the arr gives max
+      - approach 2:
+         - stack stores (height, index) pairs -> the pair indicates a rectangle of height h can be formed from index i
+         - pop from stack when the top has a higher height, push in the curr height and the index would be that of the last rectangle evicted from the stack or that of the elem itself
+         - trick: to avoid special while loop at end, add a 0 element to heights
 
 
 ### Quick Notes

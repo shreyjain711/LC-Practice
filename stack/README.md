@@ -7,9 +7,21 @@
 
 
 ### [Min Stack](https://leetcode.com/problems/min-stack/): give pop, push, top, min in O1
-  - ***Problem Desc***:
-  - ***Brute [O() time | O() space]***:
-  - ***[O() time | O() space]***:
+  - ***Problem Desc***: give pop, push, top, min in O1
+  - ***stack of pair {elem, minTillNow} [O(n) time | O(1) space]***:
+    ```cpp
+    deque<pair<int, int>> s;
+    MinStack() {}
+    
+    void push(int val) {
+        if (s.size() > 0) s.push_back({val, min(val, s.back().second)});
+        else s.push_back({val, val});
+    }
+    
+    void pop() {s.pop_back();}
+    int top() {return s.back().first;}
+    int getMin() {return s.back().second;}
+    ```
     
 
 ### **[Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/)**:

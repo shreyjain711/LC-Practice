@@ -69,9 +69,35 @@
     
 
 ### **[Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/)**:
-  - ***Problem Desc***:
-  - ***Brute [O() time | O() space]***:
-  - ***[O() time | O() space]***:
+  - ***Problem Desc***: evaluate reverse polish notation; given expression always valid
+  - ***stack to store nums and results[O(n) time | O(n) space]***:
+    ```cpp
+    int evalRPN(vector<string>& tokens) {
+        stack<int> st; int n1, n2;
+        for (string s : tokens) {
+            if (s == "+") {
+                n2 = st.top(); st.pop();
+                n1 = st.top(); st.pop();
+                st.push(n1 + n2);
+            } else if (s == "-") {
+                n2 = st.top(); st.pop();
+                n1 = st.top(); st.pop();
+                st.push(n1 - n2);
+            } else if (s == "*") {
+                n2 = st.top(); st.pop();
+                n1 = st.top(); st.pop();
+                st.push(n1 * n2);
+            } else if (s == "/") {
+                n2 = st.top(); st.pop();
+                n1 = st.top(); st.pop();
+                st.push(n1 / n2);
+            } else {
+                st.push(stoi(s));
+            }
+        }
+        return st.top();
+    }
+    ```
     
 
 ### [**Generate Parentheses**](https://leetcode.com/problems/generate-parentheses/): generate all possible valid parentheses with n pairs

@@ -182,7 +182,7 @@
     ```
 
 
-### ***[Largest Rectangle In Histogram***](https://leetcode.com/problems/largest-rectangle-in-histogram/)***: given bar heights in an arr
+### ***[Largest Rectangle In Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/)***: given bar heights in an arr
   - ***Problem Desc***: given bar heights in a histogram, what would be the largest rectangle that can be fit in the bars 
   - ***store the height and from which index that height is possible [O(n) time | O(n) space]***:
     - stack stores pairs -> height, index -> the pair indicates a rectangle of height h can be formed from index i

@@ -1,4 +1,4 @@
-// ***Problem Desc***: given stock prices in an arr, find best day to buy and then to sell
+// ***Problem Desc***: sorted matrix: each row's min > last row's max; row is sorted too
 
 // ***Brute [O(m.n) time | O(1) space]***: search linearly
 

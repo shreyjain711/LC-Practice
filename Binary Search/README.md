@@ -1,5 +1,5 @@
 ### [**Binary Search**](https://leetcode.com/problems/binary-search/): Ologn search on sorted arr
-- ***Problem Desc***: given stock prices in an arr, find best day to buy and then to sell
+- ***Problem Desc***: binary search
 - ***Brute [O(n) time | O(1) space]***: search linearly
 - ***Binary Search[O(logn) time | O(1) space]***:
   - lo = mid+1 and hi = mid-1 make sure there's no being stuck at the ans
@@ -20,7 +20,7 @@
   ```
 
 ### [**Search a 2D Matrix**](https://leetcode.com/problems/search-a-2d-matrix/): Ologm*logn time, O1 space
-- ***Problem Desc***: given stock prices in an arr, find best day to buy and then to sell
+- ***Problem Desc***: search in a sorted matrix, each row's min is more than last row's max; every row is sorted too
 - ***Brute [O(m.n) time | O(1) space]***: search linearly
 - ***Search linearly across 0..m*n [O(log(m.n)) time | O(1) space]***: convert linear index to matrix index
   ```cpp
@@ -59,35 +59,48 @@
   ```
 
 ### [**Koko Eating Bananas**](https://leetcode.com/problems/koko-eating-bananas/):
-- ***Problem Desc***: given stock prices in an arr, find best day to buy and then to sell
-- ***Brute [O() time | O() space]***:
-- ***[O() time | O() space]***:
+- ***Problem Desc***: koko eats k bananas in an hour. has to finish all piles in h hours. time taken for each pile = ceil(pile/speed)
+- ***Brute [O(p.max(p)) time | O(1) space]***: try each speed from 1...max(p)
+- ***Binary search for the right speed[O(p.log(max(p))) time | O(1) space]***:
   ```cpp
+  int minEatingSpeed(vector<int>& piles, int h) {
+        int lo = 1, hi = 1e9, mid, ans = 1e9;
+        long long t;
+        while (lo <= hi) {
+            mid = lo + (hi-lo)/2; t = 0;
+            for (int p: piles) t += ceil(p/(double)mid);
+            if (t <= h) {
+                ans = min(ans, mid);
+                hi = mid - 1;
+            } else lo = mid + 1;
+        }
+        return ans;
+    }
   ```
 
 ### [**Find Minimum In Rotated Sorted Array**](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/):
-- ***Problem Desc***: given stock prices in an arr, find best day to buy and then to sell
+- ***Problem Desc***: 
 - ***Brute [O() time | O() space]***:
 - ***[O() time | O() space]***:
   ```cpp
   ```
 
 ### [**Search In Rotated Sorted Array**](https://leetcode.com/problems/search-in-rotated-sorted-array/):
-- ***Problem Desc***: given stock prices in an arr, find best day to buy and then to sell
+- ***Problem Desc***: 
 - ***Brute [O() time | O() space]***:
 - ***[O() time | O() space]***:
   ```cpp
   ```
 
 ### [**Time Based Key Value Store**](https://leetcode.com/problems/time-based-key-value-store/):
-- ***Problem Desc***: given stock prices in an arr, find best day to buy and then to sell
+- ***Problem Desc***: 
 - ***Brute [O() time | O() space]***:
 - ***[O() time | O() space]***:
   ```cpp
   ```
 
 ### [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/):
-- ***Problem Desc***: given stock prices in an arr, find best day to buy and then to sell
+- ***Problem Desc***: 
 - ***Brute [O() time | O() space]***:
 - ***[O() time | O() space]***:
   ```cpp

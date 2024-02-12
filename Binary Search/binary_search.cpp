@@ -1,4 +1,4 @@
-// ***Problem Desc***: given stock prices in an arr, find best day to buy and then to sell
+// ***Problem Desc***: search in a sorted array
 
 // ***Brute [O(n) time | O(1) space]***: search linearly
 

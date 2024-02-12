@@ -1,4 +1,4 @@
-### [**Binary Search**](https://leetcode.com/problems/binary-search/): Ologn search on sorted arr
+### ***[Binary Search](https://leetcode.com/problems/binary-search/)***: Ologn search on sorted arr
 - ***Problem Desc***: binary search
 - ***Brute [O(n) time | O(1) space]***: search linearly
 - ***Binary Search[O(logn) time | O(1) space]***:
@@ -19,7 +19,7 @@
     }
   ```
 
-### [**Search a 2D Matrix**](https://leetcode.com/problems/search-a-2d-matrix/): Ologm*logn time, O1 space
+### ***[Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/)***: Ologm*logn time, O1 space
 - ***Problem Desc***: search in a sorted matrix, each row's min is more than last row's max; every row is sorted too
 - ***Brute [O(m.n) time | O(1) space]***: search linearly
 - ***Search linearly across 0..m*n [O(log(m.n)) time | O(1) space]***: convert linear index to matrix index
@@ -58,7 +58,7 @@
   }
   ```
 
-### [**Koko Eating Bananas**](https://leetcode.com/problems/koko-eating-bananas/):
+### ***[Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/)***:
 - ***Problem Desc***: koko eats k bananas in an hour. has to finish all piles in h hours. time taken for each pile = ceil(pile/speed)
 - ***Brute [O(p.max(p)) time | O(1) space]***: try each speed from 1...max(p)
 - ***Binary search for the right speed[O(p.log(max(p))) time | O(1) space]***:
@@ -78,28 +78,53 @@
     }
   ```
 
-### [**Find Minimum In Rotated Sorted Array**](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/):
+### ***[Find Minimum In Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)***:
+- ***Problem Desc***: array has only unique values, rotated ```1..n``` times
+- ***Brute [O(n) time | O(1) space]***: search linearly
+- ***Binary search[O(logn) time | O(1) space]***: go towards the part that isn't sorted (i.e. mid > high)
+  ```cpp
+  int findMin(vector<int>& nums) {
+      int lo = 0, hi = nums.size()-1, mid, ans = nums[0];
+      while (lo <= hi) {
+          mid = (hi+lo)/2; ans = min(ans, nums[mid]);
+          if (nums[hi] < nums[mid]) lo = mid + 1;
+          else hi = mid-1;
+      }
+      return ans;
+  }
+  ```
+
+- ***[Find Mininmum in Rotated Sorted Array II](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/)***: can have duplicate elements
+- ***Binary search[O(logn) time | O(1) space]***: go towards the part that isn't sorted (i.e. mid > high), but when don't know which part is sorted, hi-- e.g. 5,5,1,5,5
+  ```cpp
+  int findMin(vector<int>& nums) {
+      int lo = 0, hi = nums.size()-1, mid, ans = nums[0];
+      while (lo <= hi) {
+          mid = (hi+lo)/2; ans = min(ans, nums[mid]);
+          if (nums[hi] < nums[mid]) lo = mid + 1;
+          else if (nums[lo] > nums[mid]) hi = mid-1;
+          else hi--;
+      }
+      return ans;
+  }
+  ```
+
+
+### ***[Search In Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)***:
 - ***Problem Desc***: 
 - ***Brute [O() time | O() space]***:
 - ***[O() time | O() space]***:
   ```cpp
   ```
 
-### [**Search In Rotated Sorted Array**](https://leetcode.com/problems/search-in-rotated-sorted-array/):
+### ***[Time Based Key Value Store](https://leetcode.com/problems/time-based-key-value-store/)***:
 - ***Problem Desc***: 
 - ***Brute [O() time | O() space]***:
 - ***[O() time | O() space]***:
   ```cpp
   ```
 
-### [**Time Based Key Value Store**](https://leetcode.com/problems/time-based-key-value-store/):
-- ***Problem Desc***: 
-- ***Brute [O() time | O() space]***:
-- ***[O() time | O() space]***:
-  ```cpp
-  ```
-
-### [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/):
+### ***[Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)***:
 - ***Problem Desc***: 
 - ***Brute [O() time | O() space]***:
 - ***[O() time | O() space]***:

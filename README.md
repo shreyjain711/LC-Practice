@@ -56,8 +56,10 @@
       - find mid of arr1, then corresponding ```mid for arr2 = (l1+l2+1)/2 - m1```
       - set points m1-1, m1 on arr1 and m2-1,m2 on arr2
          - check if each point even exists otherwise their val = INT_MAX/MIN
-      - check if arr1[m1-1] >= arr2[m2] && arr2[m2-1] <= arr1[m1] i.e. elements from 0..m1-1 and 0..m2-1 will merge together and so will the arrays' right side
-      - if not then according move m1, and in turn m2, to right or left half of arr
+      - check if !(arr1[m1-1] >= arr2[m2]) and if !(arr2[m2-1] <= arr1[m1]) i.e. elements from 0..m1-1 and 0..m2-1 will **NOT** merge together
+      - if they will merge then
+         - if ```l1+l2 = odd``` median is max of the left halves (m1-1 or m2-1) else
+         - else ```avg of max(m1-1, m2-1) and min(m1,m2)```
 
 
 ### Quick Notes

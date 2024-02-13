@@ -39,6 +39,27 @@
          - stack stores (height, index) pairs -> the pair indicates a rectangle of height h can be formed from index i
          - pop from stack when the top has a higher height, push in the curr height and the index would be that of the last rectangle evicted from the stack or that of the elem itself
          - trick: to avoid special while loop at end, add a 0 element to heights
+5. Binary Search
+   - [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/):
+      - keep checking mid for min and keep going towards the side that's broken
+         - could be lo > mid (if left side has break)
+         - OR mid > high (if right side has break)
+   - [Search In Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/):
+      - check if mid is target
+      - check if left side is correctly sorted (lo < mid)
+         - if target in range lo to mid, move to that
+         - else move to mid+1..high range
+      - else (right side is sorted)
+         - if target in mid...high, move to it, else move to left half
+   - [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/):
+      - make sure arr1 is not longer than arr2, median element numbering goes wrong otherwise
+      - find mid of arr1, then corresponding ```mid for arr2 = (l1+l2+1)/2 - m1```
+      - set points m1-1, m1 on arr1 and m2-1,m2 on arr2
+         - check if each point even exists otherwise their val = INT_MAX/MIN
+      - check if !(arr1[m1-1] >= arr2[m2]) and if !(arr2[m2-1] <= arr1[m1]) i.e. elements from 0..m1-1 and 0..m2-1 will **NOT** merge together
+      - if they will merge then
+         - if ```l1+l2 = odd``` median is max of the left halves (m1-1 or m2-1) else
+         - else ```avg of max(m1-1, m2-1) and min(m1,m2)```
 
 
 ### Quick Notes

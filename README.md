@@ -60,6 +60,27 @@
       - if they will merge then
          - if ```l1+l2 = odd``` median is max of the left halves (m1-1 or m2-1) else
          - else ```avg of max(m1-1, m2-1) and min(m1,m2)```
+6. Sliding Window
+   - [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/):
+      - grow window till condition met, move along if not met, grow when met again
+      - optimisations/tricks:
+         - no need to find elem with maxCount, the elem being inserted in window is the only contender
+         - move window when conditions not met, i.e. no need to shrink with a while loop, just remove one char from front since once added to back
+   - [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/):
+      - track nums of charCounts that curr window has and shrink or grow as per haves vs needs
+      - optimisations/tricks:
+         - hashmap to track elems in t str
+         - counter for haves (needs met) and needed chars (with respective count)
+         - track haves and needs,
+            - if ```haves == needs```, remove first letter of window, check if that violated a have met, then haves--
+            - else, add one more letter to window, check if adding makes a have met, then have++
+         - if after window setting, ```haves == needs``` and curr len < curr min len, set start and len values
+   - [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/):
+      - maintain a deque, front maintains the max elem in curr window, back maintains the decreasing order
+      - firstly, pop from back till the back is < curr elem
+      - then push index
+      - then if front has an elem from previous iter that's no longer in the window then remove it
+      - then front has the ans value for current window
 
 
 ### Quick Notes

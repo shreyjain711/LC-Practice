@@ -2,7 +2,7 @@
 
 ### ***[Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)***:
 - ***Problem Desc***: invert -> left becomes right, right becomes left
-- ***Recursively invert right and left subtrees, reverse pointers [O(n) time | O(1) space]***:
+- ***Recursively invert right and left subtrees, reverse pointers [O(n) time | O(n) space (recursion stack space)]***:
   ```cpp
   TreeNode* invertTree(TreeNode* root) {
     if (!root) return NULL;
@@ -16,7 +16,7 @@
 
 ### ***[Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)***:
 - ***Problem Desc***: find max depth of tree
-- ***Recursive: depth at curr lvl = 1+max(depthLeft, depthRight) [O(n) time | O(1) space]***: 
+- ***Recursive: depth at curr lvl = 1+max(depthLeft, depthRight) [O(n) time | O(n) space (recursion stack space)]***: 
   ```cpp
   int maxDepth(TreeNode* root) {
       if (!root) return 0;
@@ -25,9 +25,18 @@
   ```
 
 ### ***[Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/)***:
-- ***Problem Desc***:
-- ***Sol [O() time | O() space]***:
+- ***Problem Desc***: diameter = longest path in any two nodes of tree; might not even include root
+- ***With a helper, at each node determine max diameter till now and diameter incl this node [O(n) time | O(n) space (recursion stack space)]***:
   ```cpp
+  pair<int,int> diameterDepthHelper(TreeNode* root) {
+      if (!root) return {0, 0};
+      pair<int,int> left = diameterDepthHelper(root->left), right = diameterDepthHelper(root->right);
+      return { (max(max(left.first, right.first), left.second + right.second)), 
+               (1 + max(left.second, right.second))};
+  }
+  int diameterOfBinaryTree(TreeNode* root) {
+      return diameterDepthHelper(root).first;
+  }
   ```
 
 ### ***[Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/)***:

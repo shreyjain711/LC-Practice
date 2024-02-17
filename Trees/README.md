@@ -15,9 +15,13 @@
 
 
 ### ***[Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)***:
-- ***Problem Desc***:
-- ***Sol [O() time | O() space]***:
+- ***Problem Desc***: find max depth of tree
+- ***Recursive: depth at curr lvl = 1+max(depthLeft, depthRight) [O(n) time | O(1) space]***: 
   ```cpp
+  int maxDepth(TreeNode* root) {
+      if (!root) return 0;
+      return 1 + max(maxDepth(root->left), maxDepth(root->right));
+  }
   ```
 
 ### ***[Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/)***:

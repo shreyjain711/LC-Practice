@@ -127,13 +127,22 @@
   ```
 
 ### ***[Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/)***:
-- ***Problem Desc***:
-- ***Recursive [O(n) time | O(n) space]***:
+- ***Problem Desc***: list of right most node of each level
+- ***Recursive [O(n) time | O(n) space]***: send in lvl, calls are in VRL order so if a level wasn't seen earlier then it's the one visible from right and gets pushed in ans vector
   ```cpp
+  void rightSideViewHelper(vector<int> &ans, TreeNode* root, int lvl) {
+      if (!root) return;
+      if (ans.size() <= lvl) ans.push_back(root->val);
+      rightSideViewHelper(ans, root->right, lvl+1);
+      rightSideViewHelper(ans, root->left, lvl+1);
+  }
+  
+  vector<int> rightSideView(TreeNode* root) {
+      vector<int> ans; rightSideViewHelper(ans, root, 0);
+      return ans;
+  }
   ```
-- ***iterative, with queues [O(n) time | O(n) space]***:
-  ```cpp
-  ```
+- ***iterative, with queues [O(n) time | O(n) space]***: do level order, the last back node of the queue is the right side view
 
 ### ***[Count Good Nodes In Binary Tree](https://leetcode.com/problems/count-good-nodes-in-binary-tree/)***:
 - ***Problem Desc***:

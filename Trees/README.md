@@ -145,8 +145,19 @@
 - ***iterative, with queues [O(n) time | O(n) space]***: do level order, the last back node of the queue is the right side view
 
 ### ***[Count Good Nodes In Binary Tree](https://leetcode.com/problems/count-good-nodes-in-binary-tree/)***:
-- ***Problem Desc***:
-- ***Sol [O() time | O() space]***:    
+- ***Problem Desc***: good node is one which doesn't have any node with value greater than it in its path to the root
+- ***Recur, from root start, if see a node with val less than max till now then not good else is [O(n) time | O(n) space]***:
+  ```cpp
+  void helper(TreeNode *root, int mx, int &ans) {
+      if (!root) return;
+      if (root->val >= mx) {ans++; mx = root->val;}
+      helper(root->left, mx, ans); helper(root->right, mx, ans);
+  }
+
+  int goodNodes(TreeNode* root) {
+      int ans = 0; helper(root, -1e5, ans); return ans;
+  }
+  ```
 
 ### ***[Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)***:
 - ***Problem Desc***:

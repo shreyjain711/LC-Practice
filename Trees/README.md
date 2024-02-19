@@ -41,7 +41,7 @@
 
 ### ***[Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/)***:
 - ***Problem Desc***: height-balanced, i.e. for any node, diff b/w height left and right subtrees <= 1
-- ***Sol [O(n) time | O(n) space]***:
+- ***Recur, for each node, bring back height of left and right subtrees, compare, validate and return height [O(n) time | O(n) space]***:
   ```cpp
   int helper(TreeNode* root, bool &isB) {
       if (!root) return 0;
@@ -55,9 +55,14 @@
   ```
 
 ### ***[Same Tree](https://leetcode.com/problems/same-tree/)***:
-- ***Problem Desc***:
-- ***Sol [O() time | O() space]***:
+- ***Problem Desc***: given trees are identical
+- ***Recur, check node val and then both sides [O(n) time | O(n) space]***:
   ```cpp
+  bool isSameTree(TreeNode* p, TreeNode* q) {
+      if (!p && !q) return 1;
+      else if (!p || !q) return 0;
+      return p->val == q->val && isSameTree(p->left, q->left) && isSameTree(p->right, q->right);
+  }
   ```
 
 ### ***[Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/)***:

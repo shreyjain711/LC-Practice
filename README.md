@@ -81,6 +81,14 @@
       - then push index
       - then if front has an elem from previous iter that's no longer in the window then remove it
       - then front has the ans value for current window
+7. Trees
+   - [Construct Binary Tree From Preorder And Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/):
+      - go one by one on the preorder array to find the node to be made
+      - split the inorder at the index where current node val found
+   - [Serialize And Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/):
+     - use of [o|i]stringstream -> put in strings in an order and get them out in the same one as well.. essentially like an array of strings
+     - preorder push into an ostringstream and then get its str for serialization
+     - put the string into istringstream for splitting by space, make the nodes in a preorder manner too (works as no recur call made if null denoting char detected in string)
 
 
 ### Quick Notes
@@ -149,6 +157,8 @@
     - to upper case: transform(str.begin(), str.end(), str.begin(), ::toupper)
     - substring: s1.substr(pos, len); (On time)
     - to int: stoi();
+    - istringstream i(str) -> splits the string by space char and can get values one by one through -> i >> str
+    - ostringstream o -> can keeping appending strings and other literals to stream -> o << str/int/double/etc
 - Struct:
     - Constructor, just like classes. Can be polymorphic. example :
         

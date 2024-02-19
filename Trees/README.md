@@ -40,9 +40,18 @@
   ```
 
 ### ***[Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/)***:
-- ***Problem Desc***:
-- ***Sol [O() time | O() space]***:
+- ***Problem Desc***: height-balanced, i.e. for any node, diff b/w height left and right subtrees <= 1
+- ***Sol [O(n) time | O(n) space]***:
   ```cpp
+  int helper(TreeNode* root, bool &isB) {
+      if (!root) return 0;
+      int leftH = helper(root->left, isB), rightH = helper(root->right, isB);
+      if (abs(leftH - rightH) > 1) isB = 0;
+      return max(leftH, rightH) + 1;
+  }
+  bool isBalanced(TreeNode* root) {
+      bool isB = 1; helper(root, isB); return isB;
+  }
   ```
 
 ### ***[Same Tree](https://leetcode.com/problems/same-tree/)***:

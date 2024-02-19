@@ -1,5 +1,5 @@
 // ***Problem Desc***: height-balanced, i.e. for any node, diff b/w height left and right subtrees <= 1
-// ***Sol [O(n) time | O(n) space]***:
+// ******Recur, for each node, bring back height of left and right subtrees, compare, validate and return height [O(n) time | O(n) space]***:
 int helper(TreeNode* root, bool &isB) {
     if (!root) return 0;
     int leftH = helper(root->left, isB), rightH = helper(root->right, isB);

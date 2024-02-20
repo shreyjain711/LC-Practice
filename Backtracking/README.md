@@ -2,8 +2,7 @@
 
 ### ***[Subsets](https://leetcode.com/problems/subsets/)***:
 - ***Problem Desc***: make all possible subsets of given array
-- ***Brute [O(2<sup>n</sup>) time | O(1) space]***: each elem can either be present or not be present, so 2^n possible combinations/subsets
-- ***Recursively, push curr arr into ans, add curr elem into curr arr and the call again for next index, on return pop the curr elem [O(n<sup>2</sup>) time | O(n2) space]***:
+- ***Recursively, push curr arr into ans, add curr elem into curr arr and the call again for next index, on return pop the curr elem [O(n.2<sup>n</sup>) time | O(n) space]***:
   ```cpp
   void backtrack(int i, vector<int> &curr, vector<int> &nums, vector<vector<int>>& ans) {
       ans.push_back(curr);
@@ -23,8 +22,7 @@
 
 ### ***[Combination Sum](https://leetcode.com/problems/combination-sum/)***:
 - ***Problem Desc***: given an arr of distince +ve nums, find all possible combinations of its elems (with replacement) that sum up to a given number
-- ***Brute [O(2<sup>n</sup> time | O(1) space]***: try every elem once and then restart, no backtracking
-- ***backtracking [O(n<sup>2</sup>) time | O(n) space]***:
+- ***backtracking, keep track of elems added and remaining sum after adding these elems [O(2<sup>target</sup>) time | O(target) space]***:
   ```cpp
   vector<vector<int>> combinationSum(vector<int>& candidates, int target) {
       vector<vector<int>> ans; vector<int> curr;
@@ -49,7 +47,7 @@
 
 ### ***[Permutations](https://leetcode.com/problems/permutations/)***:
 - ***Problem Desc***: given an array, generate all permutations of its elements
-- ***backtracking, swap i, j pairs for generating permutations [O() time | O() space]***:
+- ***backtracking, swap i, j pairs for generating permutations [O(n.n!) time | O(n!) space]***:
   - j goes from i...end: not from i+1 since no swapped version is also a permutation
   - recursive call gets from i+1 and not from j+1 since for j>i+1, the swaps with i+1th elem get ruled out
   ```cpp

@@ -1,8 +1,6 @@
 // ***Problem Desc***: given an arr of distince +ve nums, find all possible combinations of its elems (with replacement) that sum up to a given number
 
-// ***Brute [O(2<sup>n</sup> time | O(1) space]***: try every elem once and then restart, no backtracking
-
-// ***backtracking [O(n<sup>2</sup>) time | O(n) space]***:
+// ***backtracking [O(2<sup>target</sup>) time | O(target) space]***:
 vector<vector<int>> combinationSum(vector<int>& candidates, int target) {
     vector<vector<int>> ans; vector<int> curr;
     backtrack(0, target, curr, candidates, ans);

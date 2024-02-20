@@ -1,8 +1,6 @@
 // ***Problem Desc***: make all possible subsets of given array
 
-// ***Brute [O(2n) time | O(1) space]***: each elem can either be present or not be present, so 2^n possible combinations/subsets
-
-// ***Recursively, push curr arr into ans, add curr elem into curr arr and the call again for next index, on return pop the curr elem [O(n<sup>2</sup>) time | O(n2) space]***:
+// ***Recursively, push curr arr into ans, add curr elem into curr arr and the call again for next index, on return pop the curr elem [O(n.2<sup>n</sup>) time | O(n) space]***:
 void backtrack(int i, vector<int> &curr, vector<int> &nums, vector<vector<int>>& ans) {
     ans.push_back(curr);
     for(int j=i; j<nums.size();++j){

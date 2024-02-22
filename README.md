@@ -159,6 +159,7 @@
     - to int: stoi();
     - istringstream i(str) -> splits the string by space char and can get values one by one through -> i >> str
     - ostringstream o -> can keeping appending strings and other literals to stream -> o << str/int/double/etc
+    - copying a string takes O(n) time; so copying into a vector of string is O(n) op
 - Struct:
     - Constructor, just like classes. Can be polymorphic. example :
         

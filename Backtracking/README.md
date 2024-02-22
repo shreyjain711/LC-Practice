@@ -179,7 +179,7 @@
 
 ### ***[Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)***:
 - ***Problem Desc***: given a string with digit chars, produce possible strings using the num pad on old phones
-- ***Sol [O(n.4<sup>n</sup>) time | O(n) space]***:
+- ***Backtracking, go through digits, for each digit, recur call with each of its possible value; when recur call at end, store str formed [O(n.4<sup>n</sup>) time | O(n) space]***:
   ```cpp
   unordered_map<char, string> numMap;
   void backtrack(string &code, int di, string &digits, vector<string>& ans) {

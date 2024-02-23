@@ -61,6 +61,21 @@
       return ans;
   }
   ```
+- ***keep a max heap of size k, it pops the current farthest element in favour of a smaller one so at end will have the k least farther or k nearest pts [O(n.logk) time | O(k) space]***:
+  ```cpp
+  vector<vector<int>> kClosest(vector<vector<int>>& points, int k) {
+      vector<vector<int>> ans;priority_queue<vector<int>> maxQ;
+
+      for (auto pt: points) {
+          int x = pt[0], y = pt[1];
+          maxQ.push({pt[0]*pt[0] + pt[1]*pt[1], pt[0], pt[1]});
+          if (maxQ.size() > k) maxQ.pop();
+      }
+      
+      while (maxQ.size()) {ans.push_back({maxQ.top()[1], maxQ.top()[2]}); maxQ.pop();}
+      return ans;
+  }
+  ```
 
 ### ***[Kth Largest Element In An Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)***:
 - ***Problem Desc***:

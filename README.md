@@ -89,6 +89,42 @@
      - use of [o|i]stringstream -> put in strings in an order and get them out in the same one as well.. essentially like an array of strings
      - preorder push into an ostringstream and then get its str for serialization
      - put the string into istringstream for splitting by space, make the nodes in a preorder manner too (works as no recur call made if null denoting char detected in string)
+8. Backtracking
+   - [Permutations](https://leetcode.com/problems/permutations/):
+      - while backtracking, swap the elements on the curr index i in the recursive call and the jth pointer
+         - jth pointer goes from i to end of list
+      - swap, then recur call, then swap back
+   - [Combination Sum II](https://leetcode.com/problems/combination-sum-ii/):
+      - sort the array and avoid recursive calling on elements if they're the same as the previous
+   - [Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/):
+      - take brute approach, start taking substr of increasing length from the starting and if it is a palindrome (validate every time), call recursively on the remaining string
+   - remember to not ignore the brute approach in such questions
+9. Heaps Priority Queue
+   - [Kth Largest Element In An Array](https://leetcode.com/problems/kth-largest-element-in-an-array/):
+      - sort and pick
+      - make it into a max heap, pop k-1 times, top is ans
+      - min heap of size k, top is the ans, push all elem one by one while maintaining size
+      - quick select algorithm (average case O(n), otherwise O(n<sup>2</sup>) time so not the accepted solution):
+         - like quick sort
+         - pick a pivot -> can do randomly or the last elem
+         - sort the array as in quick sort, i.e. starting from the beginning, store the elements that are less than the pivot in front
+         - store the position of the pivot in an int and
+            - if that pos is > n-k then ans must be in this left half
+            - if < n-k then in right half
+            - else the pivot is the ans
+   - [Task Scheduler](https://leetcode.com/problems/task-scheduler/):
+      - algorithmic approach:
+         - ignore the diff elem type, treat them just as per their count
+         - must get done with the largest count first (since that defines how many n+1 sized buckets will be formed) so a max PQ of the counts needed
+         - since we can't run the same task for n slots so we also keep a queue where we keep checking in every iteration if its front can be again processed; if yes then it is again sent into the max PQ
+      - maths:
+         - since maxFreq of a task will be the one creating buckets of n+1 size so ans will be ```max ((maxFreq-1)*(n+1) + (number of tasks with freq = maxFreq)   ,   total count of tasks)``` 
+         - maxFreq-1 as that many full buckets will be formed and the subsequent bucket size will be the number of tasks with freq = max freq
+         - if n isn't too high then tasks.size() will dictate the total time needed so we check for its max
+   - [Find Median From Data Stream](https://leetcode.com/problems/find-median-from-data-stream/):
+      - keep a maxPQ (left half) and minPQ (right half), check which side the elem belongs based on the maxPQ's top (if less than equal it then to left half else right half)
+      - rebalance post pushing, keep maxPQ shouldb't be < minPQ and maxPQ shouldn't be > minPQ+1
+      - return median as avg of both PQs' top or the maxPQ top
 
 
 ### Quick Notes

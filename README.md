@@ -125,6 +125,16 @@
       - keep a maxPQ (left half) and minPQ (right half), check which side the elem belongs based on the maxPQ's top (if less than equal it then to left half else right half)
       - rebalance post pushing, keep maxPQ shouldb't be < minPQ and maxPQ shouldn't be > minPQ+1
       - return median as avg of both PQs' top or the maxPQ top
+10. Graphs
+    - Topological sort, count indegree, push 0s in Q, iterate, change inDegree and if inDegree goes 0 then add to Q
+    - [Redundant Connection](https://leetcode.com/problems/redundant-connection/):
+       - use dsu, all parents set to self or to 0 (non existent elem)
+       - keep doing union while going over each edge, union -> if parent[x] != x then p[x] = findP(x); return p[x] and the smaller parent can be used as the root for both elems
+    - [Word Ladder](https://leetcode.com/problems/word-ladder/):
+       - it can be done n<sup>2</sup>.m or n.m<sup>2</sup>
+          - n<sup>2</sup> when we try each word to make next level of the BFS
+          - m<sup>2</sup> if we try to make all possible words from the curr word and check if its in word set to add to Q
+          - select based on n and m values
 
 
 ### Quick Notes

@@ -64,25 +64,37 @@
       return max(dp[n][0], dp[n][1]);
   }
   ```
-- ***tracking of only prev index is reqd so use ints and not arr [O(n) time | O(1) space]***:
+- ***tracking of only vals from prev index is reqd so use ints and not arr [O(n) time | O(1) space]***:
   ```cpp
   int rob(vector<int>& nums) {
       int n = nums.size();
-      vector<vector<int>> dp(n+1, vector<int>(2)); 
-      int prevSteal=nums[0], prevNoSteal=0, currSteal=nums[0], currNoSteal=0;
-      for (int i=2; i<=n; ++i) {
-          currSteal = prevNoSteal + nums[i-1];
-          currNoSteal = max(prevSteal, prevNoSteal);
-          prevNoSteal = currNoSteal; prevSteal = currSteal;
+      int robIt=0, leaveIt=0;
+      for (int i=0; i<n; ++i) {
+          int leaveCurr = max(robIt, leaveIt);
+          robIt = nums[i] + leaveIt;
+          leaveIt = leaveCurr;
       }
-      return max(currSteal, currNoSteal);
+      return max(robIt, leaveIt);
   }
   ```
 
 ### ***[House Robber II](https://leetcode.com/problems/house-robber-ii/)***:
-- ***Problem Desc***:
-- ***Sol [O() time | O() space]***:
+- ***Problem Desc***: houses are in a ring, can't rob adjacent houses
+- ***Run sol from 0..n-2 and 1..n-1, since in the best case can include the numbers from only one of the houses at ends [O(n) time | O(1) space]***:
   ```cpp
+  int rob(vector<int>&nums, int start, int end) {
+      int robIt=0, leaveIt=0;
+      for (int i=start; i<end; ++i) {
+          int leaveCurr = max(robIt, leaveIt);
+          robIt = nums[i] + leaveIt;
+          leaveIt = leaveCurr;
+      }
+      return max(robIt, leaveIt);
+  }
+  int rob(vector<int>& nums) {
+      int n = nums.size(); if (n==1) return nums[0];
+      return max(rob(nums, 0, n-1), rob(nums, 1, n));
+  }
   ```
 
 ### ***[Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)***:

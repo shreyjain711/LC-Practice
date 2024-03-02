@@ -201,9 +201,23 @@
   ```
 
 ### ***[Coin Change](https://leetcode.com/problems/coin-change/)***: min coins used to form amount X
-- ***Problem Desc***:
-- ***Sol [O() time | O() space]***:
+- ***Problem Desc***: given n coins of diff value, find min number of coins required to total upto given amount X
+- ***1D DP, 0..amount, each cell = min num reqd to form amount; starting from 0, iterate over each coin and mark vals accordingly [O(amount.c) time | O(amount) space]***:
   ```cpp
+  int coinChange(vector<int>& coins, int amount) {
+      if (!amount) return 0;
+      int dp[amount+1]; memset(dp, 0, sizeof dp);
+      for (int i=0; i<=amount; ++i) {
+          if (!i || dp[i]) {
+              for (int c: coins) {
+                  long sum = i+(long)c;
+                  if (sum <= amount) 
+                      dp[sum] = dp[sum] ? min(dp[sum], 1+dp[i]) : dp[i]+1;
+              }
+          }
+      }
+      return dp[amount] ? dp[amount] : -1;
+  }
   ```
 
 ### ***[Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)***: KEY: store both min and max and set them as 1 when elem = 0

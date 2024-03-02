@@ -221,16 +221,52 @@
   ```
 
 ### ***[Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)***: KEY: store both min and max and set them as 1 when elem = 0
-- ***Problem Desc***:
-- ***Sol [O() time | O() space]***
-- ***Sol [O() time | O() space]***:
+- ***Problem Desc***: given arr with -ve, 0, +ve nums, find max prod of a sub array
+- ***Brute, calculate all subarrays' products [O(n<sup>2</sup>) time | O(1) space]***
+- ***1D dp, iter over arr, store min max for each and calc at curr, 0 resets [O(n) time | O(n) space]***:
   ```cpp
+  int maxProduct(vector<int>& nums) {
+      int n = nums.size(), ans=nums[0]; vector<vector<int>> minMax(n,vector<int>(2));
+      minMax[0][0] = minMax[0][1] = nums[0];
+      for (int i=1; i<n; ++i) {
+          int a = minMax[i-1][0] * nums[i], b = minMax[i-1][1] * nums[i];
+          minMax[i][0] = min(min(a, b), nums[i]);
+          minMax[i][1] = max(max(a, b), nums[i]);
+          ans = max(ans, minMax[i][1]);
+      }
+      return ans;
+  }
   ```
-- ***Sol [O() time | O() space]***:
+- ***store only min max from prev iter, don't store arr [O(n) time | O(1) space]***:
   ```cpp
+  int maxProduct(vector<int>& nums) {
+      int n = nums.size(), ans, prevMin, prevMax; 
+      prevMin = prevMax = nums[0]; ans = prevMax;   
+      for (int i=1; i<n; ++i) {
+          int a = prevMax * nums[i], b = prevMin * nums[i];
+          prevMin = min(min(a, b), nums[i]);
+          prevMax = max(max(a, b), nums[i]);
+          ans = max(ans, prevMax);
+      }
+      return ans;
+  }
   ```
-- ***Sol [O() time | O() space]***:
+- ***Alternate, calc continuous max prod from left(0) and right(n-1), if in iter prevMax = 0, reset to 1 [O(n) time | O(1) space]***:
   ```cpp
+  int maxProduct(vector<int>& nums) {
+      int n = nums.size(), ans=-1e6, prevMax=1; 
+      for (int i=0; i<n; ++i) {
+          prevMax *= nums[i];
+          ans = max(ans, prevMax);
+          if (!prevMax) prevMax = 1;
+      } prevMax = 1;
+      for (int i=n-1; i>=0; --i) {
+          prevMax *= nums[i];
+          ans = max(ans, prevMax);
+          if (!prevMax) prevMax = 1;
+      }
+      return ans;
+  }
   ```
 
 ### ***[Word Break](https://leetcode.com/problems/word-break/)***: break string into words from given dict, is possible?    

@@ -223,7 +223,7 @@
 ### ***[Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)***: KEY: store both min and max and set them as 1 when elem = 0
 - ***Problem Desc***: given arr with -ve, 0, +ve nums, find max prod of a sub array
 - ***Brute, calculate all subarrays' products [O(n<sup>2</sup>) time | O(1) space]***
-- ***1D dp, iter over arr, store min max for each and calc at curr, 0 resets [O(n) time | O(n) space]***:
+- ***1D dp, iter over arr, store min max for each and calc at curr, reset taken care of [O(n) time | O(n) space]***:
   ```cpp
   int maxProduct(vector<int>& nums) {
       int n = nums.size(), ans=nums[0]; vector<vector<int>> minMax(n,vector<int>(2));

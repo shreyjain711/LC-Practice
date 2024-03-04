@@ -135,6 +135,13 @@
           - n<sup>2</sup> when we try each word to make next level of the BFS
           - m<sup>2</sup> if we try to make all possible words from the curr word and check if its in word set to add to Q
           - select based on n and m values
+11. 1D Dynamic Programming
+    - [House Robber II](https://leetcode.com/problems/house-robber-ii/):
+       - do a max find from 0..n-2 and 1..n-1 -> they find the max val considering 
+    - [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/):
+    - [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/):
+    - [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/):
+    - [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/):
 
 
 ### Quick Notes

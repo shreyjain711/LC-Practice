@@ -58,9 +58,16 @@
   ```
 
 ### [Meeting Rooms](https://leetcode.com/problems/meeting-rooms/):
-- ***Problem Desc***:
-- ***Sol [O() time | O() space]***:
+- ***Problem Desc***: given meeting schedules, check if person can attend all
+- ***Sort, check for overlaps [O(n.logn) time | O(1) space]***:
   ```cpp
+  bool canAttendMeetings(vector<vector<int>>& intervals) {
+      sort(intervals.begin(), intervals.end());
+      for(int i=0; i<intervals.size()-1; ++i)
+          if (intervals[i][1] > intervals[i+1][0]) 
+              return 0;
+      return 1;
+  }
   ```
 
 ### [Meeting Rooms II](https://github.com/neetcode-gh/leetcode/blob/main/cpp/0253-meeting-rooms-ii.cpp):

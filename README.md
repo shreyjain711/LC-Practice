@@ -137,11 +137,19 @@
           - select based on n and m values
 11. 1D Dynamic Programming
     - [House Robber II](https://leetcode.com/problems/house-robber-ii/):
-       - do a max find from 0..n-2 and 1..n-1 -> they find the max val considering 
+       - do a max find from 0..n-2 and 1..n-1 -> they find the max val considering last house not robbed and first house not robbed
     - [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/):
+       - can do a grid search but rather expand for each elem from center -> practically, this should be fewer steps than n<sup>2</sup> like in grid search
     - [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/):
+       - iter over elems, store possible min & max products till then and ans becomes the max found in these iters
+       - OR continuous max prod from left and then from right - setting prod to 1 if 0 is seen - then max from one of these iters is the ans
     - [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/):
+       - keep a 1D dp arr to store the LIS at each elem and while iterating compare with all prev elem to find biggest LIS val at curr elem
+       - OR maintain an arr with LIS elems, if a bigger elem seen then append else replace it with the lower_bound (i.e. elem in arr >= the curr elem) -> given n.logn complexity
     - [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/):
+       - memoisation, dp[i][j] -> that a sum j can be formed with elems i..n-1
+       - make hashset with all possible vals that can be formed -> on each elem, add to set the curr elems and the one formed by adding to them the curr elem from arr
+          - can do this using a bitset -> becomes an O(1) operation with it
 
 
 ### Quick Notes

@@ -1,6 +1,6 @@
 # Problem Set
 
-### ***[Unique Paths](https://leetcode.com/problems/unique-paths/)***:
+### ***[Unique Paths](https://leetcode.com/problems/unique-paths/)*** [Shortest Path]:
 - ***Problem Desc***: starting from 0,0 go to m,n; can go down or right, how many unique paths possible
 - ***Brute [O((m+n)! / m!.n!) time | O((m+n)<sup>2</sup>) space]***: backtracking, go on each path
 - ***store num of ways to reach each row and keep on iteratively calculating with reference reln dp[i][j] = dp[i-1][j] + dp[i][j-1] [O(m.n) time | O(n) space]***
@@ -15,7 +15,7 @@
   }
   ```
 
-### ***[Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/)***:
+### ***[Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/)*** [LCS]:
 - ***Problem Desc***: given two string, find longest common subseq
 - ***dp[i][j] = LCS till 0..i in str1 and 0..j in str2, dp[i][j] = max(dp[i-1][j],dp[i][j-1]) and if str1[i]==str2[j] ->1+dp[i-1][j-1] [O(n1.n2) time | O(n1.n2) space]***
   ```cpp
@@ -43,9 +43,9 @@
   ```cpp
   ```
 
-### ***[Coin Change II](https://leetcode.com/problems/coin-change-ii/)***:
+### ***[Coin Change II](https://leetcode.com/problems/coin-change-ii/)*** [Unbounded Knapsack]:
 - ***Problem Desc***: given coins, find num of ways to make up given amount 
-- ***Brute [O(c<sup>amount</amount>) time | O(amount) space]***: dfs
+- ***Brute [O(c<sup>amount</amount>) time | O(amount) space]***: backtracking, use diff coins till reach sum >= amount
 - ***dp[i][j] num of ways to make j amount with with coins 0..i, dp[i][j] = dp[i-1][j] + dp[i][j-coins[i]] [O(c.amount) time | O(c.amount) space]***
   ```cpp
   int change(int amount, vector<int>& coins) {
@@ -71,11 +71,38 @@
   }
   ```
 
-### ***[Target Sum](https://leetcode.com/problems/target-sum/)***:
-- ***Problem Desc***: 
-- ***Brute [O() time | O() space]***:
-- ***Sol [O() time | O() space]***
+### ***[Target Sum](https://leetcode.com/problems/target-sum/)*** [0-1 Knapsack]:
+- ***Problem Desc***: given a list of nums, either use them as +ve or -ve to reach the target; how many ways to form target
+- ***Brute [O(2<sum>n</sum>) time | O(n) space]***: backtracking, use as +ve and then -ve, at end see if target reached
+- ***memoisation, store num ways to reach a sum t from nums indexed i..n-1, modified knapsack as decision is +ve/-ve (not 1/0) [O(n.target) time | O(n.target) space]***:
   ```cpp
+  map<pair<int,int>, int> dp;
+  int dfs(int i, int t, vector<int>& nums) {
+      if (i==nums.size()) { return (t==0);}
+      if (dp.find({i,t})!=dp.end()) return dp[{i,t}];
+      dp[{i,t}] = dfs(i+1, t-nums[i], nums) + dfs(i+1, t+nums[i], nums);
+      return dp[{i,t}];
+  }
+  int findTargetSumWays(vector<int>& nums, int target) {
+      return dfs(0, target, nums);
+  }
+  ```
+- ***Math makes task to find subset of nums to add to (target+sumAll)/2; becomes 0-1 knapsack []***:
+  - Sum(+ve) - Sum(-ve) = target -> adding sumAll (i.e. sum(+ve) + sum(-ve)) to both sides -> 2 * sum(+ve) = target + sumAll -> sum(+ve) = (target + sumAll)/2
+  - so t+sumAll can't be odd or sumAll can't be < t
+  - go decreasing order in inner loop, otherwise would end up using same coin multiple times
+  ```cpp
+  int findTargetSumWays(vector<int>& nums, int target) {
+      int sum = accumulate(begin(nums), end(nums), 0);
+      if (sum<target || (target+sum)%2) return 0;
+      target = (target+sum)>>1;
+      int dp[target+1]; memset(dp, 0, sizeof dp); dp[0]=1;
+      for (int n:nums)
+          for (int i=target; i>=n; --i) 
+          // go opp, target..n, since 0/1, if forward, will be unbounded
+              dp[i] += dp[i-n];
+      return dp[target];
+  }
   ```
 
 ### ***[Interleaving String](https://leetcode.com/problems/interleaving-string/)***:

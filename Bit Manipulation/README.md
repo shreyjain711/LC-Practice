@@ -2,8 +2,13 @@
 
 ### ***[Single Number](https://leetcode.com/problems/single-number/)***: 
 - ***Problem Desc***: Given an arr with all elems repeating except 1, find that.
-- ***Sol[O() time | O() space***:
+- ***Brute [O(n<sup>2</sup>) time | O(1) space]***: for each elem find its duplicate, for one we can't is the ans
+- ***Better [O(n) time | O(n) space]***: use hashmap to track count of each elem
+- ***XOR all vals, XOR of a val twice = 0 so only the non-duplicate elem remains [O(n) time | O(1) space***:
   ```cpp
+  int singleNumber(vector<int>& nums) {
+      int i=0; for(int n:nums) i^=n; return i;
+  }
   ```
 
 ### ***[Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)***: 

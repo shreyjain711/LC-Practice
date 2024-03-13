@@ -65,11 +65,13 @@
 
 ### ***[Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/)***: 
 - ***Problem Desc***: add two ints without + or - ops.
-- ***Sol[O() time | O() space***:
+- ***Imagine addition of binary bits, addition happens by XOR-ing and the carry is seen with AND-ing it and shifting bits left 1 [O(logn) time | O(1) space***:
   ```cpp
-  ```
-- ***Sol[O() time | O() space***:
-  ```cpp
+  int getSum(int a, int b) {
+      int t; while(b) {
+          t = a^b; b=(a&b)<<1; a=t;
+      } return a;
+  }
   ```
 
 ### ***[Reverse Integer](https://leetcode.com/problems/reverse-integer/)***:

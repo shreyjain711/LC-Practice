@@ -150,6 +150,31 @@
        - memoisation, dp[i][j] -> that a sum j can be formed with elems i..n-1
        - make hashset with all possible vals that can be formed -> on each elem, add to set the curr elems and the one formed by adding to them the curr elem from arr
           - can do this using a bitset -> becomes an O(1) operation with it
+12. Intervals
+    - [Insert Interval](https://leetcode.com/problems/insert-interval/):
+    - [Non Overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/):
+    - [Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/):
+    - [Minimum Interval to Include Each Query](https://leetcode.com/problems/minimum-interval-to-include-each-query/):
+14. Greedy
+    - [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/):
+    - [Jump Game II](https://leetcode.com/problems/jump-game-ii/):
+    - [Partition Labels](https://leetcode.com/problems/partition-labels/):
+    - [Valid Parenthesis String](https://leetcode.com/problems/valid-parenthesis-string/):
+16. 2D Dynamic Programming
+    - [Best Time to Buy And Sell Stock With Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/):
+    - [Target Sum](https://leetcode.com/problems/target-sum/):
+    - [Interleaving String](https://leetcode.com/problems/interleaving-string/):
+    - [Longest Increasing Path In a Matrix](https://leetcode.com/problems/longest-increasing-path-in-a-matrix/):
+    - [Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences/):
+    - [Burst Balloons](https://leetcode.com/problems/burst-balloons/):
+    - [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/):
+18. Bit Manipulation
+    - [Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/):
+    - [Reverse Integer](https://leetcode.com/problems/reverse-integer/):
+20. Advanced Graphs
+    - 
+22. Math Geometry
+    - 
 
 
 ### Quick Notes
@@ -159,6 +184,7 @@
     
    - Both set and unordered_set can be traversed but only in case of set that traversal order would be a sorted one
    - Why not unordered better here even after worst case complexity being higher - the hash table approach in unordered set will give O(n) if every insertion ends up creating a collision in hash table during insertion; this will not be the case in almost all practical cases
+- multiset -> essentially a sorted array, insert(val) and erase(val) is logn
 - unordered_map operations:
     - iteration:
         - `for(auto p: m) p.first p.second`

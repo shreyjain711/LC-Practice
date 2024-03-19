@@ -172,9 +172,19 @@
     - [Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/):
     - [Reverse Integer](https://leetcode.com/problems/reverse-integer/):
 20. Advanced Graphs
-    - 
+    - [Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary/):
+    - [Min Cost to Connect All Points](https://leetcode.com/problems/min-cost-to-connect-all-points/):
+    - [Network Delay Time](https://leetcode.com/problems/network-delay-time/):
+    - [Swim In Rising Water](https://leetcode.com/problems/swim-in-rising-water/):
+    - [Alien Dictionary](https://leetcode.com/problems/alien-dictionary/):
+    - [Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops/):
 22. Math Geometry
-    - 
+    - [Rotate Image](https://leetcode.com/problems/rotate-image/):
+    - [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/):
+    - [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/):
+    - [Happy Number](https://leetcode.com/problems/happy-number/):
+    - [Pow(x, n)](https://leetcode.com/problems/powx-n/):
+    - [Multiply Strings](https://leetcode.com/problems/multiply-strings/):
 
 
 ### Quick Notes

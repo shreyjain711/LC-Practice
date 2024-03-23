@@ -144,7 +144,7 @@
        - iter over elems, store possible min & max products till then and ans becomes the max found in these iters
        - OR continuous max prod from left and then from right - setting prod to 1 if 0 is seen - then max from one of these iters is the ans
     - [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/):
-       - keep a 1D dp arr to store the LIS at each elem and while iterating compare with all prev elem to find biggest LIS val at curr elem
+      - keep a 1D dp arr to store the LIS at each elem and while iterating compare with all prev elem to find biggest LIS val at curr elem
        - OR maintain an arr with LIS elems, if a bigger elem seen then append else replace it with the lower_bound (i.e. elem in arr >= the curr elem) -> given n.logn complexity
     - [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/):
        - memoisation, dp[i][j] -> that a sum j can be formed with elems i..n-1
@@ -184,7 +184,9 @@
     - [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/):
     - [Happy Number](https://leetcode.com/problems/happy-number/):
     - [Pow(x, n)](https://leetcode.com/problems/powx-n/):
+      - multiply once by x if the curr n is odd and then square and n gets /2 and do till n >0
     - [Multiply Strings](https://leetcode.com/problems/multiply-strings/):
+      - simple maths, no short way. make a temp str with m+n 0s
 
 
 ### Quick Notes

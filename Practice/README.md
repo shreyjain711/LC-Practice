@@ -10,3 +10,6 @@
 
 ### 28<sup>th</sup> March 2024
 - ***[Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)***: [orig sol](https://github.com/shreyjain711/LC-Practice/blob/main/1-D%20Dynamic%20Programming/longest_palindromic_substr.cpp)
+
+### 29<sup>th</sup> March 2024
+- ***[3Sum](https://leetcode.com/problems/3sum/)***: [orig sol](https://github.com/shreyjain711/LC-Practice/blob/main/Two%20Pointers/3sum.cpp)

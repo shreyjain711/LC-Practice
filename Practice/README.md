@@ -7,3 +7,6 @@
 ### 24<sup>th</sup> March 2024 
 - ***[Largest Rectangle In Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/)***: [orig sol](https://github.com/shreyjain711/LC-Practice/blob/main/stack/largest_rect_in_histogram.cpp)
 - ***[Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)***: [orig sol](https://github.com/shreyjain711/LC-Practice/blob/main/1-D%20Dynamic%20Programming/max_prod_subarr.cpp)
+
+### 28<sup>th</sup> March 2024
+- ***[Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)***: [orig sol](https://github.com/shreyjain711/LC-Practice/blob/main/1-D%20Dynamic%20Programming/longest_palindromic_substr.cpp)

@@ -3,13 +3,12 @@
 
 // ***Binary search[O(logn) time | O(1) space]***: go towards the part that isn't sorted (i.e. mid > high)
 int findMin(vector<int>& nums) {
-    int lo = 0, hi = nums.size()-1, mid, ans = nums[0];
-    while (lo <= hi) {
-        mid = (hi+lo)/2; ans = min(ans, nums[mid]);
-        if (nums[hi] < nums[mid]) lo = mid + 1;
-        else hi = mid-1;
-    }
-    return ans;
+    int l=0, h=nums.size()-1, m;
+    while (l<h) {
+        m=(l+h)/2;
+        if (nums[m]>nums[h]) l=m+1;
+        else h=m;
+    } return nums[l];
 }
 
 // ***[Find Mininmum in Rotated Sorted Array II](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/)***: can have duplicate elements

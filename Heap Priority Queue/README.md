@@ -105,23 +105,30 @@
         return maxQ.top();
     }
   ```
-- ***Quick Select [O(n) avg time, O(n<sup>2</sup>) worst time | O(1) space]***: (Rejected on LC due to TLE on its worst case)
+- ***Quick Select [O(nlogn) avg time, O(n<sup>2</sup>) worst time | O(1) space]***:
+  - (Rejected on LC due to TLE on its worst case)
+  - accepted is if we do descending quick select if k is small else ascending.. to reach sooner
   ```cpp
   int findKthLargest(vector<int>& nums, int k) {
-      return quickSelect(nums, nums.size()-k, 0, nums.size()-1);
+      return quickSelectLookBothWays(nums, k);
   }
-  int quickSelect(vector<int>&nums, int ind, int l, int r) {
-      int pivot = nums[r], leftHalfEnd = l;
-      for(int i = l; i<r; i++) 
-          if (nums[i] <= pivot) 
-              swap(nums[i], nums[leftHalfEnd++]);
-       swap(nums[leftHalfEnd], nums[r]);
-
-      if (leftHalfEnd < ind) 
-          return quickSelect(nums, ind, leftHalfEnd+1, r);
-      else if (leftHalfEnd > ind)
-          return quickSelect(nums, ind, l, leftHalfEnd-1);
-      return nums[ind];
+  int quickSelectLookBothWays(vector<int>& nums, int k) {
+      if (k<nums.size()/2) {
+          nth_element(nums.begin(), nums.begin()+k-1, nums.end(), greater<int>());
+          return nums[k-1];
+      } else {
+          nth_element(nums.begin(), nums.begin()+nums.size()-k, nums.end());
+          return nums[nums.size()-k];
+      }
+  }
+  int quickSelectPlain(int start, int end, vector<int>& nums, int target) {
+      int pivotPointer=start;
+      for (int i=start; i<end; i++) {
+          if (nums[i] < nums[end]) {swap(nums[i], nums[pivotPointer]); pivotPointer++;}
+      } swap(nums[pivotPointer], nums[end]);
+      if (pivotPointer == target) return nums[pivotPointer];
+      else if (pivotPointer < target) return quickSelectPlain(pivotPointer+1, end, nums, target);
+      else return quickSelectPlain(start, pivotPointer-1, nums, target);
   }
   ```
 

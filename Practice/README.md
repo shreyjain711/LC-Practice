@@ -13,3 +13,7 @@
 
 ### 29<sup>th</sup> March 2024
 - ***[3Sum](https://leetcode.com/problems/3sum/)***: [orig sol](https://github.com/shreyjain711/LC-Practice/blob/main/Two%20Pointers/3sum.cpp)
+
+### 31<sup>st</sup> March 2024
+- ***[Kth Largest Element In An Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)***: [orig sol](https://github.com/shreyjain711/LC-Practice/blob/main/Heap%20Priority%20Queue/kth_largest.cpp)
+- ***[Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)***: [orig sol](https://github.com/shreyjain711/LC-Practice/blob/main/Binary%20Search/min_in_rotated_arr.cpp)

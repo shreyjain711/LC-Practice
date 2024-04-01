@@ -17,3 +17,7 @@
 ### 31<sup>st</sup> March 2024
 - ***[Kth Largest Element In An Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)***: [orig sol](https://github.com/shreyjain711/LC-Practice/blob/main/Heap%20Priority%20Queue/kth_largest.cpp)
 - ***[Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)***: [orig sol](https://github.com/shreyjain711/LC-Practice/blob/main/Binary%20Search/min_in_rotated_arr.cpp)
+
+### 01<sup>st</sup> April 2024
+- ***[Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/)***: [orig sol](https://github.com/shreyjain711/LC-Practice/blob/main/Backtracking/palindrome_partitioning.cpp)
+- ***[Rotate Image](https://leetcode.com/problems/rotate-image/)***: [orig sol](https://github.com/shreyjain711/LC-Practice/blob/main/Math%20Geometry/rotate_image.cpp)

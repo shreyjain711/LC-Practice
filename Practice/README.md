@@ -21,3 +21,7 @@
 ### 01<sup>st</sup> April 2024
 - ***[Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/)***: [orig sol](https://github.com/shreyjain711/LC-Practice/blob/main/Backtracking/palindrome_partitioning.cpp)
 - ***[Rotate Image](https://leetcode.com/problems/rotate-image/)***: [orig sol](https://github.com/shreyjain711/LC-Practice/blob/main/Math%20Geometry/rotate_image.cpp)
+
+### 02<sup>nd</sup> April 2024
+- ***[Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)***: [orig sol](https://github.com/shreyjain711/LC-Practice/blob/main/stack/gen_parentheses.cpp)
+- ***[Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary/)***: [orig sol](https://github.com/shreyjain711/LC-Practice/blob/main/Advanced%20Graphs/reconstruct_itinerary.cpp)

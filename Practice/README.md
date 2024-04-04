@@ -29,3 +29,7 @@
 ### 03<sup>rd</sup> April 2024
 - ***[Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)***: [orig sol](https://github.com/shreyjain711/LC-Practice/blob/main/Binary%20Search/median_two_sorted_arr.cpp)
 - ***[Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)***: [orig sol](https://github.com/shreyjain711/LC-Practice/blob/main/Greedy/max_subarr.cpp)
+
+### 04<sup>th</sup> April 2024
+- ***[Non Overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/)***: [orig sol](https://github.com/shreyjain711/LC-Practice/blob/main/Intervals/non_overlapping_intervals.cpp)
+- ***[Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)***: [orig sol](https://github.com/shreyjain711/LC-Practice/blob/main/Arrays%20and%20Hashing/top_k_freq.cpp)

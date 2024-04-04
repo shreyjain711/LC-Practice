@@ -1,3 +1,8 @@
+// ***Problem Desc***: from an arr of elems, make list of top k freq
+
+// ***brute [O(n.c<sup>2</sup>) time | O(c) space]***: count of each, iterate to find the most occuring
+
+// ***max heap of counts [O(n.c.logc) time | O(c) space]***: take max heap based on counts
 vector<int> topKFrequent(vector<int>& nums, int k) {
     unordered_map<int, int> count;
     vector<pair<int, int>> v;
@@ -6,14 +11,6 @@ vector<int> topKFrequent(vector<int>& nums, int k) {
 
     for (auto i: count) v.push_back({i.second, i.first});
     priority_queue<pair<int, int>> q;
-
-    // for (auto i: count) v.push_back({i.first, i.second});
-    // auto comparator = [](pair<int, int> &a, pair<int, int> &b) {return a.second < b.second;};
-    // priority_queue<pair<int, int>, vector<pair<int, int>>, decltype(comparator)> q(comparator);
-    // priority_queue<pair<int, int>> q;
-
-    // can also use (ordered) set, pair pushed will be {-i.second, i.first)
-
     for (auto p: v) q.push(p);
 
     vector<int> ans;

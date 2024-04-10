@@ -163,13 +163,16 @@
 - ***Don't need to keep results in grid, we go over the same array repeatedly [O(m.n) time | O(n) space]***:
   ```cpp
   bool isInterleave(string s1, string s2, string s3) {
-      int n1 = s1.size(), n2 = s2.size(), dp[n2+1];
-      if (n1+n2!=s3.size()) return 0;
-      memset(dp, 0, sizeof dp); dp[n2] = 1;
-      for (int i=n1; ~i; --i) 
-          for (int j=n2; ~j; --j) 
-              if (!dp[j] && j<n2 && s2[j]==s3[i+j] && dp[j+1]) dp[j] = 1;
-      return dp[0];
+      int l1 = s1.size(), l2 = s2.size(), l3 = s3.size(); 
+      bool cache[l2+1]; memset(cache, 0, sizeof cache); cache[l2] = 1;
+      if ((l1+l2) != l3) return 0; 
+      for (int i=l1; ~i; --i) {
+          for (int j=l2; ~j;  --j) {
+              if (i<l1 && s1[i]!=s3[i+j]) cache[j] = 0;
+              if (j<l2 && s2[j]==s3[i+j] && cache[j+1]) cache[j] = 1;
+          }
+      }
+      return cache[0];
   }
   ```
 

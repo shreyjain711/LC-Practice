@@ -252,6 +252,7 @@
   }
   ```
 - ***Alternate, calc continuous max prod from left(0) and right(n-1), if in iter prevMax = 0, reset to 1 [O(n) time | O(1) space]***:
+  - works as subarr will happen for sure from either left or right -> e.g. [3,-1,4]
   ```cpp
   int maxProduct(vector<int>& nums) {
       int n = nums.size(), ans=-1e6, prevMax=1; 

@@ -238,7 +238,7 @@
       return minCost[dst]==INT_MAX ? -1 : minCost[dst];
   }
   ```
-- ***MinQ but priority is the number of stops - works as it evaluates smallest path first and can still use the skip next on its prev cost exceed [O(A.A.logF) time | O() space]***:
+- ***MinQ but priority is the number of stops - works as it evaluates smallest path first and can still use the skip next on its prev cost exceed [O(A<sup>2</sup>.logA) time | O(A<sup>2</sup>) space]***:
   ```cpp
   int findCheapestPrice(int n, vector<vector<int>>& flights, int src, int dst, int k) {
       vector<vector<vector<int>>> adjList(n);
@@ -259,5 +259,26 @@
           } 
       } 
       return minCost[dst]==INT_MAX ? -1 : minCost[dst];
+  }
+  ```
+- ***simple bfs, traverse further from an edge if its minCost > currCost [O(K.A<sup>2</sup>) time | O(A<sup>2</sup>) space]***: this works and dfs didn't -> dfs missed when a smaller k value but higher minCost seen
+  ```cpp
+  int findCheapestPrice(int n, vector<vector<int>>& flights, int src, int dst, int k) {
+      vector<int> minCost(n, INT_MAX); minCost[src] = 0;
+      vector<vector<pair<int,int>>> adjList(n); 
+      for (auto &f: flights) adjList[f[0]].push_back({f[1], f[2]});
+      
+      queue<pair<int,int>> q; q.push({src, 0}); int lvl = 0;
+      while (lvl <= k && !q.empty()) {
+          for (int i=q.size(); i>0; --i) {
+              auto [curr, currCost] = q.front(); q.pop();
+              for (auto &[n, cost]: adjList[curr]) {
+                  if (minCost[n] > currCost + cost) {
+                      minCost[n] = currCost + cost;
+                      q.push({n, currCost + cost});
+                  }
+              }
+          } lvl++;
+      } return minCost[dst] == INT_MAX ? -1 : minCost[dst];
   }
   ```

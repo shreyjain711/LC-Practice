@@ -23,8 +23,9 @@ int networkDelayTime(vector<vector<int>>& times, int n, int k) {
 }
 
 /*
-***Djikstra -> minQ for bfs -> actual signal propogation order gets mimiced as minQ sorted by time -> avoid bfs from unoptimal time nodes [O(E+VlogE) time | O(V+E) space]***:
+- ***Djikstra -> minQ for bfs -> actual signal propogation order gets mimiced as minQ sorted by time -> avoid bfs from unoptimal time nodes [O(E+V.logV) time | O(V<sup>2</sup>) space]***:
   - to make use of skipping queue entries in favor of better entries
+  - TC would be E+Vlog(V<sup>2</sup>) (in case of a fully connected graph len will be V<sup>2</sup> but total V calls would be made at max) which then converts to E+V.logV
 */
 int networkDelayTime(vector<vector<int>>& times, int n, int k) {
     vector<vector<pair<int, int>>> adjList(n);

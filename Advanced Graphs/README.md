@@ -87,9 +87,9 @@
       return  m == INT_MAX ? -1 : m;
   }
   ```
-- ***Djikstra -> minQ for bfs -> actual signal propogation order gets mimiced as minQ sorted by time -> avoid bfs from unoptimal time nodes [O(E+ElogV) time | O(V+E) space]***:
+- ***Djikstra -> minQ for bfs -> actual signal propogation order gets mimiced as minQ sorted by time -> avoid bfs from unoptimal time nodes [O(E+V.logV) time | O(V<sup>2</sup>) space]***:
   - to make use of skipping queue entries in favor of better entries
-  - TC was log(V<sup>2</sup>) which converts to 2.log(V) so logV
+  - TC would be E+Vlog(V<sup>2</sup>) (in case of a fully connected graph len will be V<sup>2</sup> but total V calls would be made at max) which then converts to E+V.logV
   ```cpp
   int networkDelayTime(vector<vector<int>>& times, int n, int k) {
       vector<vector<pair<int, int>>> adjList(n);

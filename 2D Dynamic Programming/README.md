@@ -107,10 +107,11 @@
       return dfs(0, target, nums);
   }
   ```
-- ***Math makes task to find subset of nums to add to (target+sumAll)/2; becomes 0-1 knapsack []***:
+- ***Math makes task to find subset of nums to add to (target+sumAll)/2; becomes 0-1 knapsack [O(n.target) time | O(n.target) space]***:
   - Sum(+ve) - Sum(-ve) = target -> adding sumAll (i.e. sum(+ve) + sum(-ve)) to both sides -> 2 * sum(+ve) = target + sumAll -> sum(+ve) = (target + sumAll)/2
   - so t+sumAll can't be odd or sumAll can't be < t
   - go decreasing order in inner loop, otherwise would end up using same coin multiple times
+  - TC is practically better but asymptomatically not, it also has the total+target odd = not possible check
   ```cpp
   int findTargetSumWays(vector<int>& nums, int target) {
       int sum = accumulate(begin(nums), end(nums), 0);

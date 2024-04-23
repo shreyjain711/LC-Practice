@@ -304,3 +304,17 @@
       return lcs;
   }
   ```
+  - ***sort, go across checking if prev elem is same then skip to next, if consecutive then incr currLen by 1, else reset currLen to 1 [O(n) time | O(1) space]***:
+  ```cpp
+  int longestConsecutive(vector<int>& nums) {
+      if (nums.empty()) return 0;
+      sort(begin(nums), end(nums));
+      int lcs = 1, l = 1, n = nums.size();
+      for(int i=1; i<n; ++i) {
+          if (nums[i]==nums[i-1]) continue;
+          if (nums[i]==nums[i-1]+1) {if (!l) l=2; else l++;}
+          else l=1;
+          lcs = max(lcs, l);
+      } return lcs;
+  }
+  ```

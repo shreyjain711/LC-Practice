@@ -32,3 +32,20 @@ string minWindow(string s, string t) {
     }
     return (start!=-1) ? s.substr(start, minLen) : "";
 }
+
+// ***make counter(t); t.len = need; go over s, decr need if j's count>0; subtr counter for j (make neg); when !counter, move i till can, incr counter if c[i]>0 i.e. in t[O(n) time | O(1) space]***:
+string minWindow(string s, string t) {
+    unordered_map<char, int> cT;
+    for (char c: t) cT[c]++;
+    int need = t.size(), i=0, j=0, n=s.size(), minLen=INT_MAX, minStart=0;
+    while (j<n) {
+        if (cT[s[j]]>0) need--;
+        cT[s[j]]--; j++;
+        while (!need) {
+            if (j-i < minLen) {minLen = j-i; minStart=i;}
+            cT[s[i]]++;
+            if (cT[s[i]]>0) need++;
+            i++;
+        }
+    } return (minLen<=n) ? s.substr(minStart, minLen) : "";
+}

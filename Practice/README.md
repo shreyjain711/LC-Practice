@@ -3,6 +3,7 @@
 | Date | Daily Problem 1 | Daily Problem 2 |
 | ---- | ---- | ---- |
 | **XX<sup>th</sup> April 2024** | **[]()** ([orig sol]()) | **[]()** ([orig sol]()) |
+| **27<sup>th</sup> April 2024** | **[Find Minimum In Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)** ([orig sol](../Binary%20Search/min_in_rotated_arr.cpp)) | **[Best Time to Buy And Sell Stock With Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/)** ([orig sol](../2D%20Dynamic%20Programming/buy_sell_cooldown.cpp)) |
 | **26<sup>th</sup> April 2024** | **[Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/)** ([orig sol](../1-D%20Dynamic%20Programming/partition_equal_subset_sum.cpp)) | **[Clone Graph](https://leetcode.com/problems/clone-graph/)** ([orig sol](../Graphs/clone_graph.cpp)) |
 | **25<sup>th</sup> April 2024** | **[Pow(x, n)](https://leetcode.com/problems/powx-n/)** ([orig sol](../Math%20Geometry/pow_x_n.cpp)) | **[Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)** ([orig sol](../Sliding%20Window/min_window_substr.cpp)) |
 | **23<sup>rd</sup> April 2024** | **[Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)** ([orig sol](../Arrays%20and%20Hashing/longest_consec_seq_if_sorted.cpp)) | **[Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)** ([orig sol](../Two%20Pointers/trapping_rain_water.cpp)) |

@@ -3,6 +3,7 @@
 | Date | Daily Problem 1 | Daily Problem 2 |
 | ---- | ---- | ---- |
 | **XX<sup>th</sup> April 2024** | **[]()** ([orig sol](../)) | **[]()** ([orig sol](../)) |
+| **29<sup>th</sup> April 2024** | **[Partition Labels](https://leetcode.com/problems/partition-labels/)** ([orig sol](../Greedy/partition_labels.cpp)) | **[Task Scheduler](https://leetcode.com/problems/task-scheduler/)** ([orig sol](../Heap%20Priority%20Queue/tasks_scheduler.cpp)) |
 | **28<sup>th</sup> April 2024** | **[House Robber II](https://leetcode.com/problems/house-robber-ii/)** ([orig sol](../1-D%20Dynamic%20Programming/house_robber_ii.cpp)) | **[Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)** ([orig sol](../Sliding%20Window/longest_repeating_char_replacement.cpp)) |
 | **27<sup>th</sup> April 2024** | **[Find Minimum In Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)** ([orig sol](../Binary%20Search/min_in_rotated_arr.cpp)) | **[Best Time to Buy And Sell Stock With Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/)** ([orig sol](../2D%20Dynamic%20Programming/buy_sell_cooldown.cpp)) |
 | **26<sup>th</sup> April 2024** | **[Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/)** ([orig sol](../1-D%20Dynamic%20Programming/partition_equal_subset_sum.cpp)) | **[Clone Graph](https://leetcode.com/problems/clone-graph/)** ([orig sol](../Graphs/clone_graph.cpp)) |

@@ -2,7 +2,8 @@
 
 | Date | Daily Problem 1 | Daily Problem 2 |
 | ---- | ---- | ---- |
-| **XX<sup>th</sup> April 2024** | **[]()** ([orig sol](../)) | **[]()** ([orig sol](../)) |
+| **XX<sup>th</sup> May 2024** | **[]()** ([orig sol](../)) | **[]()** ([orig sol](../)) |
+| **01<sup>st</sup> May 2024** | **[Burst Balloons](https://leetcode.com/problems/burst-balloons/)** ([orig sol](../2D%20Dynamic%20Programming/burst_balloons.cpp)) | **[Combination Sum II](https://leetcode.com/problems/combination-sum-ii/)** ([orig sol](../Backtracking/combination_sum_ii.cpp)) |
 | **30<sup>th</sup> April 2024** | **[Multiply Strings](https://leetcode.com/problems/multiply-strings/)** ([orig sol](../Math%20Geometry/multiply_strings.cpp)) | **[Reverse Nodes in K-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/)** ([orig sol](../Linked%20List/reverse-k-grp-ll.cpp)) |
 | **29<sup>th</sup> April 2024** | **[Partition Labels](https://leetcode.com/problems/partition-labels/)** ([orig sol](../Greedy/partition_labels.cpp)) | **[Task Scheduler](https://leetcode.com/problems/task-scheduler/)** ([orig sol](../Heap%20Priority%20Queue/tasks_scheduler.cpp)) |
 | **28<sup>th</sup> April 2024** | **[House Robber II](https://leetcode.com/problems/house-robber-ii/)** ([orig sol](../1-D%20Dynamic%20Programming/house_robber_ii.cpp)) | **[Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)** ([orig sol](../Sliding%20Window/longest_repeating_char_replacement.cpp)) |

@@ -3,6 +3,8 @@
 | Date | Daily Problem 1 | Daily Problem 2 |
 | ---- | ---- | ---- |
 | **XX<sup>th</sup> May 2024** | **[]()** ([orig sol](../)) | **[]()** ([orig sol](../)) |
+| **03<sup>rd</sup> May 2024** | **[Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)** ([orig sol](../Sliding%20Window/sliding_window_max.cpp)) | **[Longest Increasing Path In a Matrix](https://leetcode.com/problems/longest-increasing-path-in-a-matrix/)** ([orig sol](../2D%20Dynamic%20Programming/longest_increasing_path_matrix.cpp)) |
+| **02<sup>nd</sup> May 2024** | **Break Day** | **Break Day** |
 | **01<sup>st</sup> May 2024** | **[Burst Balloons](https://leetcode.com/problems/burst-balloons/)** ([orig sol](../2D%20Dynamic%20Programming/burst_balloons.cpp)) | **[Combination Sum II](https://leetcode.com/problems/combination-sum-ii/)** ([orig sol](../Backtracking/combination_sum_ii.cpp)) |
 | **30<sup>th</sup> April 2024** | **[Multiply Strings](https://leetcode.com/problems/multiply-strings/)** ([orig sol](../Math%20Geometry/multiply_strings.cpp)) | **[Reverse Nodes in K-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/)** ([orig sol](../Linked%20List/reverse-k-grp-ll.cpp)) |
 | **29<sup>th</sup> April 2024** | **[Partition Labels](https://leetcode.com/problems/partition-labels/)** ([orig sol](../Greedy/partition_labels.cpp)) | **[Task Scheduler](https://leetcode.com/problems/task-scheduler/)** ([orig sol](../Heap%20Priority%20Queue/tasks_scheduler.cpp)) |

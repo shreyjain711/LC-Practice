@@ -3,6 +3,7 @@
 | Date | Daily Problem 1 | Daily Problem 2 |
 | ---- | ---- | ---- |
 | **XX<sup>th</sup> May 2024** | **[]()** ([orig sol](../)) | **[]()** ([orig sol](../)) |
+| **04<sup>th</sup> May 2024** | **[Find Median From Data Stream](https://leetcode.com/problems/find-median-from-data-stream/)** ([orig sol](../Heap%20Priority%20Queue/median_from_stream.cpp)) | **[Target Sum](https://leetcode.com/problems/target-sum/)** ([orig sol](../2D%20Dynamic%20Programming/target_sum.cpp)) |
 | **03<sup>rd</sup> May 2024** | **[Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)** ([orig sol](../Sliding%20Window/sliding_window_max.cpp)) | **[Longest Increasing Path In a Matrix](https://leetcode.com/problems/longest-increasing-path-in-a-matrix/)** ([orig sol](../2D%20Dynamic%20Programming/longest_increasing_path_matrix.cpp)) |
 | **02<sup>nd</sup> May 2024** | **Break Day** | **Break Day** |
 | **01<sup>st</sup> May 2024** | **[Burst Balloons](https://leetcode.com/problems/burst-balloons/)** ([orig sol](../2D%20Dynamic%20Programming/burst_balloons.cpp)) | **[Combination Sum II](https://leetcode.com/problems/combination-sum-ii/)** ([orig sol](../Backtracking/combination_sum_ii.cpp)) |

@@ -228,7 +228,7 @@
 
 ### ***[Find Median From Data Stream](https://leetcode.com/problems/find-median-from-data-stream/)***:
 - ***Problem Desc***: from an incoming stream of data, find the medium at any given time
-- ***Sol [O(logn) time insert, O(1) median | O(n) space]***:
+- ***Min and Max Qs, max keeps lower half, min keeps greater; insert as per empty/max.top & balance; median as per sizes [O(logn) time insert, O(1) median | O(n) space]***:
   ```cpp
   priority_queue<int> maxFirstHalf;
   priority_queue<int, vector<int>, greater<int>> minSecondHalf;

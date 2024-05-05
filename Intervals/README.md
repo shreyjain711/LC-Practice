@@ -2,21 +2,17 @@
 
 ### [Insert Interval](https://leetcode.com/problems/insert-interval/):
 - ***Problem Desc***: given list of sorted non-overlapping intervals and a new interval, insert it and remove overlap to restore order
-- ***Push inters till end<new's begin; then combine the inters into new till new's end<=begin; then push in remaining inters [O(n) time| O(1) space]***:
+- ***Add the ones that end before newInt; then keep iterating till currInts intersect with newInt & update it, finally add it; add rest too [O(n) time | O(1) space]***:
   ```cpp
   vector<vector<int>> insert(vector<vector<int>>& intervals, vector<int>& newInterval) {
-      vector<vector<int>> ans; int i=0, n=intervals.size();
-      while (i<n && intervals[i][1] < newInterval[0]) ans.push_back(intervals[i++]);
-      
-      while (i<n && newInterval[1] >= intervals[i][0]) {
-          newInterval[0] = min(newInterval[0], intervals[i][0]);
-          newInterval[1] = max(newInterval[1], intervals[i][1]);
-          i++;
-      }
-      ans.push_back(newInterval);
-      
+      vector<vector<int>> ans;
+      sort(begin(intervals), end(intervals)); int i=0, n=intervals.size(), a=newInterval[0],b=newInterval[1]; 
+      while (i<n && intervals[i][1] < a) ans.push_back(intervals[i++]);
+
+      while (i<n && b >= intervals[i][0]) {a = min(a, intervals[i][0]); b = max(b, intervals[i][1]); i++;}
+      ans.push_back({a,b});
+
       while (i<n) ans.push_back(intervals[i++]);
-      
       return ans;
   }
   ```

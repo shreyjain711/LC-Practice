@@ -28,23 +28,20 @@
 - ***Iterative bfs, clone map maintain and keep pointing according and check if already visited [O(V+E) time | O(V+E) space]***:
   ```cpp
   Node* cloneGraph(Node* node) {
-      unordered_map<Node*, Node*> cloneMap;
-      unordered_set<Node*> visited;
-      queue<Node*> bfs; 
-      if (node) bfs.push(node);
-      while (!bfs.empty()) {
+      if (!node) return NULL;
+      unordered_map<Node*, Node*> clones;
+      queue<Node*> bfs; bfs.push(node);
+      while (bfs.size()) {
           Node* curr = bfs.front(); bfs.pop();
-          if (visited.find(curr) != visited.end()) continue;
-          visited.insert(curr);
-          if(cloneMap.find(curr) == cloneMap.end()) cloneMap[curr] = new Node(curr->val);
-          for (auto neighbor: curr->neighbors) {
-              bfs.push(neighbor);
-              if(cloneMap.find(neighbor) == cloneMap.end()) 
-                  cloneMap[neighbor] = new Node(neighbor->val);
-              cloneMap[curr]->neighbors.push_back(cloneMap[neighbor]);
+          if (!clones.count(curr)) clones[curr] = new Node(curr->val);
+          if (clones[curr]->neighbors.size() != curr->neighbors.size()) {
+              for (auto n: curr->neighbors) {
+                  if (!clones.count(n)) clones[n] = new Node(n->val);
+                  clones[curr]->neighbors.push_back(clones[n]);
+                  if (clones[n]->neighbors.size() != n->neighbors.size()) bfs.push(n);
+              }
           }
-      }
-      return (cloneMap.size()) ? cloneMap[node] : NULL;
+      } return clones[node];
   }
   ```
 - ***Recursive, check if it already exists in clone map, if not then create clone node, put  in map, set neighbors recursively [O(V+E) time | O(V+E) space]***:

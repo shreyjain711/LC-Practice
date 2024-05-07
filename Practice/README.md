@@ -3,6 +3,7 @@
 | Date | Daily Problem 1 | Daily Problem 2 |
 | ---- | ---- | ---- |
 | **XX<sup>th</sup> May 2024** | **[]()** ([orig sol](../)) | **[]()** ([orig sol](../)) |
+| **07<sup>th</sup> May 2024** | **[Serialize And Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)** ([orig sol](../Trees/serialize_deserialize_trees.cpp)) | **[Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)** ([orig sol](../1-D%20Dynamic%20Programming/longest_increasing_subseq.cpp)) |
 | **06<sup>th</sup> May 2024** | **[Clone Graph](https://leetcode.com/problems/clone-graph/)** ([orig sol](../Graphs/clone_graph.cpp)) | **[Insert Interval](https://leetcode.com/problems/insert-interval/)** ([orig sol](../Intervals/insert_intervals.cpp)) |
 | **05<sup>th</sup> May 2024** | **[Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences/)** ([orig sol](../2D%20Dynamic%20Programming/distinct_subseq.cpp)) | -- |
 | **04<sup>th</sup> May 2024** | **[Find Median From Data Stream](https://leetcode.com/problems/find-median-from-data-stream/)** ([orig sol](../Heap%20Priority%20Queue/median_from_stream.cpp)) | **[Target Sum](https://leetcode.com/problems/target-sum/)** ([orig sol](../2D%20Dynamic%20Programming/target_sum.cpp)) |

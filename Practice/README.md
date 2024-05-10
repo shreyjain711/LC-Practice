@@ -2,7 +2,8 @@
 
 | Date | Daily Problem 1 | Daily Problem 2 |
 | ---- | ---- | ---- |
-| **XX<sup>th</sup> May 2024** | **[]()** ([orig sol](../)) | **[]()** ([orig sol](../)) |
+| **XX<sup>th</sup> May 2024** | **[)** ([orig sol](../)) | **[)** ([orig sol](../)) |
+| **10<sup>th</sup> May 2024** | **[Word Search II](https://leetcode.com/problems/word-search-ii/)** ([orig sol](../Tries/word_search_ii.cpp)) | **[Search In Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)** ([orig sol](../Binary%20Search/search_in_rotated_arr.cpp)) |
 | **09<sup>th</sup> May 2024** | **[Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/)** ([orig sol](../Bit%20Manipulation/sum_of_two_integers.cpp)) | **[Minimum Interval to Include Each Query](https://leetcode.com/problems/minimum-interval-to-include-each-query/)** ([orig sol](../Intervals/min_interval_query.cpp)) |
 | **08<sup>th</sup> May 2024** | **[Merge Triplets to Form Target Triplet](https://leetcode.com/problems/merge-triplets-to-form-target-triplet/)** ([orig sol](../Greedy/merge_triplets_target.cpp)) | **[Word Ladder](https://leetcode.com/problems/word-ladder/)** ([orig sol](../Graphs/word_ladder.cpp)) |
 | **07<sup>th</sup> May 2024** | **[Serialize And Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)** ([orig sol](../Trees/serialize_deserialize_trees.cpp)) | **[Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)** ([orig sol](../1-D%20Dynamic%20Programming/longest_increasing_subseq.cpp)) |

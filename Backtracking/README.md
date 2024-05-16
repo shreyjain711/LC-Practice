@@ -198,40 +198,27 @@
 
 ### ***[N Queens](https://leetcode.com/problems/n-queens/)***:
 - ***Problem Desc***: given n, place n queens on an nxn grid such that none can kill each other
-- ***backtracking: maintain arr to store col pos, arr pos = row pos; add in a queen on a possible col val, validate board, if at end, generate board from arr and store [O(n!) time | O(n<sup>2</sup>) space]***:
+- ***backtracking: maintain board, go over each row and in each row each col, add in a queen if board still valid, continue; (check only prev i,same j & diagonals up-left and up-right [O(n!) time | O(n<sup>2</sup>) space]***:
   ```cpp
-  bool isValidBoard (vector<int>&qPos) {
-      for(int i = 0; i<qPos.size(); ++i) {
-          int q1c = qPos[i];
-          for(int j=i+1; j<qPos.size(); ++j) {
-              int q2c = qPos[j];
-              int rDiff = abs(i-j), cDiff = abs(q1c - q2c);
-              if (!rDiff || !cDiff || cDiff == rDiff) return 0;
-          }
-      } return 1;
-  }
-  vector<string> makeBoard(vector<int>&qPos, int n) {
-      string emptyRow = ""; for(int i=0; i<n; ++i) emptyRow += '.';
-      vector<string> ans(n, emptyRow);
-      for (int i=0; i<n; ++i) ans[i][qPos[i]] = 'Q';
-      return ans;
-  }
-  void backtrack(int n, vector<int>&qPos, vector<vector<string>> &board) {
-      if (!isValidBoard(qPos)) return;
-      if (qPos.size() == n) {
-          board.push_back(makeBoard(qPos, n));
-          return;
-      }
-      for (int i=0; i<n; i++) {
-          qPos.push_back(i); 
-          backtrack(n, qPos, board);
-          qPos.pop_back();
-      }
-  }
   vector<vector<string>> solveNQueens(int n) {
-      vector<vector<string>> board;
-      vector<int> queenPos;
-      backtrack(n, queenPos, board);
-      return board;
+      if (n==2||n==3) return {};
+      vector<vector<string>> boards; vector<string> board(n, string(n,'.'));
+      backtrack(0, n, board, boards); return boards;
+  }
+  void backtrack(int i, int &n, vector<string> &board, vector<vector<string>> &boards) {
+      if (i==n) {boards.push_back(board); return;}
+      for (int j=0; j<n; j++) {
+          board[i][j] = 'Q';
+          if (isValid(i, j, board)) backtrack(i+1, n, board, boards);
+          board[i][j] = '.';
+      }
+  }
+  bool isValid(int &i, int &j, vector<string>&board) {
+      int n = board.size();
+      for (int d=1; d<=i; d++) {
+          if (board[i-d][j]=='Q') return 0;
+          if (j-d>=0 && board[i-d][j-d] == 'Q') return 0;
+          if (j+d<n && board[i-d][j+d] == 'Q') return 0;
+      } return 1;
   }
   ```

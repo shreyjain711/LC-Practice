@@ -3,6 +3,7 @@
 | Date | Daily Problem 1 | Daily Problem 2 |
 | ---- | ---- | ---- |
 | **XX<sup>th</sup> May 2024** | **[)** ([orig sol](../)) | **[)** ([orig sol](../)) |
+| **17<sup>th</sup> May 2024** | **[Reverse Integer](https://leetcode.com/problems/reverse-integer/)** ([orig sol](../Bit%20Manipulation/reverse_integer.cpp)) | **[N Queens](https://leetcode.com/problems/n-queens/)** ([orig sol](../Backtracking/n_queens.cpp)) |
 | **16<sup>th</sup> May 2024** | **[Valid Parenthesis String](https://leetcode.com/problems/valid-parenthesis-string/)** ([orig sol](../Greedy/valid_parenthesis_string.cpp)) | **[Largest Rectangle In Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/)** ([orig sol](../stack/largest_rect_in_histogram.cpp)) |
 | **15<sup>th</sup> May 2024** | **[Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/)** ([orig sol](../Sliding%20Window/longest_repeating_char_replacement.cpp)) | **[Min Cost to Connect All Points](https://leetcode.com/problems/min-cost-to-connect-all-points/)** ([orig sol](../Advanced%20Graphs/min_cost_connect_all.cpp)) |
 | **14<sup>th</sup> May 2024** | **[Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)** ([orig sol](../Arrays%20and%20Hashing/longest_consec_seq_if_sorted.cpp)) | **[Best Time to Buy And Sell Stock With Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/)** ([orig sol](../2D%20Dynamic%20Programming/buy_sell_cooldown.cpp)) |

@@ -3,6 +3,7 @@
 | Date | Daily Problem 1 | Daily Problem 2 |
 | ---- | ---- | ---- |
 | **XX<sup>th</sup> May 2024** | **[)** ([orig sol](../)) | **[)** ([orig sol](../)) |
+| **19<sup>th</sup> May 2024** | **[Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)** ([orig sol](../1-D%20Dynamic%20Programming/max_prod_subarr.cpp)) | **[Alien Dictionary](https://leetcode.com/problems/alien-dictionary/)** ([orig sol](../Advanced%20Graphs/alien_dictionary.cpp)) |
 | **18<sup>th</sup> May 2024** | **[Kth Largest Element In An Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)** ([orig sol](../Heap%20Priority%20Queue/kth_largest.cpp)) | **[Pow(x, n)](https://leetcode.com/problems/powx-n/)** ([orig sol](../Math%20Geometry/pow_x_n.cpp)) |
 | **17<sup>th</sup> May 2024** | **[Reverse Integer](https://leetcode.com/problems/reverse-integer/)** ([orig sol](../Bit%20Manipulation/reverse_integer.cpp)) | **[N Queens](https://leetcode.com/problems/n-queens/)** ([orig sol](../Backtracking/n_queens.cpp)) |
 | **16<sup>th</sup> May 2024** | **[Valid Parenthesis String](https://leetcode.com/problems/valid-parenthesis-string/)** ([orig sol](../Greedy/valid_parenthesis_string.cpp)) | **[Largest Rectangle In Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/)** ([orig sol](../stack/largest_rect_in_histogram.cpp)) |

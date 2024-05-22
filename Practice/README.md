@@ -3,6 +3,7 @@
 | Date | Daily Problem 1 | Daily Problem 2 |
 | ---- | ---- | ---- |
 | **XX<sup>th</sup> May 2024** | **[)** ([orig sol](../)) | **[)** ([orig sol](../)) |
+| **22<sup>nd</sup> May 2024** | **[Meeting Rooms II](https://github.com/neetcode-gh/leetcode/blob/main/cpp/0253-meeting-rooms-ii.cpp)** ([orig sol](../Intervals/meeting_rooms_ii.cpp)) | **[Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)** ([orig sol](../Binary%20Search/median_two_sorted_arr.cpp)) |
 | **21<sup>st</sup> May 2024** | **[Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)** ([orig sol](../Greedy/max_subarr.cpp)) | **[Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/)** ([orig sol](../Trees/max_path_sum.cpp)) |
 | **20<sup>th</sup> May 2024** | **[Find Minimum In Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)** ([orig sol](../Binary%20Search/min_in_rotated_arr.cpp)) | **[Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops/)** ([orig sol](../Advanced%20Graphs/cheapest_flights_k_stops.cpp)) |
 | **19<sup>th</sup> May 2024** | **[Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)** ([orig sol](../1-D%20Dynamic%20Programming/max_prod_subarr.cpp)) | **[Alien Dictionary](https://leetcode.com/problems/alien-dictionary/)** ([orig sol](../Advanced%20Graphs/alien_dictionary.cpp)) |

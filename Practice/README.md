@@ -3,6 +3,7 @@
 | Date | Daily Problem 1 | Daily Problem 2 |
 | ---- | ---- | ---- |
 | **XX<sup>th</sup> May 2024** | **[)** ([orig sol](../)) | **[)** ([orig sol](../)) |
+| **24<sup>th</sup> May 2024** | **[Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary/)** ([orig sol](../Advanced%20Graphs/reconstruct_itinerary.cpp)) | **[Partition Labels](https://leetcode.com/problems/partition-labels/)** ([orig sol](../Greedy/partition_labels.cpp)) |
 | **23<sup>rd</sup> May 2024** | **[3Sum](https://leetcode.com/problems/3sum/)** ([orig sol](../Two%20Pointers/3sum.cpp)) | **[Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/)** ([orig sol](../2D%20Dynamic%20Programming/regex_matching.cpp)) |
 | **22<sup>nd</sup> May 2024** | **[Meeting Rooms II](https://github.com/neetcode-gh/leetcode/blob/main/cpp/0253-meeting-rooms-ii.cpp)** ([orig sol](../Intervals/meeting_rooms_ii.cpp)) | **[Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)** ([orig sol](../Binary%20Search/median_two_sorted_arr.cpp)) |
 | **21<sup>st</sup> May 2024** | **[Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)** ([orig sol](../Greedy/max_subarr.cpp)) | **[Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/)** ([orig sol](../Trees/max_path_sum.cpp)) |

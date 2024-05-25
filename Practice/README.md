@@ -3,6 +3,7 @@
 | Date | Daily Problem 1 | Daily Problem 2 |
 | ---- | ---- | ---- |
 | **XX<sup>th</sup> May 2024** | **[)** ([orig sol](../)) | **[)** ([orig sol](../)) |
+| **26<sup>th</sup> May 2024** | **[Swim In Rising Water](https://leetcode.com/problems/swim-in-rising-water/)** ([orig sol](../Advanced%20Graphs/swim_rising_in_water.cpp)) | **[Interleaving String](https://leetcode.com/problems/interleaving-string/)** ([orig sol](../2D%20Dynamic%20Programming/interleaving_strings.cpp)) |
 | **25<sup>th</sup> May 2024** | **[Non Overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/)** ([orig sol](../Intervals/non_overlapping_intervals.cpp)) | -- |
 | **24<sup>th</sup> May 2024** | **[Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary/)** ([orig sol](../Advanced%20Graphs/reconstruct_itinerary.cpp)) | **[Partition Labels](https://leetcode.com/problems/partition-labels/)** ([orig sol](../Greedy/partition_labels.cpp)) |
 | **23<sup>rd</sup> May 2024** | **[3Sum](https://leetcode.com/problems/3sum/)** ([orig sol](../Two%20Pointers/3sum.cpp)) | **[Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/)** ([orig sol](../2D%20Dynamic%20Programming/regex_matching.cpp)) |

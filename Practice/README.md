@@ -3,6 +3,7 @@
 | Date | Daily Problem 1 | Daily Problem 2 |
 | ---- | ---- | ---- |
 | **XX<sup>th</sup> May 2024** | **[)** ([orig sol](../)) | **[)** ([orig sol](../)) |
+| **27<sup>th</sup> May 2024** | **[House Robber II](https://leetcode.com/problems/house-robber-ii/)** ([orig sol](../1-D%20Dynamic%20Programming/house_robber_ii.cpp)) | **[Reverse Nodes in K-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/)** ([orig sol](../Linked%20List/reverse-k-grp-ll.cpp)) |
 | **26<sup>th</sup> May 2024** | **[Swim In Rising Water](https://leetcode.com/problems/swim-in-rising-water/)** ([orig sol](../Advanced%20Graphs/swim_rising_in_water.cpp)) | **[Interleaving String](https://leetcode.com/problems/interleaving-string/)** ([orig sol](../2D%20Dynamic%20Programming/interleaving_strings.cpp)) |
 | **25<sup>th</sup> May 2024** | **[Non Overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/)** ([orig sol](../Intervals/non_overlapping_intervals.cpp)) | -- |
 | **24<sup>th</sup> May 2024** | **[Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary/)** ([orig sol](../Advanced%20Graphs/reconstruct_itinerary.cpp)) | **[Partition Labels](https://leetcode.com/problems/partition-labels/)** ([orig sol](../Greedy/partition_labels.cpp)) |

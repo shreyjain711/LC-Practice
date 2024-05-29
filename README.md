@@ -152,7 +152,9 @@
           - can do this using a bitset -> becomes an O(1) operation with it
 12. Intervals
     - [Insert Interval](https://leetcode.com/problems/insert-interval/):
+       - push the ones that end before newInt; update start,end of newInt as per all its overlapping intervals, push this; push ones that start afterwards
     - [Non Overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/):
+       - start from i=1, lastEnd=0th's end; if lastEnd>currStart then lastEnd is min of end of lastEnd or curr's and count++; else lastEnd=currEnd
     - [Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/):
     - [Minimum Interval to Include Each Query](https://leetcode.com/problems/minimum-interval-to-include-each-query/):
 14. Greedy

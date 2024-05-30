@@ -3,6 +3,7 @@
 | Date | Daily Problem 1 | Daily Problem 2 |
 | ---- | ---- | ---- |
 | **XX<sup>th</sup> May 2024** | **[)** ([orig sol](../)) | **[)** ([orig sol](../)) |
+| **30<sup>th</sup> May 2024** | **[N Queens](https://leetcode.com/problems/n-queens/)** ([orig sol](../Backtracking/n_queens.cpp)) | **[Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/)** ([orig sol](../Sliding_Window/longest_repeating_char_replacement.cpp)) |
 | **29<sup>th</sup> May 2024** | **[Find Minimum In Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)** ([orig sol](../Binary_Search/min_in_rotated_arr.cpp)) | **[Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)** ([orig sol](../Sliding_Window/min_window_substr.cpp)) |
 | **28<sup>th</sup> May 2024** | **[Combination Sum II](https://leetcode.com/problems/combination-sum-ii/)** ([orig sol](../Backtracking/combination_sum_ii.cpp)) | **[Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)** ([orig sol](../Sliding_Window/sliding_window_max.cpp)) |
 | **27<sup>th</sup> May 2024** | **[House Robber II](https://leetcode.com/problems/house-robber-ii/)** ([orig sol](../1D_Dynamic_Programming/house_robber_ii.cpp)) | **[Reverse Nodes in K-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/)** ([orig sol](../Linked_List/reverse-k-grp-ll.cpp)) |

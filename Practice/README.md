@@ -3,6 +3,7 @@
 | Date | Daily Problem 1 | Daily Problem 2 |
 | ---- | ---- | ---- |
 | **XX<sup>th</sup> June 2024** | **[)** ([orig sol](../)) | **[)** ([orig sol](../)) |
+| **04<sup>th</sup> June 2024** | **[Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences/)** ([orig sol](../2D_Dynamic_Programming/distinct_subseq.cpp)) | **[Pow(x, n)](https://leetcode.com/problems/powx-n/)** ([orig sol](../Math_And_Geometry/pow_x_n.cpp)) |
 | **03<sup>rd</sup> June 2024** | **[Interleaving String](https://leetcode.com/problems/interleaving-string/)** ([orig sol](../2D_Dynamic_Programming/interleaving_strings.cpp)) | **[Word Ladder](https://leetcode.com/problems/word-ladder/)** ([orig sol](../Graphs/word_ladder.cpp)) |
 | **02<sup>nd</sup> June 2024** | **[Multiply Strings](https://leetcode.com/problems/multiply-strings/)** ([orig sol](../Math_And_Geometry/multiply_strings.cpp)) | **[Reverse Nodes in K-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/)** ([orig sol](../Linked_List/reverse-k-grp-ll.cpp)) |
 | **01<sup>st</sup> June 2024** | **[Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/)** ([orig sol](../2D_Dynamic_Programming/regex_matching.cpp)) | **[Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)** ([orig sol](../1D_Dynamic_Programming/longest_increasing_subseq.cpp)) |

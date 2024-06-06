@@ -3,6 +3,7 @@
 | Date | Daily Problem 1 | Daily Problem 2 |
 | ---- | ---- | ---- |
 | **XX<sup>th</sup> June 2024** | **[)** ([orig sol](../)) | **[)** ([orig sol](../)) |
+| **06<sup>th</sup> June 2024** | **[Search In Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)** ([orig sol](../Binary_Search/search_in_rotated_arr.cpp)) | **[Best Time to Buy And Sell Stock With Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/)** ([orig sol](../2D_Dynamic_Programming/buy_sell_cooldown.cpp)) |
 | **05<sup>th</sup> June 2024** | **[Construct Binary Tree From Preorder And Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)** ([orig sol](../Trees/tree_from_pre_inorder.cpp)) | **[Kth Largest Element In An Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)** ([orig sol](../Heap_Priority_Queue/kth_largest.cpp)) |
 | **04<sup>th</sup> June 2024** | **[Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences/)** ([orig sol](../2D_Dynamic_Programming/distinct_subseq.cpp)) | **[Pow(x, n)](https://leetcode.com/problems/powx-n/)** ([orig sol](../Math_And_Geometry/pow_x_n.cpp)) |
 | **03<sup>rd</sup> June 2024** | **[Interleaving String](https://leetcode.com/problems/interleaving-string/)** ([orig sol](../2D_Dynamic_Programming/interleaving_strings.cpp)) | **[Word Ladder](https://leetcode.com/problems/word-ladder/)** ([orig sol](../Graphs/word_ladder.cpp)) |

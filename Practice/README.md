@@ -3,6 +3,7 @@
 | Date | Daily Problem 1 | Daily Problem 2 |
 | ---- | ---- | ---- |
 | **XX<sup>th</sup> June 2024** | **[)** ([orig sol](../)) | **[)** ([orig sol](../)) |
+| **08<sup>th</sup> June 2024** | **[Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)** ([orig sol](../Binary_Search/median_two_sorted_arr.cpp)) | **[Largest Rectangle In Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/)** ([orig sol](../stack/largest_rect_in_histogram.cpp)) |
 | **07<sup>th</sup> June 2024** | **[3Sum](https://leetcode.com/problems/3sum/)** ([orig sol](../Two_Pointers/3sum.cpp)) | **[Valid Parenthesis String](https://leetcode.com/problems/valid-parenthesis-string/)** ([orig sol](../Greedy/valid_parenthesis_string.cpp)) |
 | **06<sup>th</sup> June 2024** | **[Search In Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)** ([orig sol](../Binary_Search/search_in_rotated_arr.cpp)) | **[Best Time to Buy And Sell Stock With Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/)** ([orig sol](../2D_Dynamic_Programming/buy_sell_cooldown.cpp)) |
 | **05<sup>th</sup> June 2024** | **[Construct Binary Tree From Preorder And Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)** ([orig sol](../Trees/tree_from_pre_inorder.cpp)) | **[Kth Largest Element In An Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)** ([orig sol](../Heap_Priority_Queue/kth_largest.cpp)) |

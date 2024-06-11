@@ -3,6 +3,8 @@
 | Date | Daily Problem 1 | Daily Problem 2 |
 | ---- | ---- | ---- |
 | **XX<sup>th</sup> June 2024** | **[)** ([orig sol](../)) | **[)** ([orig sol](../)) |
+| **11<sup>th</sup> June 2024** | **[Meeting Rooms II](https://github.com/neetcode-gh/leetcode/blob/main/cpp/0253-meeting-rooms-ii.cpp)** ([orig sol](../Intervals/meeting_rooms_ii.cpp)) | **[Min Cost to Connect All Points](https://leetcode.com/problems/min-cost-to-connect-all-points/)** ([orig sol](../Advanced_Graphs/min_cost_connect_all.cpp)) |
+| **10<sup>th</sup> June 2024** | **[House Robber II](https://leetcode.com/problems/house-robber-ii/)** ([orig sol](../1D_Dynamic_Programming/house_robber_ii.cpp)) | **[Minimum Interval to Include Each Query](https://leetcode.com/problems/minimum-interval-to-include-each-query/)** ([orig sol](../Intervals/min_interval_query.cpp)) |
 | **09<sup>th</sup> June 2024** | **[Permutations](https://leetcode.com/problems/permutations/)** ([orig sol](../Backtracking/permutations.cpp)) | **[Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary/)** ([orig sol](../Advanced_Graphs/reconstruct_itinerary.cpp)) |
 | **08<sup>th</sup> June 2024** | **[Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)** ([orig sol](../Binary_Search/median_two_sorted_arr.cpp)) | **[Largest Rectangle In Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/)** ([orig sol](../stack/largest_rect_in_histogram.cpp)) |
 | **07<sup>th</sup> June 2024** | **[3Sum](https://leetcode.com/problems/3sum/)** ([orig sol](../Two_Pointers/3sum.cpp)) | **[Valid Parenthesis String](https://leetcode.com/problems/valid-parenthesis-string/)** ([orig sol](../Greedy/valid_parenthesis_string.cpp)) |

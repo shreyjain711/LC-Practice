@@ -156,7 +156,12 @@
     - [Non Overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/):
        - start from i=1, lastEnd=0th's end; if lastEnd>currStart then lastEnd is min of end of lastEnd or curr's and count++; else lastEnd=currEnd
     - [Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/):
+       - maintain a min heap of intervals that are still going on. As we keep going to the next intervals, we check if the one ending earliest (min heap top) has ended and pop it; push the curr one
+       - popping only 1 in each iter ensures the overlaps stay as the size of the min heap at the end
     - [Minimum Interval to Include Each Query](https://leetcode.com/problems/minimum-interval-to-include-each-query/):
+       - we first make pair of q and index and sort that + sort the intervals
+       - now in a min heap of interval sizes and index, we push in intervals that end after curr Q (an interval index var i maintained separately)
+          - after push, we pop heap top till they end before currQ; the top is then the ans for the currQ
 14. Greedy
     - [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/):
     - [Jump Game II](https://leetcode.com/problems/jump-game-ii/):
@@ -172,7 +177,10 @@
     - [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/):
 18. Bit Manipulation
     - [Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/):
+       - a^b is the temp addition, & and <<1 give essentially the remainder of b and we keep repeating till b!=0
     - [Reverse Integer](https://leetcode.com/problems/reverse-integer/):
+       - normal /10 %10 procedure
+       - but due to limits we check if curr rev num isn't >INT_MAX/10 or <INT_MIN/10 -> if so then can't fit reversed in int
 20. Advanced Graphs
     - [Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary/):
     - [Min Cost to Connect All Points](https://leetcode.com/problems/min-cost-to-connect-all-points/):
@@ -186,9 +194,9 @@
     - [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/):
     - [Happy Number](https://leetcode.com/problems/happy-number/):
     - [Pow(x, n)](https://leetcode.com/problems/powx-n/):
-      - multiply once by x if the curr n is odd and then square and n gets /2 and do till n >0
+      - multiply res by x if the curr n is odd and then x is squared and n gets /2; do till n >0
     - [Multiply Strings](https://leetcode.com/problems/multiply-strings/):
-      - simple maths, no short way. make a temp str with m+n 0s
+      - simple maths, no short way. make a temp str with m+n 0s and go over a & b from right side and the unit digit is at i+j+1 and tens at i+j
 
 
 ### Quick Notes

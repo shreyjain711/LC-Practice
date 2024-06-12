@@ -164,9 +164,15 @@
           - after push, we pop heap top till they end before currQ; the top is then the ans for the currQ
 14. Greedy
     - [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/):
+       - keep going left while summing elems, at each step keep tracking maxSum too; if total turns -ve, reset it for the next elem
     - [Jump Game II](https://leetcode.com/problems/jump-game-ii/):
+       - go over till the point current range allows, track each loop when range is increased, that's num of jumps
     - [Partition Labels](https://leetcode.com/problems/partition-labels/):
+       - track last occur of each char; go over string, len is the last occur of curr char, when last occur of curr char == index then that's end of one str
     - [Valid Parenthesis String](https://leetcode.com/problems/valid-parenthesis-string/):
+       - track maxOpen and minOpen; make minOpen 0 if -ve, if maxOpen even -ve then return 0. at end minOpen should be 0 for validity
+    - [Gas Station](https://leetcode.com/problems/gas-station/):
+       - go across arr storing fuel diff, if hits 0 then reset start pointer from next; At end if overall fuel diff is +ve then start is ans else -1
 16. 2D Dynamic Programming
     - [Best Time to Buy And Sell Stock With Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/):
     - [Target Sum](https://leetcode.com/problems/target-sum/):
@@ -202,7 +208,6 @@
 ### Quick Notes
 - Set vs unorderedSet <br>
   <img width="585" alt="image" src="https://github.com/shreyjain711/LC-Practice/assets/31862368/4e3117cf-ec69-422d-b748-9564b943fe99">
-
     
    - Both set and unordered_set can be traversed but only in case of set that traversal order would be a sorted one
    - Why not unordered better here even after worst case complexity being higher - the hash table approach in unordered set will give O(n) if every insertion ends up creating a collision in hash table during insertion; this will not be the case in almost all practical cases

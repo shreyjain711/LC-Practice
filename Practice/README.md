@@ -3,6 +3,8 @@
 | Date | Daily Problem 1 | Daily Problem 2 |
 | ---- | ---- | ---- |
 | **XX<sup>th</sup> June 2024** | **[)** ([orig sol](../)) | **[)** ([orig sol](../)) |
+| **14<sup>th</sup> June 2024** | **[Find Minimum In Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)** ([orig sol](../Binary_Search/min_in_rotated_arr.cpp)) | **[Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)** ([orig sol](../Sliding_Window/sliding_window_max.cpp)) |
+| **13<sup>th</sup> June 2024** | -- | -- |
 | **12<sup>th</sup> June 2024** | **[Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops/)** ([orig sol](../Advanced_Graphs/cheapest_flights_k_stops.cpp)) | -- |
 | **11<sup>th</sup> June 2024** | **[Meeting Rooms II](https://github.com/neetcode-gh/leetcode/blob/main/cpp/0253-meeting-rooms-ii.cpp)** ([orig sol](../Intervals/meeting_rooms_ii.cpp)) | **[Min Cost to Connect All Points](https://leetcode.com/problems/min-cost-to-connect-all-points/)** ([orig sol](../Advanced_Graphs/min_cost_connect_all.cpp)) |
 | **10<sup>th</sup> June 2024** | **[House Robber II](https://leetcode.com/problems/house-robber-ii/)** ([orig sol](../1D_Dynamic_Programming/house_robber_ii.cpp)) | **[Minimum Interval to Include Each Query](https://leetcode.com/problems/minimum-interval-to-include-each-query/)** ([orig sol](../Intervals/min_interval_query.cpp)) |

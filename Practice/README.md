@@ -3,6 +3,9 @@
 | Date | Daily Problem 1 | Daily Problem 2 |
 | ---- | ---- | ---- |
 | **XX<sup>th</sup> June 2024** | **[)** ([orig sol](../)) | **[)** ([orig sol](../)) |
+| **17<sup>th</sup> June 2024** | **[Valid Parenthesis String](https://leetcode.com/problems/valid-parenthesis-string/)** ([orig sol](../Greedy/valid_parenthesis_string.cpp)) | **[Swim In Rising Water](https://leetcode.com/problems/swim-in-rising-water/)** ([orig sol](../Advanced_Graphs/swim_rising_in_water.cpp)) |
+| **16<sup>th</sup> June 2024** | -- | -- |
+| **15<sup>th</sup> June 2024** | -- | -- |
 | **14<sup>th</sup> June 2024** | **[Find Minimum In Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)** ([orig sol](../Binary_Search/min_in_rotated_arr.cpp)) | **[Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)** ([orig sol](../Sliding_Window/sliding_window_max.cpp)) |
 | **13<sup>th</sup> June 2024** | -- | -- |
 | **12<sup>th</sup> June 2024** | **[Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops/)** ([orig sol](../Advanced_Graphs/cheapest_flights_k_stops.cpp)) | -- |

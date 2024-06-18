@@ -175,6 +175,8 @@
        - go across arr storing fuel diff, if hits 0 then reset start pointer from next; At end if overall fuel diff is +ve then start is ans else -1
 16. 2D Dynamic Programming
     - [Best Time to Buy And Sell Stock With Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/):
+       - if we can track max profit having bought, sold and cooldown-ed the previous value then we can find the max possible by end
+          - buy = max of prev buy or buying at curr after cooldown; then cooldown = max prev cooldown or prev sell and now cooldown; sell = prev buy + curr price
     - [Target Sum](https://leetcode.com/problems/target-sum/):
     - [Interleaving String](https://leetcode.com/problems/interleaving-string/):
     - [Longest Increasing Path In a Matrix](https://leetcode.com/problems/longest-increasing-path-in-a-matrix/):

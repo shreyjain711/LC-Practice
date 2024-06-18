@@ -3,6 +3,7 @@
 | Date | Daily Problem 1 | Daily Problem 2 |
 | ---- | ---- | ---- |
 | **XX<sup>th</sup> June 2024** | **[)** ([orig sol](../)) | **[)** ([orig sol](../)) |
+| **18<sup>th</sup> June 2024** | **[Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)** ([orig sol](../Sliding_Window/min_window_substr.cpp)) | **[Longest Repeating Character Replacement)** ([orig sol](../Sliding_Window/longest_repeating_char_replacement.cpp)) |
 | **17<sup>th</sup> June 2024** | **[Valid Parenthesis String](https://leetcode.com/problems/valid-parenthesis-string/)** ([orig sol](../Greedy/valid_parenthesis_string.cpp)) | **[Swim In Rising Water](https://leetcode.com/problems/swim-in-rising-water/)** ([orig sol](../Advanced_Graphs/swim_rising_in_water.cpp)) |
 | **16<sup>th</sup> June 2024** | -- | -- |
 | **15<sup>th</sup> June 2024** | -- | -- |

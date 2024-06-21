@@ -198,9 +198,15 @@
     - [Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops/):
 22. Math Geometry
     - [Rotate Image](https://leetcode.com/problems/rotate-image/):
+       - reverse rows and then transpose (visualize in 3D)
     - [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/):
     - [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/):
-    - [Happy Number](https://leetcode.com/problems/happy-number/):
+       - detect is first row and col are supposed to be 0 or not
+       - use first row and col as lists for which rows to be made 0
+       - make cells 0 based on either of their row/col being 0
+       - make first row/col zero depending on flag
+    - [Happy Number](https://leetcode.com/problems/happy-number/): sum of sq of digits = num
+       - fast and slow approach to detect loop
     - [Pow(x, n)](https://leetcode.com/problems/powx-n/):
       - multiply res by x if the curr n is odd and then x is squared and n gets /2; do till n >0
     - [Multiply Strings](https://leetcode.com/problems/multiply-strings/):

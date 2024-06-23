@@ -309,23 +309,22 @@
   - else if next *, skip * || incl char and then (skip * || not skip *)
   - else check for curr char match and continue
   ```cpp
-  bool dfs (int i, int j, string &s, string &p, vector<vector<int>>&dp) {
-      if (i>s.size()) return 0;
-      if (dp[i][j] == -1) {
-          if (j==p.size()) dp[i][j] = i==s.size();
-          else if (j==p.size()-1) {
-              dp[i][j] = i==s.size()-1 && (s[i]==p[j] || p[j]=='.');
-          } else if (p[j+1] == '*') {
-              dp[i][j] = dfs(i, j+2, s, p, dp) || 
-                          ((p[j]=='.' || s[i]==p[j]) && 
-                              (dfs(i+1, j, s, p, dp) || dfs(i+1, j+2, s, p, dp)));
-          } else {
-              dp[i][j] = (s[i]==p[j] || p[j]=='.') && dfs(i+1, j+1, s, p, dp);
-          }
-      } return dp[i][j];
-  }
   bool isMatch(string s, string p) {
-      vector<vector<int>> dp(s.size()+1, vector<int>(p.size()+1,-1));
-      return dfs(0, 0, s, p, dp);
+      int n=s.size(), m=p.size(); vector<vector<int>> cache(n+1, vector<int>(m+1,-1));
+      return helper(0, 0, s, p, cache);
+  }
+  bool helper(int i, int j, string &s, string &p, vector<vector<int>> &cache) {
+      if (j==p.size()) return i==s.size();
+      if (cache[i][j]!=-1) return cache[i][j];
+      cache[i][j] = 0;
+      if (j+1<p.size() && p[j+1]=='*') {
+          cache[i][j] = helper(i, j+2, s, p, cache);
+          if (!cache[i][j]) 
+              cache[i][j] = i<s.size() && (s[i]==p[j] || p[j]=='.') 
+                          && (helper(i+1, j, s, p, cache) || helper(i+1, j+2, s, p, cache));
+      } else {
+          cache[i][j] = i<s.size() && (s[i]==p[j] || p[j]=='.') 
+                          && helper(i+1, j+1, s, p, cache);
+      } return cache[i][j];
   }
   ```

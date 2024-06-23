@@ -305,8 +305,8 @@
 - ***Brute [O(2<sup>n+m</sup>) time | O(n) space]***: backtracking with checking if each char of the string is to be taken as part of current pattern variable
 - ***cache the results of backtracking  [O(n.m) time | O(n.m) space]***
   - if p end, s also end
-  - if last char p then check match
-  - else if next *, skip * || incl char and then (skip * || not skip *)
+  - check in cache
+  - if not last char in p and next star then check skip 2 in p and if still not 1 and i<s then 1 forward in s + 1,2 forward in both
   - else check for curr char match and continue
   ```cpp
   bool isMatch(string s, string p) {

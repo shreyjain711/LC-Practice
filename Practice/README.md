@@ -3,6 +3,7 @@
 | Date | Daily Problem 1 | Daily Problem 2 |
 | ---- | ---- | ---- |
 | **XX<sup>th</sup> June 2024** | **[)** ([orig sol](../)) | **[)** ([orig sol](../)) |
+| **27<sup>th</sup> June 2024** | **[Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/)** ([orig sol](../Bit_Manipulation/sum_of_two_integers.cpp)) | **[Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences/)** ([orig sol](../2D_Dynamic_Programming/distinct_subseq.cpp)) |
 | **26<sup>th</sup> June 2024** | **[Kth Largest Element In An Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)** ([orig sol](../Heap_Priority_Queue/kth_largest.cpp)) | **[Largest Rectangle In Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/)** ([orig sol](../stack/largest_rect_in_histogram.cpp)) |
 | **25<sup>th</sup> June 2024** | -- | -- |
 | **24<sup>th</sup> June 2024** | -- | -- |

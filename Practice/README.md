@@ -2,7 +2,8 @@
 
 | Date | Daily Problem 1 | Daily Problem 2 |
 | ---- | ---- | ---- |
-| **XX<sup>th</sup> June 2024** | **[)** ([orig sol](../)) | **[)** ([orig sol](../)) |
+| **XX<sup>th</sup> July 2024** | **[)** ([orig sol](../)) | **[)** ([orig sol](../)) |
+| **30<sup>th</sup> June 2024** | **[Minimum Interval to Include Each Query](https://leetcode.com/problems/minimum-interval-to-include-each-query/)** ([orig sol](../Intervals/min_interval_query.cpp)) | **[Min Cost to Connect All Points](https://leetcode.com/problems/min-cost-to-connect-all-points/)** ([orig sol](../Advanced_Graphs/min_cost_connect_all.cpp)) |
 | **29<sup>th</sup> June 2024** | **[Combination Sum II](https://leetcode.com/problems/combination-sum-ii/)** ([orig sol](../Backtracking/combination_sum_ii.cpp)) | **[Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary/)** ([orig sol](../Advanced_Graphs/reconstruct_itinerary.cpp)) |
 | **28<sup>th</sup> June 2024** | -- | -- |
 | **27<sup>th</sup> June 2024** | **[Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/)** ([orig sol](../Bit_Manipulation/sum_of_two_integers.cpp)) | **[Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences/)** ([orig sol](../2D_Dynamic_Programming/distinct_subseq.cpp)) |

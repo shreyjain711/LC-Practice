@@ -105,37 +105,6 @@
 ### [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/):
 - ***Problem Desc***: find substring in s that has all chars of str t
 - ***Brute [O(n<sup>3</sup>) time | O(1) space]***: try every substring for every char count match
-- ***track nums of charCounts that curr window has and shrink or grow as per haves vs needs[O(n) time | O(1) space]***:
-  - hashmap to track letters in t (not vector as that doesn't tell if a letter existed or not
-  - size of map = needed; init haves = 0
-  - track minLen and start point (don't save string it will exceed memory if too long)
-  - start i, j from 0
-    - if haves == needed then shrink
-      - if curr j ptr's char in map, upadte counter and if counter turned negative then one need unmet so haves--
-    - else
-      - if i's char in map and on incrementing counter its value hits 0 then a need met and haves++
-    - check again if haves==needed and minLen > currLen
-      - set minLen and start vals
-  ```cpp
-  string minWindow(string s, string t) {
-      unordered_map<char, int> ctr;
-      for (auto i: t) ctr[i]--;
-      int haves = 0, needed = ctr.size(), minLen = s.length()+1, start = -1;
-      for (int i = 0, j = 0; i<s.size() || haves == needed; ) {
-          if (haves == needed) { // shrink
-              if (ctr.find(s[j]) != ctr.end()) {
-                  ctr[s[j]]--; if (ctr[s[j]] < 0) haves--;
-              } j++;
-          } else {
-              if (ctr.find(s[i]) != ctr.end()) {
-                  ctr[s[i]]++; if (ctr[s[i]] == 0) haves++;
-              } i++;
-          }
-          if (haves == needed && minLen > i-j) {minLen = i-j; start = j;}
-      }
-      return (start!=-1) ? s.substr(start, minLen) : "";
-  }
-  ```
 - ***make counter(t); t.len = need; go over s, decr need if j's count>0; subtr counter for j (make neg); when !counter, move i till can, incr counter if c[i]>0 i.e. in t[O(n) time | O(1) space]***:
   ```cpp
   string minWindow(string s, string t) {
@@ -152,6 +121,28 @@
               i++;
           }
       } return (minLen<=n) ? s.substr(minStart, minLen) : "";
+  }
+  ```
+- ***track nums of charCounts that curr window has and shrink or grow as per haves vs needs[O(n) time | O(1) space]***:
+  - hashmap to track letters in t (not vector as that doesn't tell if a letter existed or not
+  - size of map = needed; 
+  - track minLen and start point (don't save string it will exceed memory if too long)
+  - start i, j from 0
+    - if needed != 0 then expand -> reduce count of curr char..
+      - if post reduction == 0 then one needed char achieved so needed--
+    - else shrink and inc count of l pointer char
+      - if l char count ==1 i.e. one needed char's count no longer enough
+    - check if needed==0 and minLen > currLen
+      - set minLen and start vals
+  ```cpp
+  string minWindow(string s, string t) {
+      unordered_map<char, int> ct; for (char c:t) ct[c]++;
+      int needed = ct.size(), l=0, r=0, start = 0, minLen = INT_MAX;
+      while (r<=s.size()) {
+          if (needed) {ct[s[r]]--; if (!ct[s[r++]]) needed--;}
+          else {ct[s[l]]++; if (ct[s[l++]]==1) needed++;}
+          if (!needed && r-l < minLen) {minLen = r-l; start = l;}
+      } return minLen==INT_MAX? "" : s.substr(start, minLen);
   }
   ```
 

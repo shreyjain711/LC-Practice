@@ -3,6 +3,9 @@
 | Date | Daily Problem 1 | Daily Problem 2 |
 | ---- | ---- | ---- |
 | **XX<sup>th</sup> July 2024** | **[)** ([orig sol](../)) | **[)** ([orig sol](../)) |
+| **08<sup>th</sup> July 2024** | **[Find Minimum In Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)** ([orig sol](../Binary_Search/min_in_rotated_arr.cpp)) | **[Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/)** ([orig sol](../Bit_Manipulation/sum_of_two_integers.cpp)) |
+| **07<sup>th</sup> July 2024** | -- | -- |
+| **06<sup>th</sup> July 2024** | -- | -- |
 | **05<sup>th</sup> July 2024** | **[Permutations](https://leetcode.com/problems/permutations/)** ([orig sol](../Backtracking/permutations.cpp)) | **[Multiply Strings](https://leetcode.com/problems/multiply-strings/)** ([orig sol](../Math_And_Geometry/multiply_strings.cpp)) |
 | **04<sup>th</sup> July 2024** | **[N Queens](https://leetcode.com/problems/n-queens/)** ([orig sol](../Backtracking/n_queens.cpp)) | **[Best Time to Buy And Sell Stock With Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/)** ([orig sol](../2D_Dynamic_Programming/buy_sell_cooldown.cpp)) |
 | **03<sup>rd</sup> July 2024** | **[Interleaving String](https://leetcode.com/problems/interleaving-string/)** ([orig sol](../2D_Dynamic_Programming/interleaving_strings.cpp)) | **[Reverse Nodes in K-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/)** ([orig sol](../Linked_List/reverse-k-grp-ll.cpp)) |

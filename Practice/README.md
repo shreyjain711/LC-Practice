@@ -3,6 +3,10 @@
 | Date | Daily Problem 1 | Daily Problem 2 |
 | ---- | ---- | ---- |
 | **XX<sup>th</sup> July 2024** | **[)** ([orig sol](../)) | **[)** ([orig sol](../)) |
+| **13<sup>th</sup> July 2024** | **[Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum)** ([orig sol](../Sliding_Window/sliding_window_max.cpp)) | **[Kth Largest Element In An Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)** ([orig sol](../Heap_Priority_Queue/kth_largest.cpp)) |
+| **12<sup>th</sup> July 2024** | -- | -- |
+| **11<sup>th</sup> July 2024** | -- | -- |
+| **10<sup>th</sup> July 2024** | -- | -- |
 | **09<sup>th</sup> July 2024** | **[Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)** ([orig sol](../Sliding_Window/min_window_substr.cpp)) | **[Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops/)** ([orig sol](../Advanced_Graphs/cheapest_flights_k_stops.cpp)) |
 | **08<sup>th</sup> July 2024** | **[Find Minimum In Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)** ([orig sol](../Binary_Search/min_in_rotated_arr.cpp)) | **[Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/)** ([orig sol](../Bit_Manipulation/sum_of_two_integers.cpp)) |
 | **07<sup>th</sup> July 2024** | -- | -- |

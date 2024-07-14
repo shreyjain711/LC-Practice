@@ -3,6 +3,7 @@
 | Date | Daily Problem 1 | Daily Problem 2 |
 | ---- | ---- | ---- |
 | **XX<sup>th</sup> July 2024** | **[)** ([orig sol](../)) | **[)** ([orig sol](../)) |
+| **14<sup>th</sup> July 2024** | **[Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/)** ([orig sol](../2D_Dynamic_Programming/regex_matching.cpp)) | **[N Queens](https://leetcode.com/problems/n-queens/)** ([orig sol](../Backtracking/n_queens.cpp)) |
 | **13<sup>th</sup> July 2024** | **[Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum)** ([orig sol](../Sliding_Window/sliding_window_max.cpp)) | **[Kth Largest Element In An Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)** ([orig sol](../Heap_Priority_Queue/kth_largest.cpp)) |
 | **12<sup>th</sup> July 2024** | -- | -- |
 | **11<sup>th</sup> July 2024** | -- | -- |

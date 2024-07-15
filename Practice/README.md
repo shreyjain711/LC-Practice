@@ -3,6 +3,7 @@
 | Date | Daily Problem 1 | Daily Problem 2 |
 | ---- | ---- | ---- |
 | **XX<sup>th</sup> July 2024** | **[)** ([orig sol](../)) | **[)** ([orig sol](../)) |
+| **15<sup>th</sup> July 2024** | **[Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary/)** ([orig sol](../Advanced_Graphs/reconstruct_itinerary.cpp)) | **[Reverse Nodes in K-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/)** ([orig sol](../Linked_List/reverse-k-grp-ll.cpp)) |
 | **14<sup>th</sup> July 2024** | **[Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/)** ([orig sol](../2D_Dynamic_Programming/regex_matching.cpp)) | **[N Queens](https://leetcode.com/problems/n-queens/)** ([orig sol](../Backtracking/n_queens.cpp)) |
 | **13<sup>th</sup> July 2024** | **[Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum)** ([orig sol](../Sliding_Window/sliding_window_max.cpp)) | **[Kth Largest Element In An Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)** ([orig sol](../Heap_Priority_Queue/kth_largest.cpp)) |
 | **12<sup>th</sup> July 2024** | -- | -- |

@@ -3,7 +3,14 @@
 | Date | Daily Problem 1 | Daily Problem 2 |
 | ---- | ---- | ---- |
 | **XX<sup>th</sup> July 2024** | **[)** ([orig sol](../)) | **[)** ([orig sol](../)) |
-| **XX<sup>th</sup> July 2024** | **[Interleaving String](https://leetcode.com/problems/interleaving-string/)** ([orig sol](../2D_Dynamic_Programming/interleaving_strings.cpp)) | **[Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)** ([orig sol](../Binary_Search/median_two_sorted_arr.cpp)) |
+| **24<sup>th</sup> July 2024** | **[Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/)** ([orig sol](../https://github.com/shreyjain711/LC-Practice/blob/20240724-practice/Sliding_Window/longest_repeating_char_replacement.cpp)) | **[Minimum Interval to Include Each Query](https://leetcode.com/problems/minimum-interval-to-include-each-query/)** ([orig sol](../https://github.com/shreyjain711/LC-Practice/blob/20240724-practice/Intervals/min_interval_query.cpp)) |
+| **23<sup>th</sup> July 2024** | -- | -- |
+| **22<sup>th</sup> July 2024** | -- | -- |
+| **21<sup>th</sup> July 2024** | -- | -- |
+| **20<sup>th</sup> July 2024** | -- | -- |
+| **19<sup>th</sup> July 2024** | -- | -- |
+| **18<sup>th</sup> July 2024** | -- | -- |
+| **17<sup>th</sup> July 2024** | **[Interleaving String](https://leetcode.com/problems/interleaving-string/)** ([orig sol](../2D_Dynamic_Programming/interleaving_strings.cpp)) | **[Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)** ([orig sol](../Binary_Search/median_two_sorted_arr.cpp)) |
 | **16<sup>th</sup> July 2024** | -- | -- |
 | **15<sup>th</sup> July 2024** | **[Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary/)** ([orig sol](../Advanced_Graphs/reconstruct_itinerary.cpp)) | **[Reverse Nodes in K-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/)** ([orig sol](../Linked_List/reverse-k-grp-ll.cpp)) |
 | **14<sup>th</sup> July 2024** | **[Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/)** ([orig sol](../2D_Dynamic_Programming/regex_matching.cpp)) | **[N Queens](https://leetcode.com/problems/n-queens/)** ([orig sol](../Backtracking/n_queens.cpp)) |

@@ -3,6 +3,7 @@
 | Date | Daily Problem 1 | Daily Problem 2 |
 | ---- | ---- | ---- |
 | **XX<sup>th</sup> July 2024** | **[)** ([orig sol](../)) | **[)** ([orig sol](../)) |
+| **25<sup>th</sup> July 2024** | **[Largest Rectangle In Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/)** ([orig sol](../stack/largest_rect_in_histogram.cpp)) | **[Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences/)** ([orig sol](../2D_Dynamic_Programming/distinct_subseq.cpp)) |
 | **24<sup>th</sup> July 2024** | **[Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/)** ([orig sol](../https://github.com/shreyjain711/LC-Practice/blob/20240724-practice/Sliding_Window/longest_repeating_char_replacement.cpp)) | **[Minimum Interval to Include Each Query](https://leetcode.com/problems/minimum-interval-to-include-each-query/)** ([orig sol](../https://github.com/shreyjain711/LC-Practice/blob/20240724-practice/Intervals/min_interval_query.cpp)) |
 | **23<sup>th</sup> July 2024** | -- | -- |
 | **22<sup>th</sup> July 2024** | -- | -- |

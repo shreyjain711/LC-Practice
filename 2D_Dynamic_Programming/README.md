@@ -218,10 +218,7 @@
       return dfs(0, 0, s, t, dp);
   }
   ```
-- ***For incr len of t, we keep going over s; we store for curr len of t and prev; c[i] = c[i-1], if s[i]==t[j] then +p[i-1] [O(s.t) time | O(s.t) space]***
-  - c[i] = c[i-1] -> dp[si][ti] = dp[si+1][ti] i.e. if I could form X subseq till the prev char in s then the current non-matching char will keep the count same
-  - if the current char of s is matching the curr last char of t then using this char,
-    - we can have successful subseqs that'll be equal to the num possible without the curr chars, i.e. p[i-1]
+- ***dp[i][j] = dp[i-1][j] + if s[i-1]==t[j-1] then +dp[i-1][j-1] [O(s.t) time | O(s.t) space]***: incr s' len and each time val can be as much as it was with s-1 and t or if last char of both match then s-1, t-1 too
   ```cpp
   int numDistinct(string s, string t) {
       int m=s.size(), n=t.size(); vector<int> curr(m+1), prev(m+1, 1);

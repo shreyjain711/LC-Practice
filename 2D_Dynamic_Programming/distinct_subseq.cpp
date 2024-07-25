@@ -16,18 +16,13 @@ int numDistinct(string s, string t) {
     return dfs(0, 0, s, t, dp);
 }
 
-/*
-***For incr len of t, we keep going over s; we store for curr len of t and prev; c[i] = c[i-1], if s[i]==t[j] then +p[i-1] [O(s.t) time | O(s.t) space]***
-  - c[i] = c[i-1] -> dp[si][ti] = dp[si+1][ti] i.e. if I could form X subseq till the prev char in s then the current non-matching char will keep the count same
-  - if the current char of s is matching the curr last char of t then using this char,
-    - we can have successful subseqs that'll be equal to the num possible without the curr chars, i.e. p[i-1]
-*/
+// ***dp[i][j] = dp[i-1][j] + if s[i-1]==t[j-1] then +dp[i-1][j-1] [O(s.t) time | O(s.t) space]***: incr s' len and each time val can be as much as it was with s-1 and t or if last char of both match then s-1, t-1 too
 int numDistinct(string s, string t) {
-    int m=s.size(), n=t.size(); vector<int> curr(m+1), prev(m+1, 1);
-    for (int j=1; j<=n; ++j) {
-        for (int i=1; i<=m; ++i) {
-            curr[i] = curr[i-1]%(int)1e9 + (s[i-1]==t[j-1] ? prev[i-1]%(int)1e9 : 0);
-        } prev = curr;
-    }
-    return curr[m];
+    int m=s.size(), n=t.size(); vector<vector<int>> dp(m+1, vector<int>(n+1, 0));
+    // return helper(0, 0, s, t, dp);
+    for (int i=0; i<=m; i++) dp[i][0]=1;
+    for (int i=1; i<=m; i++) 
+        for (int j=1; j<=n; j++) 
+            dp[i][j] = (dp[i-1][j] + (s[i-1]==t[j-1] ? dp[i-1][j-1] : 0)) % ((int)1e9+7);
+    return dp[m][n];
 }

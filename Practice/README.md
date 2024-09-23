@@ -2,8 +2,11 @@
 
 | Date | Daily Problem 1 | Daily Problem 2 |
 | ---- | ---- | ---- |
-| **XX<sup>th</sup> July 2024** | **[)** ([orig sol](../)) | **[)** ([orig sol](../)) |
-| **XX<sup>th</sup> July 2024** | **[Valid Parenthesis String](https://leetcode.com/problems/valid-parenthesis-string/)** ([orig sol](../Greedy/valid_parenthesis_string.cpp)) | **[Find Minimum In Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)** ([orig sol](../Binary_Search/min_in_rotated_arr.cpp)) |
+| **XX<sup>th</sup> Sep 2024** | **[)** ([orig sol](../)) | **[)** ([orig sol](../)) |
+| **23<sup>th</sup> Sep 2024** | **[Number of Flowers in Full Bloom)** ([orig sol](../Misc/flowers_full_bloom.cpp)) | -- |
+| **22<sup>th</sup> Sep 2024** | ZipRecruiterOA | ZipRecruiterOA |
+| **29<sup>th</sup> Jul to 21<sup>st</sup>Sep 2024** | break | break |
+| **28<sup>th</sup> July 2024** | **[Valid Parenthesis String](https://leetcode.com/problems/valid-parenthesis-string/)** ([orig sol](../Greedy/valid_parenthesis_string.cpp)) | **[Find Minimum In Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)** ([orig sol](../Binary_Search/min_in_rotated_arr.cpp)) |
 | **XX<sup>th</sup> July 2024** | SIG OA | SIG OA |
 | **26<sup>th</sup> July 2024** | **[Permutations](https://leetcode.com/problems/permutations/)** ([orig sol](../Backtracking/permutations.cpp)) | **[Swim In Rising Water](https://leetcode.com/problems/swim-in-rising-water/)** ([orig sol](../Advanced_Graphs/swim_rising_in_water.cpp)) |
 | **25<sup>th</sup> July 2024** | **[Largest Rectangle In Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/)** ([orig sol](../stack/largest_rect_in_histogram.cpp)) | **[Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences/)** ([orig sol](../2D_Dynamic_Programming/distinct_subseq.cpp)) |

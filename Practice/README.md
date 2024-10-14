@@ -2,7 +2,9 @@
 
 | Date | Daily Problem 1 | Daily Problem 2 |
 | ---- | ---- | ---- |
-| **XX<sup>th</sup> Sep 2024** | **[)** ([orig sol](../)) | **[)** ([orig sol](../)) |
+| **XX<sup>th</sup> Oct 2024** | **[)** ([orig sol](../)) | **[)** ([orig sol](../)) |
+| **14<sup>th</sup> Oct 2024** | **[Min Cost to Connect All Points](https://leetcode.com/problems/min-cost-to-connect-all-points/)** ([orig sol](../Advanced_Graphs/min_cost_connect_all.cpp)) | **[Best Time to Buy And Sell Stock With Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/)** ([orig sol](../2D_Dynamic_Programming/buy_sell_cooldown.cpp)) |
+| **24<sup>th</sup> Sep to 13<sup>th</sup>Oct 2024** | break | break |
 | **23<sup>th</sup> Sep 2024** | **[Number of Flowers in Full Bloom](https://leetcode.com/problems/number-of-flowers-in-full-bloom/)** ([orig sol](../Misc/flowers_full_bloom.cpp)) | -- |
 | **22<sup>th</sup> Sep 2024** | ZipRecruiterOA | ZipRecruiterOA |
 | **29<sup>th</sup> Jul to 21<sup>st</sup>Sep 2024** | break | break |

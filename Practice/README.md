@@ -2,7 +2,8 @@
 
 | Date | Daily Problem 1 | Daily Problem 2 |
 | ---- | ---- | ---- |
-| **XX<sup>th</sup> Oct 2024** | **[)** ([orig sol](../)) | **[)** ([orig sol](../)) |
+| **XX<sup>th</sup> Oct 2024** | **[)** ([orig sol](../)) | **[)** ([orig sol](../)) | 
+| **15<sup>th</sup> Oct 2024** | **[Search In Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)** ([orig sol](../Binary_Search/README.md)) | **[Combination Sum II](https://leetcode.com/problems/combination-sum-ii/)** ([orig sol](../Backtracking/combination_sum_ii.cpp)) |
 | **14<sup>th</sup> Oct 2024** | **[Min Cost to Connect All Points](https://leetcode.com/problems/min-cost-to-connect-all-points/)** ([orig sol](../Advanced_Graphs/min_cost_connect_all.cpp)) | **[Best Time to Buy And Sell Stock With Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/)** ([orig sol](../2D_Dynamic_Programming/buy_sell_cooldown.cpp)) |
 | **24<sup>th</sup> Sep to 13<sup>th</sup>Oct 2024** | break | break |
 | **23<sup>th</sup> Sep 2024** | **[Number of Flowers in Full Bloom](https://leetcode.com/problems/number-of-flowers-in-full-bloom/)** ([orig sol](../Misc/flowers_full_bloom.cpp)) | -- |

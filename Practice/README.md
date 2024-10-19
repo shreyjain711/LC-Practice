@@ -3,6 +3,7 @@
 | Date | Daily Problem 1 | Daily Problem 2 |
 | ---- | ---- | ---- |
 | **XX<sup>th</sup> Oct 2024** | **[)** ([orig sol](../)) | **[)** ([orig sol](../)) | 
+| **19<sup>th</sup> Oct 2024** | **[Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences/)** ([orig sol](../2D_Dynamic_Programming/distinct_subseq.cpp)) | **[Jump Game II](https://leetcode.com/problems/jump-game-ii/)** ([orig sol](../Greedy/jump_game_ii.cpp)) | 
 | **18<sup>th</sup> Oct 2024** | **[Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)** ([orig sol](../Greedy/max_subarr.cpp)) | **[Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/)** ([orig sol](../Sliding_Window/longest_repeating_char_replacement.cpp)) | 
 | **17<sup>th</sup> Oct 2024** | -- | -- | 
 | **16<sup>th</sup> Oct 2024** | -- | -- |

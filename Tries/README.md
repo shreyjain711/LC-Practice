@@ -93,7 +93,7 @@
 
 ### [Word Search II](https://leetcode.com/problems/word-search-ii/):
 - ***Problem Desc***: given crossword board and a list of words, tell what all words exist in board
-- ***make trie with word list, iterate over board, dfs when the letter in trie and dfs till following letters in trie [O(m.n + numStr.strLen) time | O(numStr.StrLen) space]***:
+- ***make trie with word list, iterate over board, dfs when the letter in trie and dfs till following letters in trie [O(m.n.strLen + numStr.strLen) time | O(numStr.StrLen) space]***:
   ```cpp
   struct TrieNode {
       string endingHere; TrieNode *edges[26];

@@ -70,23 +70,22 @@
   ```cpp
   int change(int amount, vector<int>& coins) {
       sort(begin(coins), end(coins));
-      int n = coins.size(), dp[n][amount+1]; memset(dp, 0, sizeof dp); 
+      long long n = coins.size(), dp[n][amount+1]; memset(dp, 0, sizeof dp); 
       for (int i=0; i<n; ++i) dp[i][0] = 1;
       for (int i=coins[0]; i<=amount; i+=coins[0]) dp[0][i] = 1;
       for (int c=1; c<n; c++) 
           for(int i=0; i<=amount; ++i) 
-              dp[c][i] = dp[c-1][i] + ((i-coins[c]>=0) ? dp[c][i-coins[c]] : 0);
+              dp[c][i] = (dp[c-1][i] + ((i-coins[c]>=0) ? dp[c][i-coins[c]] : 0)) % INT_MAX;
       return dp[n-1][amount];
   }
   ```
 - ***Use a 1D array of amount+1 len, don't need to add the numWays till i-1 coin, just add dp[j-coins[i]] if j-coin[i] is +ve [O(c.amount) time | O(amount) space]***:
   ```cpp
   int change(int amount, vector<int>& coins) {
-      sort(begin(coins), end(coins));
-      int n = coins.size(), dp[amount+1]; memset(dp, 0, sizeof dp); dp[0] = 1;
+      long long n = coins.size(), dp[amount+1]; memset(dp, 0, sizeof dp); dp[0] = 1;
       for (int c=0; c<n; c++) 
           for(int i=0; i<=amount; ++i) 
-              dp[i] += ((i-coins[c]>=0) ? dp[i-coins[c]] : 0);
+              dp[i] += ((i-coins[c]>=0) ? dp[i-coins[c]] : 0) % INT_MAX;
       return dp[amount];
   }
   ```

@@ -3,6 +3,7 @@
 | Date | Daily Problem 1 | Daily Problem 2 |
 | ---- | ---- | ---- |
 | **XX<sup>th</sup> Oct 2024** | **[)** ([orig sol](../)) | **[)** ([orig sol](../)) | 
+| **22<sup>nd</sup> Oct 2024** | **[Word Break](https://leetcode.com/problems/word-break/)** ([orig sol](../1D_Dynamic_Programming/word_break.cpp)) | **[Detect Squares](https://leetcode.com/problems/detect-squares/)** ([orig sol](../Math_And_Geometry/detect_squares.cpp)) | 
 | **21<sup>st</sup> Oct 2024** | **[Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)** ([orig sol](../1D_Dynamic_Programming/longest_palindromic_substr.cpp)) | **[Coin Change II](https://leetcode.com/problems/coin-change-ii/)** ([orig sol](../2D_Dynamic_Programming/coin_change_ii.cpp)) | 
 | **20<sup>th</sup> Oct 2024** | **[Coin Change](https://leetcode.com/problems/coin-change/)** ([orig sol](../1D_Dynamic_Programming/coin_change.cpp)) | **[Word Search II](https://leetcode.com/problems/word-search-ii/)** ([orig sol](../Tries/word_search_ii.cpp)) | 
 | **19<sup>th</sup> Oct 2024** | **[Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences/)** ([orig sol](../2D_Dynamic_Programming/distinct_subseq.cpp)) | **[Jump Game II](https://leetcode.com/problems/jump-game-ii/)** ([orig sol](../Greedy/jump_game_ii.cpp)) | 

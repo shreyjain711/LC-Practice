@@ -3,6 +3,8 @@
 | Date | Daily Problem 1 | Daily Problem 2 |
 | ---- | ---- | ---- |
 | **XX<sup>th</sup> Oct 2024** | **[)** ([orig sol](../)) | **[)** ([orig sol](../)) |
+| **26<sup>th</sup> Oct 2024** | **[Subsets](https://leetcode.com/problems/subsets/)** ([orig sol](../Backtracking/subsets.cpp)) | **[Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)** ([orig sol](../Trees/LCA_BST.cpp)) |
+| **25<sup>th</sup> Oct 2024** | **Snowflake OA** | **Snowflake OA** |
 | **24<sup>th</sup> Oct 2024** | **[N Queens](https://leetcode.com/problems/n-queens/)** ([orig sol](../Backtracking/n_queens.cpp)) | **[Non Overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/)** ([orig sol](../Intervals/non_overlapping_intervals.cpp)) |
 | **23<sup>rd</sup> Oct 2024** | **[TiTo OA](../Practice/20241023.md)** | **[TiTo OA](../Practice/20241023.md)** |
 | **22<sup>nd</sup> Oct 2024** | **[Word Break](https://leetcode.com/problems/word-break/)** ([orig sol](../1D_Dynamic_Programming/word_break.cpp)) | **[Detect Squares](https://leetcode.com/problems/detect-squares/)** ([orig sol](../Math_And_Geometry/detect_squares.cpp)) | 

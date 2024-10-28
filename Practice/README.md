@@ -3,6 +3,8 @@
 | Date | Daily Problem 1 | Daily Problem 2 |
 | ---- | ---- | ---- |
 | **XX<sup>th</sup> Oct 2024** | **[)** ([orig sol](../)) | **[)** ([orig sol](../)) |
+| **XX<sup>th</sup> Oct 2024** | **[Hand of Straights](https://leetcode.com/problems/hand-of-straights/)** ([orig sol](../Greedy/hands_of_straights.cpp)) | **[Word Ladder](https://leetcode.com/problems/word-ladder/)** ([orig sol](../Graphs/word_ladder.cpp)) |
+| **27<sup>th</sup> Oct 2024** | break | break |
 | **26<sup>th</sup> Oct 2024** | **[Subsets](https://leetcode.com/problems/subsets/)** ([orig sol](../Backtracking/subsets.cpp)) | **[Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)** ([orig sol](../Trees/LCA_BST.cpp)) |
 | **25<sup>th</sup> Oct 2024** | **Snowflake OA** | **Snowflake OA** |
 | **24<sup>th</sup> Oct 2024** | **[N Queens](https://leetcode.com/problems/n-queens/)** ([orig sol](../Backtracking/n_queens.cpp)) | **[Non Overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/)** ([orig sol](../Intervals/non_overlapping_intervals.cpp)) |

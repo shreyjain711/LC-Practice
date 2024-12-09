@@ -3,28 +3,28 @@
 ### Problems For Revision
 
 1. Arrays and Hashing
-   - [Top K Frequent Elems](https://github.com/shreyjain711/LC-Practice/blob/main/Arrays%20and%20Hashing/top_k_freq.cpp)
+   - [Top K Frequent Elems](Arrays_And_Hashing/top_k_freq.cpp)
      - learn about heap and custom comparator
-   - [Longest Consecutive Sequence (if arr sorted)](https://github.com/shreyjain711/LC-Practice/blob/main/Arrays%20and%20Hashing/longest_consec_seq_if_sorted.cpp)
+   - [Longest Consecutive Sequence (if arr sorted)](Arrays_And_Hashing/longest_consec_seq_if_sorted.cpp)
      - hashmap, iterate and eval sequences from elems that don't have an elem-1 in arr
 2. Two Pointers
-   - [3Sum](https://github.com/shreyjain711/LC-Practice/blob/main/Two%20Pointers/3sum.cpp)
+   - [3Sum](Two_Pointers/3sum.cpp)
       - sort, pick first, other two with two ptr approach
-   - [Trapping rain water](https://github.com/shreyjain711/LC-Practice/blob/main/Two%20Pointers/trapping_rain_water.cpp)
+   - [Trapping rain water](Two_Pointers/trapping_rain_water.cpp)
       - don't need to calc maxLeft and right for all, go with two ptr approach
 3. Linked Lists
    - Notes:
       - for cycle start slow and fast pointers taking 1 step (starting from node 0)
       - for finding cycle point, start slow from 0 and fast from where first collision happened; move only one step at a time
-   - [LRU Cache](https://leetcode.com/problems/lru-cache/):
+   - [LRU Cache](Linked_List/lru_cache.cpp):
       - doubleLL with node also storing key, val
       - a map of key->doubleLL
       - also maintain *head, *tail, size and capacity
-   - [Reverse Nodes In K Group](https://leetcode.com/problems/reverse-nodes-in-k-group/):
+   - [Reverse Nodes In K Group](Linked_List/reverse-k-grp-ll.cpp):
       - iterative: check k nodes exist, reverse, repeat on next; store the prevTail (tail of LL till now) and currHead
       - recursive: check k or more nodes exist, reverse, pass last recursively to next function
 4. Stacks
-   - [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/):
+   - [Generate Parentheses](stack/gen_parentheses.cpp):
       - recursively call a helper, acc to num of open brackets, make further calls
          - if numOpen == numClose
             - if == n: insert in ans arr
@@ -33,25 +33,25 @@
             - if numOpen < n: insert a '(' and add to temp
             - insert a ')' and add to temp
       - iterative: use stacks, iterate on each n, like its BFS
-   - [Largest Rectangle In Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/):
+   - [Largest Rectangle In Histogram](stack/largest_rect_in_histogram.cpp):
       - find indexes where the element's left and right smaller heights exist, dis b/w these * the height of the bar across the arr gives max
       - approach 2:
          - stack stores (height, index) pairs -> the pair indicates a rectangle of height h can be formed from index i
          - pop from stack when the top has a higher height, push in the curr height and the index would be that of the last rectangle evicted from the stack or that of the elem itself
          - trick: to avoid special while loop at end, add a 0 element to heights
 5. Binary Search
-   - [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/):
+   - [Find Minimum in Rotated Sorted Array](Binary_Search/min_in_rotated_arr.cpp):
       - keep checking mid for min and keep going towards the side that's broken
          - could be lo > mid (if left side has break)
          - OR mid > high (if right side has break)
-   - [Search In Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/):
+   - [Search In Rotated Sorted Array](Binary_Search/search_in_rotated_arr.cpp):
       - check if mid is target
       - check if left side is correctly sorted (lo < mid)
          - if target in range lo to mid, move to that
          - else move to mid+1..high range
       - else (right side is sorted)
          - if target in mid...high, move to it, else move to left half
-   - [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/):
+   - [Median of Two Sorted Arrays](Binary_Search/median_two_sorted_arr.cpp):
       - make sure arr1 is not longer than arr2, median element numbering goes wrong otherwise
       - find mid of arr1, then corresponding ```mid for arr2 = (l1+l2+1)/2 - m1```
       - set points m1-1, m1 on arr1 and m2-1,m2 on arr2
@@ -61,12 +61,12 @@
          - if ```l1+l2 = odd``` median is max of the left halves (m1-1 or m2-1) else
          - else ```avg of max(m1-1, m2-1) and min(m1,m2)```
 6. Sliding Window
-   - [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/):
+   - [Longest Repeating Character Replacement](Sliding_Window/longest_repeating_char_replacement.cpp):
       - grow window till condition met, move along if not met, grow when met again
       - optimisations/tricks:
          - no need to find elem with maxCount, the elem being inserted in window is the only contender
          - move window when conditions not met, i.e. no need to shrink with a while loop, just remove one char from front since once added to back
-   - [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/):
+   - [Minimum Window Substring](Sliding_Window/min_window_substr.cpp):
       - track nums of charCounts that curr window has and shrink or grow as per haves vs needs
       - optimisations/tricks:
          - hashmap to track elems in t str
@@ -75,32 +75,32 @@
             - if ```haves == needs```, remove first letter of window, check if that violated a have met, then haves--
             - else, add one more letter to window, check if adding makes a have met, then have++
          - if after window setting, ```haves == needs``` and curr len < curr min len, set start and len values
-   - [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/):
+   - [Sliding Window Maximum](Sliding_Window/sliding_window_max.cpp):
       - maintain a deque, front maintains the max elem in curr window, back maintains the decreasing order
       - firstly, pop from back till the back is < curr elem
       - then push index
       - then if front has an elem from previous iter that's no longer in the window then remove it
       - then front has the ans value for current window
 7. Trees
-   - [Construct Binary Tree From Preorder And Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/):
+   - [Construct Binary Tree From Preorder And Inorder Traversal](Trees/tree_from_pre_inorder.cpp):
       - go one by one on the preorder array to find the node to be made
       - split the inorder at the index where current node val found
-   - [Serialize And Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/):
+   - [Serialize And Deserialize Binary Tree](Trees/serialize_deserialize_trees.cpp):
      - use of [o|i]stringstream -> put in strings in an order and get them out in the same one as well.. essentially like an array of strings
      - preorder push into an ostringstream and then get its str for serialization
      - put the string into istringstream for splitting by space, make the nodes in a preorder manner too (works as no recur call made if null denoting char detected in string)
 8. Backtracking
-   - [Permutations](https://leetcode.com/problems/permutations/):
+   - [Permutations](Backtracking/permutations.cpp):
       - while backtracking, swap the elements on the curr index i in the recursive call and the jth pointer
          - jth pointer goes from i to end of list
       - swap, then recur call, then swap back
-   - [Combination Sum II](https://leetcode.com/problems/combination-sum-ii/):
+   - [Combination Sum II](Backtracking/combination_sum_ii.cpp):
       - sort the array and avoid recursive calling on elements if they're the same as the previous
-   - [Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/):
+   - [Palindrome Partitioning](Backtracking/palindrome_partitioning.cpp):
       - take brute approach, start taking substr of increasing length from the starting and if it is a palindrome (validate every time), call recursively on the remaining string
    - remember to not ignore the brute approach in such questions
 9. Heaps Priority Queue
-   - [Kth Largest Element In An Array](https://leetcode.com/problems/kth-largest-element-in-an-array/):
+   - [Kth Largest Element In An Array](Heap_Priority_Queue/kth_largest.cpp):
       - sort and pick
       - make it into a max heap, pop k-1 times, top is ans
       - min heap of size k, top is the ans, push all elem one by one while maintaining size
@@ -112,7 +112,7 @@
             - if that pos is > n-k then ans must be in this left half
             - if < n-k then in right half
             - else the pivot is the ans
-   - [Task Scheduler](https://leetcode.com/problems/task-scheduler/):
+   - [Task Scheduler](Heap_Priority_Queue/tasks_scheduler.cpp):
       - algorithmic approach:
          - ignore the diff elem type, treat them just as per their count
          - must get done with the largest count first (since that defines how many n+1 sized buckets will be formed) so a max PQ of the counts needed
@@ -121,7 +121,7 @@
          - since maxFreq of a task will be the one creating buckets of n+1 size so ans will be ```max ((maxFreq-1)*(n+1) + (number of tasks with freq = maxFreq)   ,   total count of tasks)``` 
          - maxFreq-1 as that many full buckets will be formed and the subsequent bucket size will be the number of tasks with freq = max freq
          - if n isn't too high then tasks.size() will dictate the total time needed so we check for its max
-   - [Find Median From Data Stream](https://leetcode.com/problems/find-median-from-data-stream/):
+   - [Find Median From Data Stream](Heap_Priority_Queue/median_from_stream.cpp):
       - keep a maxPQ (left half) and minPQ (right half), check which side the elem belongs based on the maxPQ's top (if less than equal it then to left half else right half)
       - rebalance post pushing, keep maxPQ shouldb't be < minPQ and maxPQ shouldn't be > minPQ+1
       - return median as avg of both PQs' top or the maxPQ top

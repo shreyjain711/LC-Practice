@@ -2,7 +2,9 @@
 
 | Date | Daily Problem 1 | Daily Problem 2 |
 | ---- | ---- | ---- |
-| **XX<sup>th</sup> Oct 2024** | **[)** ([orig sol](../)) | **[)** ([orig sol](../)) |
+| **XX<sup>th</sup> May 2025** | **[)** ([orig sol](../)) | **[)** ([orig sol](../)) |
+| **14<sup>th</sup> May 2025** | **[Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)** ([orig sol](../Linked_List/merge_k_ll.cpp)) | **[Valid Parenthesis String](https://leetcode.com/problems/valid-parenthesis-string/)** ([orig sol](../Greedy/valid_parenthesis_string.cpp)) |
+| **Oct 2024 - May 2025** | **Secured SDE and MLE interns 🥳** | **Got research role too!** |
 | **XX<sup>th</sup> Oct 2024** | **[Hand of Straights](https://leetcode.com/problems/hand-of-straights/)** ([orig sol](../Greedy/hands_of_straights.cpp)) | **[Word Ladder](https://leetcode.com/problems/word-ladder/)** ([orig sol](../Graphs/word_ladder.cpp)) |
 | **27<sup>th</sup> Oct 2024** | break | break |
 | **26<sup>th</sup> Oct 2024** | **[Subsets](https://leetcode.com/problems/subsets/)** ([orig sol](../Backtracking/subsets.cpp)) | **[Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)** ([orig sol](../Trees/LCA_BST.cpp)) |

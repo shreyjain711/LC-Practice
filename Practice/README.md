@@ -2,7 +2,14 @@
 
 | Date | Daily Problem 1 | Daily Problem 2 |
 | ---- | ---- | ---- |
-| **XX<sup>th</sup> May 2025** | **[)** ([orig sol](../)) | **[)** ([orig sol](../)) |
+| **XX<sup>th</sup> May 2025** | **[Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/)** ([orig sol](../Bit_Manipulation/sum_of_two_integers.cpp)) | **[Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/)** ([orig sol](../Graphs/pacific_atlantic_water_flow.cpp)) |
+| **21<sup>st</sup> May 2025** | break | break |
+| **20<sup>th</sup> May 2025** | break | break |
+| **19<sup>th</sup> May 2025** | break | break |
+| **18<sup>th</sup> May 2025** | break | break |
+| **17<sup>th</sup> May 2025** | break | break |
+| **16<sup>th</sup> May 2025** | break | break |
+| **15<sup>th</sup> May 2025** | break | break |
 | **14<sup>th</sup> May 2025** | **[Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)** ([orig sol](../Linked_List/merge_k_ll.cpp)) | **[Valid Parenthesis String](https://leetcode.com/problems/valid-parenthesis-string/)** ([orig sol](../Greedy/valid_parenthesis_string.cpp)) |
 | **Oct 2024 - May 2025** | **Secured SDE and MLE interns 🥳** | **Got research role too!** |
 | **XX<sup>th</sup> Oct 2024** | **[Hand of Straights](https://leetcode.com/problems/hand-of-straights/)** ([orig sol](../Greedy/hands_of_straights.cpp)) | **[Word Ladder](https://leetcode.com/problems/word-ladder/)** ([orig sol](../Graphs/word_ladder.cpp)) |

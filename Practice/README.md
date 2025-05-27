@@ -3,6 +3,10 @@
 | Date | Daily Problem 1 | Daily Problem 2 |
 | ---- | ---- | ---- |
 | **XX<sup>th</sup> May 2025** | **[)** ([orig sol](../)) | **[)** ([orig sol](../)) |
+| **26<sup>th</sup> May 2025** | **[Combination Sum](https://leetcode.com/problems/combination-sum/)** ([orig sol](../Backtracking/combination_sum.cpp)) | **[Alien Dictionary](https://leetcode.com/problems/alien-dictionary/)** ([orig sol](../Advanced_Graphs/alien_dictionary.cpp)) |
+| **25<sup>th</sup> May 2025** | break | break |
+| **24<sup>th</sup> May 2025** | break | break |
+| **23<sup>rd</sup> May 2025** | break | break |
 | **22<sup>nd</sup> May 2025** | **[Find Minimum In Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)** ([orig sol](../Binary_Search/min_in_rotated_arr.cpp)) | **[Best Time to Buy And Sell Stock With Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/)** ([orig sol](../2D_Dynamic_Programming/buy_sell_cooldown.cpp)) |
 | **21<sup>st</sup> May 2025** | **[Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/)** ([orig sol](../Bit_Manipulation/sum_of_two_integers.cpp)) | **[Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/)** ([orig sol](../Graphs/pacific_atlantic_water_flow.cpp)) |
 | **20<sup>th</sup> May 2025** | break | break |

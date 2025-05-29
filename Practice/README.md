@@ -3,6 +3,8 @@
 | Date | Daily Problem 1 | Daily Problem 2 |
 | ---- | ---- | ---- |
 | **XX<sup>th</sup> May 2025** | **[)** ([orig sol](../)) | **[)** ([orig sol](../)) |
+| **28<sup>th</sup> May 2025** | **[Pow(x, n)](https://leetcode.com/problems/powx-n/)** ([orig sol](../Math_And_Geometry/pow_x_n.cpp)) | **[Permutations](https://leetcode.com/problems/permutations/)** ([orig sol](../Backtracking/permutations.cpp)) |
+| **27<sup>th</sup> May 2025** | break | break |
 | **26<sup>th</sup> May 2025** | **[Combination Sum](https://leetcode.com/problems/combination-sum/)** ([orig sol](../Backtracking/combination_sum.cpp)) | **[Alien Dictionary](https://leetcode.com/problems/alien-dictionary/)** ([orig sol](../Advanced_Graphs/alien_dictionary.cpp)) |
 | **25<sup>th</sup> May 2025** | break | break |
 | **24<sup>th</sup> May 2025** | break | break |

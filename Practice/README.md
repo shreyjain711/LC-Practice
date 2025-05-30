@@ -3,6 +3,7 @@
 | Date | Daily Problem 1 | Daily Problem 2 |
 | ---- | ---- | ---- |
 | **XX<sup>th</sup> May 2025** | **[)** ([orig sol](../)) | **[)** ([orig sol](../)) |
+| **29<sup>th</sup> May 2025** | **[Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)** ([orig sol](../Linked_List/detect_cycle_ll.cpp)) | **[Best Time to Buy And Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)** ([orig sol](../Sliding_Window/buy_sell_stock_1.cpp)) |
 | **28<sup>th</sup> May 2025** | **[Pow(x, n)](https://leetcode.com/problems/powx-n/)** ([orig sol](../Math_And_Geometry/pow_x_n.cpp)) | **[Permutations](https://leetcode.com/problems/permutations/)** ([orig sol](../Backtracking/permutations.cpp)) |
 | **27<sup>th</sup> May 2025** | break | break |
 | **26<sup>th</sup> May 2025** | **[Combination Sum](https://leetcode.com/problems/combination-sum/)** ([orig sol](../Backtracking/combination_sum.cpp)) | **[Alien Dictionary](https://leetcode.com/problems/alien-dictionary/)** ([orig sol](../Advanced_Graphs/alien_dictionary.cpp)) |

@@ -2,7 +2,17 @@
 
 | Date | Daily Problem 1 | Daily Problem 2 |
 | ---- | ---- | ---- |
-| **XX<sup>th</sup> May 2025** | **[)** ([orig sol](../)) | **[)** ([orig sol](../)) |
+| **XX<sup>th</sup> June 2025** | **[)** ([orig sol](../)) | **[)** ([orig sol](../)) |
+| **08<sup>th</sup> June 2025** | **[Largest Rectangle In Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/)** ([orig sol](../stack/largest_rect_in_histogram.cpp)) | **[Redundant Connection](https://leetcode.com/problems/redundant-connection/)** ([orig sol](../Graphs/redundant_connection.cpp)) |
+| **07<sup>th</sup> June 2025** | break | break |
+| **06<sup>th</sup> June 2025** | break | break |
+| **05<sup>th</sup> June 2025** | break | break |
+| **04<sup>th</sup> June 2025** | break | break |
+| **03<sup>rd</sup> June 2025** | break | break |
+| **02<sup>nd</sup> June 2025** | break | break |
+| **01<sup>st</sup> June 2025** | break | break |
+| **31<sup>st</sup> May 2025** | break | break |
+| **30<sup>th</sup> May 2025** | break | break |
 | **29<sup>th</sup> May 2025** | **[Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)** ([orig sol](../Linked_List/detect_cycle_ll.cpp)) | **[Best Time to Buy And Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)** ([orig sol](../Sliding_Window/buy_sell_stock_1.cpp)) |
 | **28<sup>th</sup> May 2025** | **[Pow(x, n)](https://leetcode.com/problems/powx-n/)** ([orig sol](../Math_And_Geometry/pow_x_n.cpp)) | **[Permutations](https://leetcode.com/problems/permutations/)** ([orig sol](../Backtracking/permutations.cpp)) |
 | **27<sup>th</sup> May 2025** | break | break |

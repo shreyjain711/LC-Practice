@@ -3,6 +3,7 @@
 | Date | Daily Problem 1 | Daily Problem 2 |
 | ---- | ---- | ---- |
 | **XX<sup>th</sup> June 2025** | **[)** ([orig sol](../)) | **[)** ([orig sol](../)) |
+| **10<sup>th</sup> June 2025** | **[Merge Triplets to Form Target Triplet](https://leetcode.com/problems/merge-triplets-to-form-target-triplet/)** ([orig sol](../Greedy/merge_triplets_target.cpp)) | **[Network Delay Time](https://leetcode.com/problems/network-delay-time/)** ([orig sol](../Advanced_Graphs/network_delay_time.cpp)) |
 | **09<sup>th</sup> June 2025** | **[Task Scheduler](https://leetcode.com/problems/task-scheduler/)** ([orig sol](../Heap_Priority_Queue/tasks_scheduler.cpp)) | **[3Sum](https://leetcode.com/problems/3sum/)** ([orig sol](../Two_Pointers/3sum.cpp)) |
 | **08<sup>th</sup> June 2025** | **[Largest Rectangle In Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/)** ([orig sol](../stack/largest_rect_in_histogram.cpp)) | **[Redundant Connection](https://leetcode.com/problems/redundant-connection/)** ([orig sol](../Graphs/redundant_connection.cpp)) |
 | **07<sup>th</sup> June 2025** | break | break |

@@ -3,7 +3,9 @@
 | Date | Daily Problem 1 | Daily Problem 2 |
 | ---- | ---- | ---- |
 | **XX<sup>th</sup> June 2025** | **[)** ([orig sol](../)) | **[)** ([orig sol](../)) |
-| **XX<sup>th</sup> June 2025** | **[Reverse Nodes in K-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/)** ([orig sol](../Linked_List/reverse-k-grp-ll.cpp)) | **[LRU Cache](https://leetcode.com/problems/lru-cache/)** ([orig sol](../Linked_List/lru_cache.cpp)) |
+| **15<sup>th</sup> June 2025** | **[Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/)** ([orig sol](../Trees/max_path_sum.cpp)) | **[Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops/)** ([orig sol](../Advanced_Graphs/cheapest_flights_k_stops.cpp)) |
+| **14<sup>th</sup> June 2025** | break | break |
+| **13<sup>th</sup> June 2025** | **[Reverse Nodes in K-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/)** ([orig sol](../Linked_List/reverse-k-grp-ll.cpp)) | **[LRU Cache](https://leetcode.com/problems/lru-cache/)** ([orig sol](../Linked_List/lru_cache.cpp)) |
 | **12<sup>th</sup> June 2025** | break | break |
 | **11<sup>th</sup> June 2025** | **[Gas Station](https://leetcode.com/problems/gas-station/)** ([orig sol](../Greedy/gas_station.cpp)) | **[Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/)** ([orig sol](../Backtracking/palindrome_partitioning.cpp)) |
 | **10<sup>th</sup> June 2025** | **[Merge Triplets to Form Target Triplet](https://leetcode.com/problems/merge-triplets-to-form-target-triplet/)** ([orig sol](../Greedy/merge_triplets_target.cpp)) | **[Network Delay Time](https://leetcode.com/problems/network-delay-time/)** ([orig sol](../Advanced_Graphs/network_delay_time.cpp)) |

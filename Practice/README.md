@@ -3,6 +3,7 @@
 | Date | Daily Problem 1 | Daily Problem 2 |
 | ---- | ---- | ---- |
 | **XX<sup>th</sup> June 2025** | **[)** ([orig sol](../)) | **[)** ([orig sol](../)) |
+| **16<sup>th</sup> June 2025** | **[Word Break](https://leetcode.com/problems/word-break/)** ([orig sol](../1D_Dynamic_Programming/word_break.cpp)) | **[Word Search II](https://leetcode.com/problems/word-search-ii/)** ([orig sol](../Tries/word_search_ii.cpp)) |
 | **15<sup>th</sup> June 2025** | **[Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/)** ([orig sol](../Trees/max_path_sum.cpp)) | **[Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops/)** ([orig sol](../Advanced_Graphs/cheapest_flights_k_stops.cpp)) |
 | **14<sup>th</sup> June 2025** | break | break |
 | **13<sup>th</sup> June 2025** | **[Reverse Nodes in K-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/)** ([orig sol](../Linked_List/reverse-k-grp-ll.cpp)) | **[LRU Cache](https://leetcode.com/problems/lru-cache/)** ([orig sol](../Linked_List/lru_cache.cpp)) |

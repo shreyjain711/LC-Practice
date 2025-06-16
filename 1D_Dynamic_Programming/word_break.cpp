@@ -14,3 +14,14 @@ bool wordBreak(string s, vector<string>& wordDict) {
     }
     return canBreak[n];
 }
+
+// ***Start from last, go across each word, if exists, set ith bit to i+wordLen bit [O(n*NumWords) time|O(n) space]***:
+bool wordBreak(string s, vector<string>& wordDict) {
+  int n = s.size(); 
+  vector<bool> possible(n+1); possible[n] = 1;
+  for (int i=n-1; i>=0; --i) 
+      for (auto w: wordDict) 
+          if (s.substr(i, w.size())==w) 
+              possible[i] = possible[i+w.size()];
+  return possible[0];
+}

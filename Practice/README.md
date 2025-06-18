@@ -3,6 +3,7 @@
 | Date | Daily Problem 1 | Daily Problem 2 |
 | ---- | ---- | ---- |
 | **XX<sup>th</sup> June 2025** | **[)** ([orig sol](../)) | **[)** ([orig sol](../)) |
+| **18<sup>th</sup> June 2025** | **[Swim In Rising Water](https://leetcode.com/problems/swim-in-rising-water/)** ([orig sol](../Graphs/clone_graph.cpp)) | **[Clone Graph](https://leetcode.com/problems/clone-graph/)** ([orig sol](../Advanced_Graphs/swim_rising_in_water.cpp)) |
 | **17<sup>th</sup> June 2025** | **[Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)** ([orig sol](../Two_Pointers/trapping_rain_water.cpp)) | **[Min Cost to Connect All Points](https://leetcode.com/problems/min-cost-to-connect-all-points/)** ([orig sol](../Advanced_Graphs/min_cost_connect_all.cpp)) |
 | **16<sup>th</sup> June 2025** | **[Word Break](https://leetcode.com/problems/word-break/)** ([orig sol](../1D_Dynamic_Programming/word_break.cpp)) | **[Word Search II](https://leetcode.com/problems/word-search-ii/)** ([orig sol](../Tries/word_search_ii.cpp)) |
 | **15<sup>th</sup> June 2025** | **[Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/)** ([orig sol](../Trees/max_path_sum.cpp)) | **[Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops/)** ([orig sol](../Advanced_Graphs/cheapest_flights_k_stops.cpp)) |

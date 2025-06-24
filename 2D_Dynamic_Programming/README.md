@@ -114,7 +114,7 @@
   ```cpp
   int findTargetSumWays(vector<int>& nums, int target) {
       int sum = accumulate(begin(nums), end(nums), 0);
-      if (sum<target || (target+sum)%2) return 0;
+      if (sum<abs(target) || (target+sum)%2) return 0;
       target = (target+sum)>>1;
       int dp[target+1]; memset(dp, 0, sizeof dp); dp[0]=1;
       for (int n:nums)

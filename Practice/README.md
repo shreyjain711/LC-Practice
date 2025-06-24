@@ -3,6 +3,7 @@
 | Date | Daily Problem 1 | Daily Problem 2 |
 | ---- | ---- | ---- |
 | **XX<sup>th</sup> June 2025** | **[)** ([orig sol](../)) | **[)** ([orig sol](../)) |
+| **23<sup>rd</sup> June 2025** | **[Target Sum](https://leetcode.com/problems/target-sum/)** ([orig sol](../2D_Dynamic_Programming/target_sum.cpp)) | **[Multiply Strings](https://leetcode.com/problems/multiply-strings/)** ([orig sol](../Math_And_Geometry/multiply_strings.cpp)) |
 | **22<sup>nd</sup> June 2025** | **[Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/)** ([orig sol](../1D_Dynamic_Programming/palindromic_substrs.cpp)) | **[Permutation In String](https://leetcode.com/problems/permutation-in-string/)** ([orig sol](../Sliding_Window/permutation_in_string.cpp)) |
 | **21<sup>st</sup> June 2025** | **[Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/)** ([orig sol](../Linked_List/copy_random_ptr.cpp)) | **[Surrounded Regions](https://leetcode.com/problems/surrounded-regions/)** ([orig sol](../Graphs/surrounded_regions.cpp)) |
 | **20<sup>th</sup> June 2025** | **[Course Schedule II](https://leetcode.com/problems/course-schedule-ii/)** ([orig sol](../Graphs/course_schedule_ii.cpp)) | **[Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)** ([orig sol](../Sliding_Window/min_window_substr.cpp)) |

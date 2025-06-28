@@ -3,6 +3,9 @@
 | Date | Daily Problem 1 | Daily Problem 2 |
 | ---- | ---- | ---- |
 | **XX<sup>th</sup> June 2025** | **[)** ([orig sol](../)) | **[)** ([orig sol](../)) |
+| **27<sup>th</sup> June 2025** | **[Coin Change II](https://leetcode.com/problems/coin-change-ii/)** ([orig sol](../2D_Dynamic_Programming/coin_change_ii.cpp)) | **[Find Median From Data Stream](https://leetcode.com/problems/find-median-from-data-stream/)** ([orig sol](../Heap_Priority_Queue/median_from_stream.cpp)) |
+| **26<sup>th</sup> June 2025** | break | break |
+| **25<sup>th</sup> June 2025** | break | break |
 | **24<sup>th</sup> June 2025** | **[N Queens](https://leetcode.com/problems/n-queens/)** ([orig sol](../Backtracking/n_queens.cpp)) | **[Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)** ([orig sol](../Sliding_Window/longest_substring_no_repeat.cpp)) |
 | **23<sup>rd</sup> June 2025** | **[Target Sum](https://leetcode.com/problems/target-sum/)** ([orig sol](../2D_Dynamic_Programming/target_sum.cpp)) | **[Multiply Strings](https://leetcode.com/problems/multiply-strings/)** ([orig sol](../Math_And_Geometry/multiply_strings.cpp)) |
 | **22<sup>nd</sup> June 2025** | **[Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/)** ([orig sol](../1D_Dynamic_Programming/palindromic_substrs.cpp)) | **[Permutation In String](https://leetcode.com/problems/permutation-in-string/)** ([orig sol](../Sliding_Window/permutation_in_string.cpp)) |

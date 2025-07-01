@@ -2,7 +2,10 @@
 
 | Date | Daily Problem 1 | Daily Problem 2 |
 | ---- | ---- | ---- |
-| **XX<sup>th</sup> June 2025** | **[)** ([orig sol](../)) | **[)** ([orig sol](../)) |
+| **XX<sup>th</sup> July 2025** | **[)** ([orig sol](../)) | **[)** ([orig sol](../)) |
+| **30<sup>th</sup> June 2025** | **[Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)** ([orig sol](../1D_Dynamic_Programming/max_prod_subarr.cpp)) | **[Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)** ([orig sol](../Backtracking/letter_combinations_phone_number.cpp)) |
+| **29<sup>th</sup> June 2025** | break | break |
+| **28<sup>th</sup> June 2025** | break | break |
 | **27<sup>th</sup> June 2025** | **[Coin Change II](https://leetcode.com/problems/coin-change-ii/)** ([orig sol](../2D_Dynamic_Programming/coin_change_ii.cpp)) | **[Find Median From Data Stream](https://leetcode.com/problems/find-median-from-data-stream/)** ([orig sol](../Heap_Priority_Queue/median_from_stream.cpp)) |
 | **26<sup>th</sup> June 2025** | break | break |
 | **25<sup>th</sup> June 2025** | break | break |

@@ -54,6 +54,20 @@
       } return jumps;
   }
   ```
+- ***iterate till second last elem, update range at each, if i==currRange then we at the end of lvl so make a jump, update currRange [O(n) time | O(1) space]***:
+  ```cpp
+  int jump(vector<int>& nums) {
+      int jumps = 0, range = 0, currRange = 0; 
+      for (int i=0; i<nums.size()-1; i++) {
+          range = max(range, i+nums[i]);
+          if (i==currRange) {
+              jumps++; 
+              currRange = range;
+          }
+      } return jumps;
+  }
+  ```
+
 
 ### [Gas Station](https://leetcode.com/problems/gas-station/):
 - ***Problem Desc***: for each i, gas available there and cost from there to next station is given; where can one start to complete a loop

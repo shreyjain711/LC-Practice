@@ -3,6 +3,7 @@
 | Date | Daily Problem 1 | Daily Problem 2 |
 | ---- | ---- | ---- |
 | **XX<sup>th</sup> July 2025** | **[)** ([orig sol](../)) | **[)** ([orig sol](../)) |
+| **01<sup>st</sup> July 2025** | **[Jump Game II](https://leetcode.com/problems/jump-game-ii/)** ([orig sol](../Greedy/jump_game_ii.cpp)) | **[Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences/)** ([orig sol](../2D_Dynamic_Programming/distinct_subseq.cpp)) |
 | **30<sup>th</sup> June 2025** | **[Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)** ([orig sol](../1D_Dynamic_Programming/max_prod_subarr.cpp)) | **[Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)** ([orig sol](../Backtracking/letter_combinations_phone_number.cpp)) |
 | **29<sup>th</sup> June 2025** | break | break |
 | **28<sup>th</sup> June 2025** | break | break |

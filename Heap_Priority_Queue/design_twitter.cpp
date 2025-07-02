@@ -1,38 +1,34 @@
 // ***Problem Desc***: design functions for follow, unfollow and generate news feed
-// ***Sol [O(logn) time for follow, unfollow, O(n.p.logFeedSize) time for news feed generation | O(feedSize) space]***:
-int tweetNum;
-unordered_map<int, unordered_set<int>> followList;
-unordered_map<int, vector<vector<int>>> postList;
-Twitter() {
-    tweetNum = 0;
-}
+// ***set for followers, vector for tweets, get into a maxHeap for top 10, add self to follower every time [O(logn) time for post, follow, unfollow, O(nlogn) time for getFeed | O(n + t) space]***:
+  
+unordered_map<int, unordered_set<int>> following;
+unordered_map<int, vector<int>> tweets;
+Twitter() {}
 
 void postTweet(int userId, int tweetId) {
-    if (followList.find(userId) == followList.end())
-        followList[userId].insert(userId);
-    postList[userId].push_back({tweetNum++, tweetId});
+  following[userId].insert(userId);
+  tweets[userId].push_back(tweetId);
 }
 
 vector<int> getNewsFeed(int userId) {
-    vector<int> newsFeed;
-    priority_queue<vector<int>, vector<vector<int>>, greater<vector<int>>> pq;
-    for (auto followed: followList[userId]) {
-        for (auto postDetails : postList[followed]) {
-            pq.push(postDetails);
-            if (pq.size() > 10) pq.pop();
-        }
-    }
-    while (!pq.empty()) {newsFeed.push_back(pq.top()[1]); pq.pop();}
-    reverse(newsFeed.begin(), newsFeed.end());
-    return newsFeed;
+  vector<int> top10; priority_queue<int> orderTweets;
+  if (following.count(userId)) {
+      for (auto f: following[userId])
+          if (tweets.count(f))
+              for (int i=0; i<min(10, (int)tweets[f].size()); i++)
+                  orderTweets.push(tweets[f][i]);
+      while (!orderTweets.empty() && top10.size()<10) {
+          top10.push_back(orderTweets.top()); orderTweets.pop();
+      }
+  } return top10;
 }
 
 void follow(int followerId, int followeeId) {
-    if (followList.find(followerId) == followList.end())
-        followList[followerId].insert(followerId);
-    followList[followerId].insert(followeeId);
+  following[followerId].insert(followerId);
+  following[followerId].insert(followeeId);
 }
 
 void unfollow(int followerId, int followeeId) {
-    followList[followerId].erase(followeeId);
+  if (followerId==followeeId) return;
+  following[followerId].erase(followeeId);
 }

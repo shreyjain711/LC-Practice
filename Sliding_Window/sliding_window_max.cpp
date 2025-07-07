@@ -1,6 +1,19 @@
 // ***Problem Desc***: a window of size k slides over an array of size n. for each window give its max element
 // ***Brute [O(k.(n-k)) time | O(1) space]***: for each window check max linearly
 
+// ***make a max heap of elements, push to it in a for loop, pop the top if it's outside the window, top is then the ans [O(nlogn) time | O(n) space]***:
+vector<int> maxSlidingWindow(vector<int>& nums, int k) {
+    vector<int> ans(nums.size()-k+1); priority_queue<pair<int,int>> maxHeap;
+    for (int i=0; i<nums.size(); i++) {
+        maxHeap.push({nums[i], i});
+        if (i-k+1>=0) {
+            while (maxHeap.top().second<i-k+1) maxHeap.pop();
+            ans[i-k+1] = maxHeap.top().first;
+        }
+    } return ans;
+}
+
+
 /*
 ***once a max elem seen, then the ones smaller before it are no longer of use[O(n) time | O(k) space]***:
   - maintain a deque, a monotonically decreasing deque

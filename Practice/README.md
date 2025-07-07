@@ -3,6 +3,9 @@
 | Date | Daily Problem 1 | Daily Problem 2 |
 | ---- | ---- | ---- |
 | **XX<sup>th</sup> July 2025** | **[)** ([orig sol](../)) | **[)** ([orig sol](../)) |
+| **06<sup>th</sup> July 2025** | **[Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)** ([orig sol](../Sliding_Window/sliding_window_max.cpp)) | **[Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary/)** ([orig sol](../Advanced_Graphs/reconstruct_itinerary.cpp)) |
+| **05<sup>th</sup> July 2025** | break | break |
+| **04<sup>th</sup> July 2025** | break | break |
 | **03<sup>rd</sup> July 2025** | **[Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/)** ([orig sol](../1D_Dynamic_Programming/partition_equal_subset_sum.cpp)) | **[Rotate Image](https://leetcode.com/problems/rotate-image/)** ([orig sol](../Math_And_Geometry/rotate_image.cpp)) |
 | **02<sup>nd</sup> July 2025** | **[Design Twitter](https://leetcode.com/problems/design-twitter/)** ([orig sol](../Heap_Priority_Queue/design_twitter.cpp)) | **[Decode Ways](https://leetcode.com/problems/decode-ways/)** ([orig sol](../1D_Dynamic_Programming/decode_ways.cpp)) |
 | **01<sup>st</sup> July 2025** | **[Jump Game II](https://leetcode.com/problems/jump-game-ii/)** ([orig sol](../Greedy/jump_game_ii.cpp)) | **[Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences/)** ([orig sol](../2D_Dynamic_Programming/distinct_subseq.cpp)) |

@@ -247,42 +247,25 @@
     5. lengths (followed by a delimiter) before each word
   - ***Problem solution [encode: O(n) time, decode: O(n*l) time | O(1) space]***:
     ```cpp
-    #include <iostream>
-    #include <vector>
-    #include <string>
-    
-    using namespace std;
-    
-    string encode(vector<string> strs) {
+    string encode(vector<string>& strs) {
         string encoded = "";
-        for (auto str : strs) encoded += (to_string(str.length()) + '*' + str);
+        for (auto s: strs) encoded += to_string(s.size()) + '*' + s;
         return encoded;
     }
-    
-    vector<string> decode (string encoded) {
-        vector<string> strs;
-        int i = 0, j = 0;
-        while (i<encoded.length()) {
-            while (encoded[j] != '*') j++;
-            int len = stoi(encoded.substr(i, j-i));
-            strs.push_back(encoded.substr(j+1, len));
-            i = j+len+1;
-            j = i;
-        }
-        return strs;
-    }
-    
-    
-    int main() {
-        vector<string> strs = {"Hello", "world!26*"};
-        for (auto s: strs) cout << s << " ";
-        
-        cout<<endl<<encode(strs)<<endl;
-        
-        strs = decode(encode(strs));
-        for (auto s: strs) cout << s << " ";
-    
-        return 0;
+  
+    vector<string> decode(string s) {
+        vector<string> ans;
+        int last=0, i=0, nextLen=-1; 
+        while (i<=s.size()) {
+            if (nextLen==-1) {
+                if (s[i]=='*') {nextLen = stoi(s.substr(last, i-last));}
+                i++;
+            } else {
+                ans.push_back(s.substr(i, nextLen));
+                i = last = i+nextLen;
+                nextLen = -1;
+            }
+        } return ans;
     }
     ```
 

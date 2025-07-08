@@ -3,6 +3,7 @@
 | Date | Daily Problem 1 | Daily Problem 2 |
 | ---- | ---- | ---- |
 | **XX<sup>th</sup> July 2025** | **[)** ([orig sol](../)) | **[)** ([orig sol](../)) |
+| **08<sup>th</sup> July 2025** | **[Kth Largest Element In An Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)** ([orig sol](../Heap_Priority_Queue/kth_largest.cpp)) | **[Encode and Decode Strings](https://leetcode.com/problems/encode-and-decode-strings/)** ([orig sol](../Arrays_And_Hashing/encode_decode_strings.cpp)) |
 | **07<sup>th</sup> July 2025** | **[Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)** ([orig sol](../stack/gen_parentheses.cpp)) | **[Combination Sum II](https://leetcode.com/problems/combination-sum-ii/)** ([orig sol](../Backtracking/combination_sum_ii.cpp)) |
 | **06<sup>th</sup> July 2025** | **[Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)** ([orig sol](../Sliding_Window/sliding_window_max.cpp)) | **[Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary/)** ([orig sol](../Advanced_Graphs/reconstruct_itinerary.cpp)) |
 | **05<sup>th</sup> July 2025** | break | break |

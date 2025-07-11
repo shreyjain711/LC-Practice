@@ -3,6 +3,7 @@
 | Date | Daily Problem 1 | Daily Problem 2 |
 | ---- | ---- | ---- |
 | **XX<sup>th</sup> July 2025** | **[)** ([orig sol](../)) | **[)** ([orig sol](../)) |
+| **10<sup>th</sup> July 2025** | **[Container with Most Water](https://leetcode.com/problems/container-with-most-water/)** ([orig sol](../Two_Pointers/container_with_most_water.cpp)) | **[Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)** ([orig sol](../Arrays_And_Hashing/longest_consec_seq_if_sorted.cpp)) |
 | **09<sup>th</sup> July 2025** | **[Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)** ([orig sol](../1D_Dynamic_Programming/longest_palindromic_substr.cpp)) | Couldn't do |
 | **08<sup>th</sup> July 2025** | **[Kth Largest Element In An Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)** ([orig sol](../Heap_Priority_Queue/kth_largest.cpp)) | **[Encode and Decode Strings](https://leetcode.com/problems/encode-and-decode-strings/)** ([orig sol](../Arrays_And_Hashing/encode_decode_strings.cpp)) |
 | **07<sup>th</sup> July 2025** | **[Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)** ([orig sol](../stack/gen_parentheses.cpp)) | **[Combination Sum II](https://leetcode.com/problems/combination-sum-ii/)** ([orig sol](../Backtracking/combination_sum_ii.cpp)) |

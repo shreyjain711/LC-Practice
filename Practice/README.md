@@ -3,6 +3,7 @@
 | Date | Daily Problem 1 | Daily Problem 2 |
 | ---- | ---- | ---- |
 | **XX<sup>th</sup> July 2026** | **[)** ([orig sol](../)) | **[)** ([orig sol](../)) |
+| **01<sup>st</sup> July 2026** | **[Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)** ([orig sol](../Arrays_And_Hashing/longest_consec_seq_if_sorted.cpp)) | **[3Sum](https://leetcode.com/problems/3sum/)** ([orig sol](../Two_Pointers/3sum.cpp)) |
 | **30<sup>th</sup> June 2026** | **[Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)** ([orig sol](../Two_Pointers/trapping_rain_water.cpp)) | **[Construct Binary Tree From Preorder And Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)** ([orig sol](../Trees/tree_from_pre_inorder.cpp)) |
 | **Back** | **To The** | **Grind!** |
 | **10<sup>th</sup> July 2025** | **[Container with Most Water](https://leetcode.com/problems/container-with-most-water/)** ([orig sol](../Two_Pointers/container_with_most_water.cpp)) | **[Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)** ([orig sol](../Arrays_And_Hashing/longest_consec_seq_if_sorted.cpp)) |
